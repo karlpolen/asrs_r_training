@@ -1,0 +1,28 @@
+---
+title: "Event Analysis"
+output:
+  html_document: default
+  html_notebook: default
+---
+
+Graphical analysis of the instinet event study.
+
+```{r, message=FALSE,warning=FALSE}
+eventdf=read.csv("event results 2.csv")
+categories=unique(eventdf$Category)
+benches=unique(eventdf$index)
+require(ggplot2)
+for (category in categories) {
+  for(bench in benches) {
+    ggplot(subset(eventdf,eventdf$Category==category&eventdf$AnncPlus<16&bench==eventdf$index),
+           aes(x=factor(AnncPlus),y=100*cum_annc_mu,color=IsEff))+
+      geom_boxplot()+
+      ylim(c(-5,5))+
+      ggtitle(paste("Instinet announced",category,bench))+
+      xlab("Trading days after announcement")+
+      ylab("Excess return compared to benchmark")
+  }
+}
+
+```
+

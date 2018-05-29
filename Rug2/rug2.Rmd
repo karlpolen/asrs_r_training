@@ -1,0 +1,166 @@
+---
+title: "RUG Lesson 2"
+output:
+  html_document: default
+  html_notebook: default
+  pdf_document: default
+  word_document: default
+---
+
+# Summary
+
+Last week, we got started with R and R Markdown/Notebook documents.  This week, we will advance our skills with R, learn how to read in data, calculate returns,do our first graph and calculate some elementary statistics.  As a bonus, I throw in an example to show how to format nice looking equations.
+
+# Introduction to vectors
+
+R is a matrix oriented language and most of its instructions will work with scalars, vectors and matrices.  This capability is a core strength and makes it powerful for working with data naturally represented with these type of structures.
+
+A vector is just multiple numbers or character strings (I don't say "list", because that's a different concept in R we will cover later).
+
+You can create a vector by typing the data in your code as arguments to the function "c", which I think is abbreviation for concatenate.  Here are some examples of what you can do with a numeric vector.
+
+```{r}
+x=c(1,3,5,7,9)
+x
+length(x) #how many numbers are in x
+x[4] #the fourth element of the vector
+sum(x)   #what is the sum of the numbers in x
+mean(x)  #what is the average value of the numbers in x
+sd(x)  #the standard deviation of the numbers in x
+x+x    #pairwise addition of the numbers in x
+x*x    #pairwise multiplication of the numbers in x
+x%*%x  #vector muliplication of x times x (standard math definition from linear algebra)
+outer(x,x,"*")  #generate a multiplication table 
+```
+
+Here are some examples with characters.
+
+```{r}
+a=c("Karl","Eric","Courtney","John","Kerry")
+length(a)
+which("Karl"%in% a)
+a[c(4,1)]  #the fourth and first (in that order) elements of the vector
+a[-2] #the vector excluding the second element
+grep("K+",a)  #which names have a capital "K" in them 
+grep("r{2}",a)  #which name has two r's in it (last two lines use "regular expressions" for pattern matching -- google it if curious -- very powerful text manipulation tool)
+gsub("K","E",a)  #replace capital "K" with "E"
+tickers=c("IBM","AAPL","MSFT") # some well known tickers
+paste(tickers,"US EQUITY")
+```
+
+# Working with stock price and return data
+
+Now, let's work with some real data.  I created a file of securities data in a file called "stockdat.csv".  If you haven't already, copy this file in to your own directory.  You also need to set your working directory by clicking at the top left of R Studio "Session/Set Working Directory/To Source File Location" to make sure you are reading and writing to the correct place.
+
+Here is how you read the file:
+
+```{r}
+stockdat=read.csv("stockdat.csv")
+head(stockdat) #displays the first 6 rows of the data
+tail(stockdat[,-1]) #displays the last 6 rows of the data excluding the first column
+```
+
+These are monthly stock prices (adjusted for dividends to calculate correct total return) for Apple, Microsoft and IBM.  Right now this data is in a data frame (much more about this later).  To keep this lesson about vectors, we will extract the price data for the stocks in three separate vectors.  (Not explaining now why the following code works, but it does.)
+
+```{r}
+apple=stockdat$AAPL.US.EQUITY
+ibm=stockdat$IBM.US.EQUITY
+microsoft=stockdat$MSFT.US.EQUITY
+date=as.Date(stockdat$date)
+```
+
+
+Now, we will do our first graph -- the price of Apple plotted over time.
+
+
+```{r}
+require(ggplot2)
+qplot(date,apple)  #two arguments to qplot -- x axis and y axis
+```
+
+Suppose we want to show growth of a dollar, instead of the price.  Easy!
+
+```{r}
+apple_gd=apple/apple[1]
+qplot(date,apple_gd)
+```
+
+
+Now let's calculate the return from Apple stock.  One way to calculate return is to think in terms of multiple -- how much did your money grow in relation to your starting position.  For apple, here is a way to calculate multiple.
+
+```{r}
+multiple=apple[length(apple)]/apple[1]
+multiple
+```
+
+Over this time frame, an investor made `r round(multiple,2)` times their money invested in apple.
+
+What is that in an annual return?  For a return earned over n years, you take the nth root of the number to calculate this then subtract one to convert from a multiple to an annual percentage.  How many years was the investment (don't cheat, always use a formula this will make your code portable for different data of different lengths). 
+
+```{r}
+nyears=(length(apple)-1)/12  #why did I subtract 1 before dividing by 12?
+apple_annual_return=-1+multiple^(1/nyears)  #the nth root of something is the same as to the 1/n power
+apple_annual_return
+```
+
+If you understand the rules of logarithms, you can calculate the same thing like this.
+
+```{r}
+-1+exp((1/nyears)*log(multiple))
+```
+
+This may seem pedantic, but understanding log returns is worthwhile.  In the first place, they are the standard in nearly all academic research -- whenever you see a log in an academic formula, they are calculating a return.  So, log(x) is shorthand for the return of x.  Also, coding is often simplified by using logarithms.  
+
+Now, we will calculate the monthly returns for Apple.  Here is one way to calculate arithmetic monthly returns.
+
+```{r}
+apple_monthly_arith_return=-1+apple[-1]/apple[-length(apple)]  #pairwise division of apple month n+1 divided apple month n
+qplot(date[-1],apple_monthly_arith_return)
+```
+
+We might be curious how Apple compares to IBM.  We will start by calculating the monthly returns for IBM.  
+
+```{r}
+ibm_monthly_arith_return=-1+ibm[-1]/ibm[-length(ibm)] 
+```
+
+To visually get a sense of the comparison we will do a scatterplot of IBM and Apple returns with IBM on the x axis.
+
+```{r}
+qplot(ibm_monthly_arith_return,apple_monthly_arith_return)
+```
+
+Definitely, an upward sloping relationship but not super-strong.  What is the correlation?
+
+```{r}
+cor(apple_monthly_arith_return,ibm_monthly_arith_return)
+```
+
+Now let's calculate a linear regression.  
+
+```{r}
+apple_ibm=lm(apple_monthly_arith_return~ibm_monthly_arith_return)  # regression apple as a function of ibm "lm" stands for linear model
+summary(apple_ibm)
+```
+
+THis regression suggests a significant relationship with an intercept at `r apple_ibm$coefficients[1]` and slope of `r apple_ibm$coefficients[2]`. (Note I didn't cheat and type the numbers -- I used a formula to grab the values from the regression results.) 
+
+For those schooled in the capital asset pricing model, regression statistics are often used to estimate "beta" of securities.  Another formula for estimating beta is as follows:
+
+$correlation(a,b) * \frac{sd(a)}{sd(b)}$
+
+Let's try it.
+
+```{r}
+cor(apple_monthly_arith_return,ibm_monthly_arith_return)*sd(apple_monthly_arith_return)/sd(ibm_monthly_arith_return)
+```
+
+Equals the slope in the regression results.  Amazing!
+
+# Homework
+
+Repeat these calculations, but calculate Microsoft instead of Apple.  Then calculate the correlation and regression statistics for Microsoft as a function of IBM.  How does it compare to Apple.  Write a report comparing Microsoft to Apple.  Include numbers created by formulas in the body of your report.
+
+For additional challenge, add a regression line to the scatterplot.  Google it.  You will need to graduate from qplot (for "quick plot") in the ggplot2 package to ggplot. Hint: use the stat_smooth geometry with the lm method.
+
+Also, you will note in my folder P:\R Studio Users Group\Karl\Rug2 a file called getstockdata.R.  This is the code that created the stockdat.csv file.  If you have a BBG terminal you can use this as a model for capturing data on whatever tickers you may be interested in.  You will find that the find that the arguments for the Java API work pretty much the same as the Excel API.

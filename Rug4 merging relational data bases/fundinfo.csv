@@ -1,0 +1,220 @@
+Portfolio,Short,Csname,catshort,catlong,Vintage,Unfunded.Date,Commit,Unfunded,Benchmark,Legacy,CSDate,Closed,InvestEnd,TermEnd,Extension,ExtTime,ExtUsed,Grow,Yield,Method,ICPCat,Consultant,Sponsor,AdvBoard,FundSizeM,Ticker,City
+FARM,IFM,"IFM Global Infrastructure (US), L.P.",FARM,Farmland/Infrastructure,2012,1/31/2017,300,0,,K,9/30/2016,FALSE,,,,,,,,,R,,,TRUE,3226900,,
+FARM,USFRT,"U.S. Farming Realty Trust II, LP",FARM,Farmland/Infrastructure,2013,,175,0,,K,,FALSE,,,,,,,,,R,,,TRUE,430000,,
+OPP,AresSIF,"Ares Saguaro Income Opportunity Fund, L.P.",Spec,Special Situation,2016,,300,300,,A,,FALSE,,,,,,,,,,,Ares,TRUE,302000,,
+OPP,Ave3,"Avenue Europe Special Situations Fund III (U.S.), L.P.",Spec,Special Situation,2015,,100,42,,A,,FALSE,6/5/2019,6/5/2021,4,1,0,,,,,,Avenue,TRUE,,,
+OPP,AveAZ,Avenue-ASRS Europe Opportunities Fund L.P.,Spec,Special Situation,2015,,250,105,,A,,FALSE,6/5/2019,6/5/2021,4,1,0,,,,,,Avenue,TRUE,,,
+OPP,AveEuro,"Avenue Europe Special Situations Fund II (U.S.), L.P.",Spec,Special Situation,2011,,250,0,,A,,FALSE,,,,,,,,,,,,TRUE,1736500,,
+OPP,BlkCI2,"Blackrock Credit Investors II, L.P.",BankHY,Bank Loans/HY,2008,,0,0,,A,,FALSE,,,,,,,,,,,Blackrock,,301500,,
+OPP,BlkMort,"Blackrock Mortgage Investors, LP",CDO,RMBS/CMBS/CDO,2008,,0,0,,A,,FALSE,,,,,,,,,,,Blackrock,,168800,,
+OPP,CSFI,*Credit Suisse Fixed Income Opportunistic Fund,RMBS,ABS/RMBS/CMBS,2009,,0,0,,A,,TRUE,,,,,,,,,,,,,200000,,
+OPP,Fortress,Fortress MSR Opportunities Fund II A LP,OPCr,Opportunistic Credit,2013,,200,4,,A,,TRUE,,,,,,,,,,,,,11000000,,
+OPP,GSCact,GSO Cactus Credit Opportunities Fund LP,OPCr,Opportunistic Credit,2014,,350,100,,A,,TRUE,,,,,,,,,,,Blackstone,,353500,,
+OPP,GSO,Blackstone/GSO Capital Solutions Fund LP,Corp,Corporate,2010,,0,0,,A,,TRUE,,,,,,,,,,,Blackstone,,2430500,,NYC
+OPP,Gugg,Guggenheim Partners Asset Magement,RMBS,ABS/RMBS/CMBS,2008,,0,0,,A,,FALSE,,,,,,,,,,,,,150000,,
+OPP,Hyper,*Hyperion Asset Magement,RMBS,ABS/RMBS/CMBS,2008,,0,0,,A,,TRUE,,,,,,,,,,,,,150000,,
+OPP,LCM,LCM Partners CO IV LP,OPCr,Opportunistic Credit,2016,,350,350,,A,,FALSE,,,,,,,,,,,LCM,TRUE,353500,,
+OPP,Oak8,"Oaktree Opportunities Fund VIII, L.P.",Spec,Special Situation,2009,,50,0,,A,,FALSE,,,,,,,,,,,Oaktree,,4386700,,LA
+OPP,Oak8b,"Oaktree Opportunities Fund VIIIb, L.P.",Spec,Special Situation,2010,,150,0,,A,,FALSE,,,,,,,,,,,Oaktree,,2692200,,
+OPP,OZ,"OZ Credit Opportunities Domestic Partners, L.P.",OPCr,Opportunistic Credit,2014,,300,0,,A,,TRUE,,,,,,,,,,,,,387700,,
+OPP,Sankty,"*Sankaty Advisors, LLC",LLSEP,Leveraged Loan Separate Acct,2011,,0,0,,A,,TRUE,,,,,,,,,,,,,300000,,
+OPP,TCWCap,TCW Capital Trust,OPCr,Opportunistic Credit,2009,,150,0,,A,,FALSE,,,,,,,,,,,TCW,,609100,,
+OPP,TCWCrdt,"*TCW Credit Opportunities Fund, LP",OPCr,Opportunistic Credit,2008,,0,0,,A,,TRUE,,,,,,,,,,,TCW,,597300,,
+PD,Ares,"Ares Cactus Private Asset Backed Fund, L.P.",PD,Private Debt,2015,,500,355,Eight,A,,FALSE,,,,,,,,,,,Ares,TRUE,,,
+PD,BlGSO,Blackstone / GSO Capital Solutions Fund LP,PD,Private Debt,2010,,200,27,Eight,A,,FALSE,,,,,,,,,,,Blackstone,TRUE,2430500,,
+PD,Crbrs,"Sonoran (Cerberus) ASRS Credit Opportunities Fund, L.P.",PD,Private Debt,2012,,1100,465,Eight,A,,FALSE,,,,,,,,,,,,TRUE,1000000,,NYC
+PD,H2Core,H/2 Core Real Estate Debt Fund L.P.,PD,Private Debt,2013,,400,95,Eight,A,,FALSE,,,,,,,,,,,H2,TRUE,475000,,
+PD,HghBr,"Highbridge Principal Strategies and Mezzanine Partners II, L.P.",PD,Private Debt,2013,,200,41,Eight,A,,FALSE,,,,,,,,,,,Highbridge,TRUE,4406600,,
+PD,HghBr3,"HPS-AP Mezzanine Partners III, L.P.",PD,Private Debt,2016,,500,500,Eight,A,,FALSE,,,,,,,,,,,Highbridge,TRUE,,,
+PD,HighSSL,"Highbridge Principal Strategies-Cactus Direct Lending Fund, L.P.",PD,Private Debt,2015,,600,349,Eight,A,,FALSE,5/5/2018,5/5/2022,0,0,0,,,,,,Highbridge,TRUE,,,
+PD,ICG,ICG Senior Debt Partners Fund,PD,Private Debt,2015,,401,90,Eight,A,,FALSE,4/1/2035,4/1/2035,0,0,0,,,,,,ICG,TRUE,,,
+PD,Monroe,"Monroe Private Credit Fund A, L.P.",PD,Private Debt,2015,,450,127,Eight,A,,FALSE,5/1/2018,,0,0,0,,,,,,Monroe,TRUE,,,
+PD,RFM,"RFM Cactus Holding Company, LLC",PD,Private Debt,2013,,600,107,Eight,A,,FALSE,,,,,,,,,,,Related,,310000,,
+PD,WhtOak,White Oak Global Advisors Private Debt,PD,Private Debt,2013,,210,43,Eight,A,,FALSE,,,,,,,,,,,,TRUE,160000,,
+PE,AccelKKR,"Accel-KKR Capital Partners III, LP",Tech,Technology,2008,,40,0,^RUT,PreK,,FALSE,6/30/2014,6/30/2018,2,1.5,0,,,,P,,,,600000,PEF1024,San Francisco
+PE,ACOF5,"Ares Corporate Opportunities Fund V, LP",MegBo,Mega Buyout,2015,,50,50,^RUT,K,,FALSE,,,,,,,,,,,Ares,,,PE10282,
+PE,AltCOF3,"Altaris Constellation - Overage Fund III, L.P.",MedBo,Medium Buyout,2016,,30,30,^RUT,K,,FALSE,,,3,1,0,,,,P,,,TRUE,,,
+PE,Altrs,"Altaris Health Partners III, L.P.",SmlBo,Small Buyout,2013,,50,27,^RUT,K,,FALSE,12/31/2019,12/31/2023,3,1,0,,,,P,,,TRUE,512200,PE01122,
+PE,ANRP1,"Apollo Natural Resources Partners, L.P.",Enrgy,Energy,2011,,100,24,^RUT,K,,FALSE,8/31/2017,12/31/2022,2,1,0,,,,P,,Apollo,TRUE,1300000,PEF8505 ,NYC
+PE,ANRP2,"Apollo Natural Resources Partners II, L.P.",Enrgy,Energy,2015,,100,82,^RUT,K,,FALSE,8/31/2021,12/31/2027,2,1,0,,,,P,,Apollo,TRUE,,PE09000 ,NYC
+PE,Aplo7,"Apollo Investment Fund VII, L.P.",MegBo,Mega Buyout,2008,,50,8,^RUT,PreK,,FALSE,8/30/2013,12/17/2018,3,1,0,,,,P,,Apollo,,14676500,PEF1081,NYC
+PE,Aplo8,"Apollo Investment Fund VIII, L.P.",MegBo,Mega Buyout,2013,,85,35,^RUT,K,,FALSE,,,,,0,,,,P,,Apollo,,8800000,PEF6121 ,NYC
+PE,Arlng3,"Arlington Capital Partners III, L.P.",SmlBo,Small Buyout,2010,,50,-2,^RUT,PreK,,FALSE,2/6/2017,8/6/2021,3,1,0,,,,P,,,TRUE,415500,PEF5659 ,D.C.
+PE,Arlng4,"Arlington Capital Partners IV, L.P.",MedBo,Medium Buyout,2016,,50,50,^RUT,K,,FALSE,,,,,,,,,,,,,700000000,,D.C.
+PE,Astorg6,"Astorg VI, SLP",MedBo,Medium Buyout,2016,,50,50,^RUT,K,,FALSE,,,,,,,,,,,,,,,
+PE,Atls8,"Atlas Venture Fund VIII, L.P.",VC,Venture Capital,2009,,15,0,^RUT,PreK,,FALSE,1/15/2014,1/15/2019,3,1,0,,,,P,,,,283300,PEF4971 ,Boston
+PE,Audx4,"Audax Private Equity Fund IV, L.P.",SmlBo,Small Buyout,2012,,50,0,^RUT,K,,FALSE,1/18/2018,1/18/2023,3,1,0,,,,P,,,,1322200,PEF3946 ,Boston
+PE,Baird5,Baird Capital Partners V Limited Partnership,SmlBo,Small Buyout,2011,,50,0,^RUT,K,,FALSE,10/1/2015,10/1/2019,3,1,0,,,,P,,,TRUE,248900,PEF3183 ,
+PE,BAMsp3,Brookfield Capital Partners Fund III (NR A) L.P.,Dstr,Distressed,2011,,50,7,^RUT,K,,FALSE,9/30/2016,9/30/2020,2,1,0,,,,P,,,TRUE,997300,PEF5840 CN,Toronto
+PE,BAMsp4,Brookfield Capital Partners Fund IV (NR A) L.P.,Dstr,Distressed,2015,,50,35,^RUT,K,,FALSE,6/30/2020,6/30/2025,2,1,0,,,,P,,Brookfield,TRUE,3500000,PE08757 US,
+PE,BEP2,Blackstone Energy Partners II L.P.,Enrgy,Energy,2014,,75,68,^RUT,K,,FALSE,,,,,,,,,P,,Blackstone,TRUE,4000000,PE08257,
+PE,BlkrkSec,"Blackrock Private Opportunities Fund, L.P.",Scndry,Secondaries,2011,,8,0,^RUT,K,,FALSE,7/23/2010,12/11/2014,2,1,0,,,,P,,Blackrock,,153700,PEF5122 ,NYC
+PE,Brdgpt4,Bridgepoint Europe IV 'D' L.P.,MegBo,Mega Buyout,2008,,40,3,^RUT,PreK,,FALSE,11/13/2013,11/13/2018,3,1,0,,,,P,,,,5849300,PEF1178 ,
+PE,BXcp6,Blackstone Capital Partners VI L.P.,MegBo,Mega Buyout,2009,,80,13,^RUT,PreK,,FALSE,1/7/2017,1/7/2022,2,1,0,,,,P,,Blackstone,,15114100,PEF3284 ,
+PE,BXcp7,Blackstone Capital Partners VII L.P.,MegBo,Mega Buyout,2015,,80,70,^RUT,K,,FALSE,12/31/2021,12/31/2027,2,1,0,,,,P,,Blackstone,,15000000,PE08353 ,
+PE,BXep,Blackstone Energy Partners L.P.,Enrgy,Energy,2012,,50,5,^RUT,K,,FALSE,8/1/2017,8/1/2022,2,1,0,,,,P,,Blackstone,TRUE,2374100,PEF3658 ,
+PE,CatCap3,Catalyst Fund Limited Partnership III,Dstr,Distressed,2009,,50,1,^RUT,K,,FALSE,9/29/2014,9/29/2019,2,1,0,,,,P,,Catalyst,TRUE,1020000,PEF6916 ,Toronto
+PE,CatCap4,Catalyst Fund Limited Partnership IV,Dstr,Distressed,2012,,100,17,^RUT,K,,FALSE,9/25/2017,9/25/2022,2,1,0,,,,P,,Catalyst,TRUE,812500,PE00256,Toronto
+PE,CatCap5,Catalyst Fund Limited Partnership V,Dstr,Distressed,2015,,100,82,^RUT,K,,FALSE,,,,,,,,,P,,Catalyst,TRUE,,PE09422 ,Toronto
+PE,Catrtn5,"Catterton Partners VII, L.P.",LrgBo,Large Buyout,2013,,50,2,^RUT,K,,FALSE,9/12/2019,9/12/2023,2,1,0,,,,P,,,,1680000,PEF6721 ,Greenwich
+PE,CCMP,"CCMP Capital Investors III, L.P.",LrgBo,Large Buyout,2014,,75,34,^RUT,K,,FALSE,,,,,,,,,P,,,,3357100,PEF6744,
+PE,ClrChn,iHeartMedia Inc.,SmlBo,Small Buyout,2008,,7,0,^RUT,PreK,,FALSE,,6/30/2016,0,0,0,,,P,P,,,,6800,IHRT ,
+PE,CMEA6,"Presidio Partners 2007, L.P.",VC,Venture Capital,2007,,10,0,^RUT,PreK,,FALSE,3/24/2014,3/24/2018,3,1,0,,,,P,,,TRUE,390500,1346381D,
+PE,CntrBr2,"Centerbridge Capital Partners II, L.P.",Dstr,Distressed,2011,,100,15,^RUT,K,,FALSE,12/31/2016,12/31/2021,2,1,0,,,,P,,Centerbridge,,4496800,PEF2449 ,NYC
+PE,CrwnEu2,Crown European Buyout Opportunities II Plc,SmlBo,Small Buyout,2007,,26,4,^RUT,PreK,,FALSE,5/15/2019,5/15/2019,3,1,0,,,,P,,,,967800,PEF9017 ,
+PE,CtrBdg3,"Centerbridge Capital Partners III, L.P.",Dstr,Distressed,2014,,75,55,^RUT,K,,FALSE,,,,,,,,,P,,Centerbridge,,5750000,PE07294 ,NYC
+PE,CVC5,CVC European Equity Partners V (C) L.P.,MegBo,Mega Buyout,2009,,60,2,^RUT,PreK,,FALSE,4/18/2014,4/18/2018,2,1,0,,,,P,,,,13004400,PEF1293 ,Summit
+PE,ECP2,"Energy Capital Partners II-A, LP",Enrgy,Energy,2010,,50,15,^RUT,PreK,,FALSE,12/31/2014,12/31/2019,2.5,2,0,,,,P,,,,2337700,BNEF930 ,NYC
+PE,Edgwtr3,"Edgewater Growth Capital Partners III, L.P.",SmlBo,Small Buyout,2011,,50,10,^RUT,K,,FALSE,10/12/2016,10/12/2020,3,1,0,,,,P,,,,638100,PEF5665,Chicago
+PE,EMG,"The Energy & Minerals Group Fund III, L.P.",Enrgy,Energy,2015,,75,10,^RUT,K,,FALSE,3/15/2019,3/15/2024,2,1,0,,,,P,,,,3509500,PE02603 ,
+PE,EnCp10,"EnCap Energy Capital Fund X, L.P.",Enrgy,Energy,2015,,50,34,^RUT,K,,FALSE,,,,,,,,,P,,,,5000000,PE09018 ,Houston
+PE,EnCp11,"EnCap Energy Capital Fund IXI, L.P.",Enrgy,Energy,2017,,50,50,^RUT,,,,,,,,,,,,,,,,,,Houston
+PE,EnCp9,"EnCap Energy Capital Fund IX, L.P.",Enrgy,Energy,2013,,35,8,^RUT,PreK,,FALSE,12/19/2017,12/19/2022,2,1,0,,,,P,,,,5154600,PEF8217 ,Houston
+PE,EQT7,EQT VII,MegBo,Mega Buyout,2015,,46,28,^RUT,K,,FALSE,12/31/2021,12/31/2027,2,1,0,,,,P,,EQT,,,PE09145 ,
+PE,FFL,"FFL Capital Partners IV, L.P.",LrgBo,Large Buyout,2014,,40,23,^RUT,K,,FALSE,8/15/2020,8/15/2024,2,1,0,,,,P,,,,2000000,PE01979,San Francisco
+PE,FirstR12,"First Reserve Fund XII, L.P.",Enrgy,Energy,2008,,80,2,^RUT,PreK,,FALSE,8/31/2014,8/31/2018,2,1,0,,,,P,,,TRUE,8665400,PEF6642 ,Greenwich
+PE,Harvest,Harvest Partners VII,LrgBo,Large Buyout,2015,,25,25,^RUT,K,,FALSE,12/31/2022,12/31/2026,,,,,,,,,,,,PE11700 ,San Francisco
+PE,IDG,"IDG Ventures SF, L.P.",VC,Venture Capital,2008,,10,0,^RUT,PreK,,FALSE,11/27/2013,11/27/2018,3,1,0,,,,P,,,TRUE,100300,PEF1486 ,
+PE,Insight3,Insight Equity III,MedBo,Medium Buyout,2015,,50,32,^RUT,K,,FALSE,12/31/2021,12/31/2027,2,1,0,,,,P,,Insight,,,PE00690,
+PE,JLL6,"JLL Partners Fund VI, L.P.",LrgBo,Large Buyout,2008,,40,6,^RUT,PreK,,FALSE,12/31/2014,12/31/2018,2,1,0,,,,P,,,TRUE,807200,PEF1519,NYC
+PE,Jrdn2,"The Resolute Fund II, L.P.",LrgBo,Large Buyout,2007,,40,5,^RUT,PreK,,FALSE,12/21/2013,12/21/2017,3,1,0,,,,P,,Jordan,TRUE,3576600,PE00080 ,NYC
+PE,Jrdn3,"The Resolute Fund III, L.P.",LrgBo,Large Buyout,2014,,50,30,^RUT,K,,FALSE,,,,,,,,,P,,Jordan,,3200000,PE12732 ,NYC
+PE,K3,"K3 Private Investors, L.P.",Tech,Technology,2016,,50,50,^RUT,K,,FALSE,,,,,,,,,,,,,,,
+PE,Khsla4,"Khosla Ventures IV, L.P.",VC,Venture Capital,2011,,25,1,^RUT,K,,FALSE,5/20/2017,5/20/2021,3,1,0,,,,P,,Khosla,,939900,PEF4893 ,
+PE,Khsla5,"Khosla Ventures V, L.P.",VC,Venture Capital,2014,,25,14,^RUT,K,,FALSE,6/15/2019,6/15/2025,3,1,0,,,,P,,Khosla,,757800,PE06951 ,
+PE,KindHk3,"Kinderhook Capital Fund III, L.P.",SmlBo,Small Buyout,2010,,40,5,^RUT,PreK,,FALSE,11/23/2015,11/23/2020,2,1,0,,,,P,,Kinderhook,TRUE,300000,PEF7783 ,NYC
+PE,KindHk4,"Kinderhook Capital Fund IV, L.P.",MedBo,Medium Buyout,2014,,40,19,^RUT,K,,FALSE,6/15/2019,6/15/2025,2,1,0,,,,P,,Kinderhook,TRUE,400000,PE05335 ,NYC
+PE,KindHk5,"Kinderhook Capital Fund V, L.P.",SmlBo,Small Buyout,2016,,40,40,^RUT,K,,FALSE,,,,,,,,,,,Kinderhook,TRUE,,,NYC
+PE,KPS4,"KPS Special Situations Fund IV, LP",LrgBo,Large Buyout,2013,,50,47,^RUT,K,,FALSE,1/1/2021,1/1/2026,2,1,0,,,,P,,,,3571400,PEF9005 ,
+PE,LCtrtn8,"L Catterton VIII Offshore, L.P.",MedBo,Medium Buyout,2016,,50,50,^RUT,K,,FALSE,,,,,,,,,,,,,,,
+PE,Lincln4,"Lincolnshire Equity Fund IV-A, L.P.",MedBo,Medium Buyout,2009,,30,1,^RUT,PreK,,FALSE,8/11/2015,8/11/2015,2,1,0,,,,P,,,,830300,PEF1577,NYC
+PE,Lindn2,Linden Capital Partners II LP,SmlBo,Small Buyout,2010,,30,3,^RUT,PreK,,FALSE,1/15/2016,1/15/2020,3,1,0,,,,P,,,TRUE,326200,PEF7816 ,Chicago
+PE,Littljn4,"Littlejohn Fund IV-A, L.P.",LrgBo,Large Buyout,2010,,40,7,^RUT,PreK,,FALSE,3/31/2015,8/31/2020,1,1,0,,,,P,,,,1350000,PEF6080,Greenwich
+PE,LLCP4,"Levine Leichtman Capital Partners IV, L.P.",LrgBo,Large Buyout,2008,,80,19,^RUT,PreK,,FALSE,10/31/2015,10/31/2019,3,1,0,,,,P,,LLCP,TRUE,1107300,PEF3385 ,LA
+PE,LLCP5,"Levine Leichtman Capital Partners V, L.P.",LrgBo,Large Buyout,2013,,80,19,^RUT,K,,FALSE,12/31/2019,12/31/2023,3,1,0,,,,P,,LLCP,TRUE,1328600,PE00534 ,LA
+PE,LLCPdv2,"Levine Leichtman Capital Partners Private Capital Solutions, L.P.",Dstr,Distressed,2011,,80,23,^RUT,K,,FALSE,12/31/2017,12/31/2022,3,1,0,,,,P,,LLCP,TRUE,226500,PE08922 ,LA
+PE,LLR3,"LLR Equity Partners III, L.P.",MedBo,Medium Buyout,2008,,30,3,^RUT,PreK,,FALSE,3/28/2014,7/28/2018,2,1,0,,,,P,,LLR,TRUE,803000,PEF1584 ,Philadelphia
+PE,LLR4,"LLR Equity Partners IV, L.P.",MedBo,Medium Buyout,2012,,50,15,^RUT,K,,FALSE,8/27/2017,8/31/2022,2,1,0,,,,P,,LLR,,950000,PEF7098 ,Philadelphia
+PE,LLR5,"LLR Equity Partners V, L.P.",MedBo,Medium Buyout,2017,,50,50,^RUT,K,,FALSE,,,,,,,,,,,,,950000000,,Philadelphia
+PE,Love,Lovell Minnick Equity Partners IV LP,MedBo,Medium Buyout,2014,,40,30,^RUT,K,,FALSE,,,,,,,,,P,,,,550000,PE03846 ,
+PE,MarnMz,"Maranon Mezzanine Fund, L.P.",Mezz,Mezzanine,2009,,30,4,^RUT,PreK,,FALSE,12/31/2013,7/29/2018,3,1,0,,,,P,,,TRUE,504200,PEF8886 ,
+PE,Montrx4,"Montreux Equity Partners IV, L.P.",VC,Venture Capital,2007,,10,0,^RUT,PreK,,FALSE,9/1/2011,9/1/2016,3,1,0,,,,P,,,,250000,PEF6175,
+PE,Nautic6,"Nautic Partners VI, L.P.",MedBo,Medium Buyout,2007,,40,2,^RUT,PreK,,FALSE,12/31/2013,5/1/2017,3,1,0,,,,P,,,TRUE,581400,PEF1633 ,
+PE,Nautic8,"Nautic Partners VIII, L.P.",MedBo,Medium Buyout,2015,,33,33,^RUT,K,,FALSE,,,,,,,,,P,,,,,PE11975,
+PE,NAV3,"New Atlantic Ventures Fund III, L.P.",VC,Venture Capital,2007,,10,0,^RUT,PreK,,FALSE,11/26/2012,12/14/2017,2,1,0,,,,P,,,TRUE,111700,PEF4023 ,
+PE,NewMtn3,"New Mountain Partners III, L.P.",MegBo,Mega Buyout,2007,,40,3,^RUT,PreK,,FALSE,2/28/2013,2/28/2018,2,1,0,,,,P,,,TRUE,5121800,PEF3135,
+PE,OakEu3,"Oaktree European Principal Fund III, L.P.",LrgBo,Large Buyout,2011,,43,11,^RUT,K,,FALSE,11/9/2016,11/9/2021,2,1,0,,,,P,,,,3840400,PEF8972 ,LA
+PE,OakHill3,"Oak Hill Capital Partners III, L.P.",LrgBo,Large Buyout,2008,,75,4,^RUT,PreK,,FALSE,2/28/2015,10/15/2017,2,1,0,,,,P,,,TRUE,3802100,PEF1653,
+PE,Oly6,"Olympus Growth Fund VI, L.P.",LrgBo,Large Buyout,2013,,50,28,^RUT,K,,FALSE,4/19/2019,10/1/2025,2,1,0,,,,P,,,,2301000,PEF9736,
+PE,Onex3,"Onex Partners III, L.P.",LrgBo,Large Buyout,2008,,75,7,^RUT,PreK,,FALSE,12/31/2013,12/31/2019,3,1,0.5,,,,P,,Partners,TRUE,4994800,PEF1676 CN,
+PE,PaulCap9,"Paul Capital Partners IX, L.P.",Scndry,Secondaries,2007,,50,14,^RUT,PreK,,FALSE,6/30/2012,6/30/2017,3,1,0,,,,P,,,,1650000,PEF8843,NYC
+PE,PBCP,"Pine Brook Capital Partners, L.P.",LrgBo,Large Buyout,2008,,50,5,^RUT,PreK,,FALSE,12/31/2013,12/14/2017,2,1,0,,,,P,,Pine Brook,TRUE,1150100,PEF6429,
+PE,PBCP2,"Pine Brook Capital Partners II, L.P.",LrgBo,Large Buyout,2012,,75,19,^RUT,K,,FALSE,11/19/2018,11/19/2023,2,1,0,,,,P,,Pine Brook,TRUE,2157900,PEF0756 ,
+PE,PenTech,"Peninsula Technology Ventures, L.P.",VC,Venture Capital,2007,,10,0,^RUT,PreK,,FALSE,12/31/2011,12/15/2016,2,1,0,,,,P,,,TRUE,67600,PEF0147 ,
+PE,PlatEP2,"Platinum Equity Capital Partners II, L.P.",LrgBo,Large Buyout,2007,,40,7,^RUT,PreK,,FALSE,9/7/2013,8/29/2018,2,1,0,,,,P,,,,2750000,PEF1701,
+PE,Prtnr11,"Partners Group Secondary 2011 (USD), L.P. INC.",Scndry,Secondaries,2011,,50,18,^RUT,K,,FALSE,6/30/2016,6/30/2024,3,1,0,,,,P,,,,1777400,PEF8965 ,Switzerland
+PE,Prtnr8,"Partners Group Secondary 2008, L.P.",Scndry,Secondaries,2007,,66,7,^RUT,PreK,,FALSE,12/31/2013,12/31/2021,3,1,0,,,,P,,Partners,TRUE,3024400,PEF6401 ,Switzerland
+PE,QEP5,"Quantum Energy Partners V, L.P.",Enrgy,Energy,2008,,50,5,^RUT,PreK,,FALSE,7/2/2014,7/2/2019,2,1,0,,,,P,,,,21281000,PEF1723 ,
+PE,Rhone,"Rhone Partners V, L.P.",LrgBo,Large Buyout,2015,,51,44,^RUT,K,,FALSE,,,,,,,,,P,,,,2016000,PE09542 ,
+PE,Saybrk,"Saybrook Corporate Opportunity Fund, L.P.",Dstr,Distressed,2008,,20,0,^RUT,PreK,,FALSE,11/2/2012,11/2/2017,2,1,0,,,,P,,,TRUE,150700,PEF8120,
+PE,SdlrEP4,"Seidler Equity Partners IV, L.P.",SmlBo,Small Buyout,2010,,40,1,^RUT,PreK,,FALSE,4/30/2015,4/30/2020,2,1,0,,,,P,,,TRUE,236000,PEF8134 ,
+PE,SlvrLk3,"Silver Lake Partners III, L.P.",Tech,Technology,2007,,40,4,^RUT,PreK,,FALSE,6/4/2013,6/4/2017,2,1,0,,,,P,,,,93571000,PEF1951 ,
+PE,TCW5,"TCW/Crescent Mezzanine Partners V, L.P.",Mezz,Mezzanine,2009,,70,6,^RUT,PreK,,FALSE,12/2/2013,12/14/2017,3,1,0,,,,P,,TCW,TRUE,2850000,PEF6559 ,
+PE,Tenx1,"Tenex Capital Partners, L.P.",SmlBo,Small Buyout,2011,,50,5,^RUT,K,,FALSE,11/30/2016,10/22/2020,2,1,0,,,,P,,,TRUE,452700,PEF8123,
+PE,Tenx2,"Tenex Capital Partners II, L.P.",MedBo,Medium Buyout,2016,,50,50,^RUT,K,,FALSE,,,2,1,0,,,,P,,,TRUE,,PE12095 ,
+PE,THL6,"Thomas H. Lee Equity Fund VI, L.P.",MegBo,Mega Buyout,2006,,50,2,^RUT,PreK,,FALSE,4/27/2014,4/27/2017,1,1,1,,,,P,,,TRUE,4395300,PEF1801 ,
+PE,Trilanc5,Trilantic Capital Partners V (North America) L.P.,LrgBo,Large Buyout,2013,,50,17,^RUT,K,,FALSE,6/8/2018,6/8/2023,3,1,0,,,,P,,,TRUE,2079600,PEF4022 ,
+PE,TSG7A,TSG VII-A,LrgBo,Large Buyout,2015,,24,24,^RUT,K,,FALSE,12/31/2022,12/31/2026,,,,,,,,,,,,PE11475 ,
+PE,TSG7B,TSG VII-B,MedBo,Medium Buyout,2015,,6,6,^RUT,K,,FALSE,12/31/2022,12/31/2026,,,,,,,,,,,,PE11475 ,
+PE,Veritas4,"The Veritas Capital Fund IV, L.P.",LrgBo,Large Buyout,2010,,70,7,^RUT,PreK,,FALSE,7/8/2015,7/8/2020,2,1,0,,,,P,,Veritas,TRUE,1166700,PEF3662 ,
+PE,Vert5,"The Veritas Capital Fund V, L.P.",LrgBo,Large Buyout,2014,,50,16,^RUT,K,,FALSE,,,,,,,,,P,,,,1500000,PE06026 ,
+PE,Vista4,"Vista Equity Partners Fund IV, L.P.",Tech,Technology,2011,,50,6,^RUT,K,,FALSE,9/12/2017,9/12/2022,2,1,0,,,,P,,Vista,,3467000,PEF4013,
+PE,Vista5,"Vista Equity Partners Fund V, L.P.",Tech,Technology,2014,,75,14,^RUT,K,,FALSE,,,,,,,,,P,,Vista,,4178000,PE03425,
+PE,Vista6,"Vista Equity Partners Fund VI, L.P.",Tech,Technology,2016,,75,75,^RUT,K,,FALSE,,,,,,,,,P,,Vista,,,,
+PE,VistaCo,Vista Equity Partners Co-Invest Program,Tech,Technology,2013,,50,0,^RUT,K,,FALSE,9/12/2017,9/12/2022,,,,,,,P,,Vista,,101000,PE02360 ,
+PE,VistaF3,"Vista Foundation Fund III, L.P.",Tech,Technology,2016,,25,25,^RUT,K,,FALSE,,,,,,,,,P,,Vista,,,,
+PE,Waud3,"Waud Capital Partners QP III, L.P.",SmlBo,Small Buyout,2010,,50,10,^RUT,K,,FALSE,3/30/2017,3/30/2021,3,1,0,,,,P,,,TRUE,273900,PEF9067,
+PE,Wayz2,"Wayzata Opportunities Fund II, L.P.",Dstr,Distressed,2007,,40,8,^RUT,PreK,,FALSE,11/10/2012,11/12/2016,3,1,0,,,,P,,Wayzata,,3031500,PEF6296 ,
+PE,Wayz2Sec,"Wayzata Opportunities Fund II, L.P. (Secondary)",Dstr,Distressed,2007,,6,1,^RUT,K,,FALSE,11/10/2012,11/12/2016,3,1,0,,,,P,,Wayzata,,3031500,PEF6296 ,
+PE,WhtDr1,White Deer Energy LP,Enrgy,Energy,2009,,50,6,^RUT,PreK,,FALSE,6/29/2014,6/29/2019,2,1,0,,,,P,,White Deer,TRUE,822400,PEF8112,
+PE,WhtDr2,White Deer Energy L.P. II,Enrgy,Energy,2013,,50,19,^RUT,K,,FALSE,2/15/2018,2/15/2022,2,1,0,,,,P,,White Deer,TRUE,1389000,PE00286 ,
+PE,Wrbrg10,"Warburg Pincus Private Equity X, L.P.",MegBo,Mega Buyout,2007,,50,0,^RUT,PreK,,FALSE,10/5/2013,10/5/2019,2,1,0,,,,P,,,,14656100,PEF1828 ,
+PE,Ycapa2,"Yucaipa American Alliance Fund II, LP",LrgBo,Large Buyout,2008,,40,0,^RUT,PreK,,FALSE,3/14/2014,3/11/2019,2,1,0,,,,P,,,,1641000,PEF2628,
+POPP,APSoc,"AP Socrates Co-Invest, L.P.",SmlBo,Small Buyout,2017,,63,63,Eight,K,,FALSE,,,,,,,,,,,Apollo,,204670,,
+POPP,Athne,Athene Holding Ltd.,POPP,Private Opportunistic,2014,,48,0,Eight,K,,FALSE,,,,,,,,,P,,Apollo,,500000,,
+POPP,BCQP,Blackstone CQP Co-Invest L.P.,POPP,Private Opportunistic,2012,,10,3,Eight,K,,FALSE,,,,,,,,,P,,Blackstone,,643600,,
+POPP,EMGAsc,"EMG Ascent 2016 Equity, L.P.",POPP,Private Opportunistic,2016,,35,35,Eight,K,,FALSE,,,,,,,,,P,,EMG,,305104035,,
+POPP,Jen,"Saguaro Land Investor, LLC.",POPP,Private Opportunistic,2014,,140,42,Eight,K,,FALSE,,,,,,,,,P,RCLCO,,,115500,,NYC
+POPP,Juptr,"AP Jupiter Co-Invest I, L.P.",POPP,Private Opportunistic,2014,,30,2,Eight,K,,FALSE,,,,,,,,,P,,,,150000,,
+POPP,LSQ,LM LSQ Investors LLC,POPP,Private Opportunistic,2015,,45,0,Eight,K,,FALSE,,,,,,,,,P,,Lovell,,,,
+POPP,Monte,Monte Nido,POPP,Private Opportunistic,2016,,30,30,Eight,K,,FALSE,,,,,,,,,P,,LLCP,,,,
+POPP,OCMSTR,"OCM STR Co-Invest 1, L.P.",POPP,Private Opportunistic,2011,,0,0,Eight,K,,FALSE,,,,,,,,,P,,Oaktree,,150300,,
+POPP,Park432,"56th and Park (NY) Holdings, LLC",POPP,Private Opportunistic,2012,,50,1,Eight,K,,FALSE,,,,,,,,,P,RCLCO,CIM,,50000,,LA
+POPP,TPG,"TPG Specialty Lending, Inc.",POPP,Private Opportunistic,2011,,0,0,Eight,K,,FALSE,,,,,,,,,P,,,,1300000,,
+POPP,Tunbrdg,Pine Brook Tunbridge ,POPP,Private Opportunistic,2015,,94,94,Eight,K,,FALSE,,,,,,,,,P,RCLCO,Pine Brook,TRUE,,,
+RE,140B,"A-140W Co-Investor, LLC",HgRP,High Return ,2015,,70,1,ODCE,K,,FALSE,1/1/2016,1/1/2018,,,,,,,R,RCLCO,CIM,,70000,,
+RE,AEWcpt,"AEW Core Property Trust (U.S.), Inc.",CorePr,Core Private,2007,,150,0,ODCE,PreK,,FALSE,,12/31/2016,0,0,0,,,,R,,AEW,TRUE,3877730,,Boston
+RE,AEWvif2,"AEW Value Investors II, L.P.",EnRP,Enhanced Return,2006,,44,0,ODCE,PreK,,FALSE,3/31/2011,3/31/2014,3,1,0,,,,R,,AEW,TRUE,568000,,Boston
+RE,Alcion,"Alcion Real Estate Partners Tax-Exempt Parallel Fund II, L.P.",HgRP,High Return ,2010,,50,18,ODCE,K,,FALSE,3/31/2014,12/31/2018,2,1,0,,,,R,,Alcion,TRUE,273700,,Boston
+RE,Almc4,"Almac Realty Securities IV, LP",HgRP,High Return ,2004,,75,0,ODCE,PreK,,FALSE,10/31/2009,10/31/2014,3,1,1,,,,R,,Almac,TRUE,444940,,
+RE,Almc5,"Almac Realty Securities V, L.P.",HgRP,High Return ,2008,,50,0,ODCE,PreK,,FALSE,7/31/2013,7/31/2018,3,1,0,,,,R,,Almac,TRUE,839210,,
+RE,BPP,Blackstone Property Partners L.P.,CorePr,Core Private,2014,,300,0,ODCE,K,,FALSE,,,,,,,,,R,RCLCO,Blackstone,,1375000,,
+RE,Brdwy,Broadway Proper,AZ,Arizona Owned,2004,,3,0,ODCE,PreK,,FALSE,,9/30/2019,,,,,,,R,,AZ,,,,
+RE,BREP6,"Blackstone Real Estate Partners VI, L.P.",HgRP,High Return ,2006,,45,2,ODCE,PreK,,FALSE,8/26/2011,8/26/2016,2,1,0,,,,R,,Blackstone,,10878730,,
+RE,BREP7,Blackstone Real Estate Partners VII L.P.,HgRP,High Return ,2012,,50,8,ODCE,K,,FALSE,2/26/2016,2/26/2022,2,1,0,,,,R,,Blackstone,,13250000,,
+RE,BREP8,Blackstone Real Estate Partners VIII L.P.,HgRP,High Return ,2015,,100,67,ODCE,K,,FALSE,5/1/2020,5/1/2025,2,1,0,,,,R,RCLCO,Blackstone,,15000000,,
+RE,BSP,"BSP Senita Realty Investors, LLC",Strat,Strategic Mager,2014,,100,47,ODCE,K,,FALSE,,,,,,,,,R,RCLCO,Buchanon,TRUE,103000,,
+RE,CBREOp5,"CB Richard Ellis Strategic Partners US Opportunity 5, L.P.",HgRP,High Return ,2007,,50,3,ODCE,PreK,,FALSE,5/9/2011,11/9/2018,2,1,1,,,,R,,CBRE,TRUE,679100,,
+RE,CBREV5,"CB Richard Ellis Strategic Partners U.S. Value 5, L.P.",EnRP,Enhanced Return,2008,,50,0,ODCE,PreK,,FALSE,5/9/2011,11/9/2014,2,1,0,,,,R,,CBRE,TRUE,1295080,,
+RE,CIM3,"CIM Fund III, L.P.",HgRP,High Return ,2007,,50,0,ODCE,PreK,,FALSE,11/4/2011,11/4/2017,2,1,0,,,,R,,CIM,,2372310,,
+RE,CIM6,"CIM VI (Urban REIT), LLC",CorePr,Core Private,2010,,50,0,ODCE,PreK,,FALSE,10/31/2015,10/31/2023,0,0,0,,,,R,,CIM,TRUE,353620,,
+RE,CIM8,"CIM Fund VIII, L.P.",HgRP,High Return ,2013,,100,38,ODCE,K,,FALSE,6/30/2017,6/30/2022,2,1,0,,,,R,,CIM,TRUE,357900,,
+RE,CIMUrbn,"CIM Urban REIT, LLC",CorePr,Core Private,2005,,75,0,ODCE,PreK,,FALSE,12/31/2009,6/30/2016,0,0,0,,,,R,,CIM,TRUE,1770760,,
+RE,Clny8,"Colony Investors VIII, L.P.",HgRP,High Return ,2006,,55,2,ODCE,PreK,,FALSE,9/1/2010,9/1/2017,2,1,1,,,,R,,Colony,,3002810,,Santa Monica
+RE,CMAI,"Cactus Multi-Asset Investor, LLC",Strat,Strategic Mager,2013,,400,67,ODCE,K,,FALSE,,,0,0,0,,,,R,RCLCO,CIM,TRUE,210000,,
+RE,Crlyl5,"Carlyle Realty Partners V, L.P.",HgRP,High Return ,2006,,50,11,ODCE,PreK,,FALSE,11/1/2011,11/1/2016,0,0,0,,,,R,,Carlyle,,3000000,,NYC
+RE,Dune1,Dune Real Estate Fund LP,HgRP,High Return ,2005,,50,0,ODCE,PreK,,FALSE,3/6/2013,3/6/2017,2,1,0,,,,R,,Dune,TRUE,459100,,
+RE,Dune2,Dune Real Estate Fund II LP,HgRP,High Return ,2009,,50,1,ODCE,PreK,,FALSE,10/31/2010,10/31/2014,2,1,1,,,,R,,Dune,TRUE,343400,,
+RE,E5,*E5 Portfolio,CorePb,Core Public,2005,,0,0,ODCE,PreK,,TRUE,,,,,,,,,R,,,,,,
+RE,EIG,European Investors Global Real Estate Securities Account,CorePb,Core Public,2007,,0,0,ODCE,PreK,,FALSE,,,,,,,,,R,,,,72210,,
+RE,FCrdf,"FC Cactus Residential Development Fund, LLC",Strat,Strategic Mager,2012,,350,37,ODCE,K,,FALSE,,,0,0,0,,,,R,RCLCO,Forest City,TRUE,450000,,
+RE,Forum,Forum Securities Ltd.,CorePb,Core Public,2009,,0,0,ODCE,PreK,,TRUE,,,,,,,,,R,,,,55260,,Greenwich
+RE,Fvemle2,"Five Mile Capital Partners II, L.P.",HgRP,High Return ,2007,,50,0,ODCE,PreK,,FALSE,4/15/2012,4/15/2016,,,,,,,R,,Five Mile,,153400,,NYC
+RE,FvemleLOPO,Five Mile Capital II LOPO Co-Investment LP,HgRP,High Return ,2010,,0,0,ODCE,K,,FALSE,4/15/2012,4/15/2015,4,1,0,,,P,R,,Five Mile,TRUE,16500,,NYC
+RE,GPI,LA Ocotillo Investor LLC,Strat,Strategic Mager,2015,,200,200,ODCE,K,,FALSE,,,,,,,,,R,RCLCO,GPI,TRUE,,,
+RE,H2SO2,H/2 Special Opportunities II L.P.,HgRP,High Return ,2011,,150,0,ODCE,K,,FALSE,3/31/2014,3/31/2018,,,,,,,R,,H2,TRUE,1150000,,NYC
+RE,H2SO3,H/2 Special Opportunities III L.P.,HgRP,High Return ,2014,,200,27,ODCE,K,,FALSE,,,,,,,,,R,RCLCO,H2,TRUE,1283600,,NYC
+RE,H2SO4,H/2 Special Opportunities IV L.P.,HgRP,High Return ,2016,,150,150,ODCE,K,,FALSE,,,,,,,,,R,RCLCO,H2,TRUE,,,NYC
+RE,H2SP,H/2 Strategic Partners L.P.,HgRP,High Return ,2016,,350,350,ODCE,K,,FALSE,,,,,,,,,R,RCLCO,H2,TRUE,,,
+RE,Hines,*Hines US Core Office Fund LP,CorePr,Core Private,2003,,0,0,ODCE,PreK,,TRUE,,,,,,,,,R,,Hines,,869400,,Houston
+RE,Hrsn3,"Harrison Street Real Estate Partners III, L.P.",HgRP,High Return ,2010,,55,9,ODCE,PreK,,FALSE,6/7/2013,6/7/2020,2,1,0,,,,R,,Harrison,TRUE,595500,,
+RE,Htmn2,"Heitman Value Partners II, L.P.",EnRP,Enhanced Return,2006,,50,2,ODCE,PreK,,FALSE,12/22/2011,12/22/2018,2,1,0,,,,R,,Heitman,TRUE,800000,,
+RE,Hunt3,"Hunt Commercial Realty Partners III, L.P.",EnRP,Enhanced Return,2007,,50,2,ODCE,PreK,,FALSE,7/24/2010,7/24/2018,2,1,0,,,,R,,Hunt,,540480,,
+RE,INGL,*ING Clarion REIT,CorePb,Core Public,2005,,0,0,ODCE,PreK,,TRUE,,,,,,,,,R,,,,50390,,
+RE,Invesco2,"Invesco Asian Real Estate Partners II (USD), L.P.",HgRP,High Return ,2007,,25,4,ODCE,PreK,,FALSE,9/3/2011,9/3/2018,2,1,0,,,,R,,Invesco,TRUE,295220,,
+RE,L3,"Cholla L3 Investor, LLC",Strat,Strategic Mager,2014,,200,99,ODCE,K,,FALSE,,,,,,,,,R,RCLCO,L3,TRUE,102500,,
+RE,LaSalle,*LaSalle Investment Magement Global Real Estate Portfolio,CorePb,Core Public,2007,,0,0,ODCE,PreK,,TRUE,,,,,,,,,R,,,,0,,Baltimore
+RE,Lone6,"Lone Star Fund VI (U.S.), L.P.",HgRP,High Return ,2008,,75,15,ODCE,PreK,,FALSE,7/18/2012,7/18/2016,2,1,0,,,,R,,Lone Star,,4343880,,Dallas
+RE,LoneREF,"Lone Star Real Estate Fund (U.S.), L.P.",HgRP,High Return ,2008,,25,4,ODCE,PreK,,FALSE,7/18/2012,7/18/2016,2,1,0,,,,R,,Lone Star,,1251720,,Dallas
+RE,MGrdf,M&G Real Estate Debt Fund LP,EnRP,Enhanced Return,2011,,0,0,ODCE,K,,FALSE,3/31/2014,6/30/2016,,,,0,0.1,D,R,,M&G,TRUE,343050,,London
+RE,OTROF5,"Oaktree Real Estate Opportunities Fund V, L.P.",HgRP,High Return ,2011,,50,26,ODCE,K,,FALSE,3/23/2015,9/3/2020,5,1,0,,,,R,,Oaktree,,1282970,,LA
+RE,OTROF6,"Oaktree Real Estate Opportunities Fund VI, L.P.",HgRP,High Return ,2012,,50,12,ODCE,K,,FALSE,8/30/2016,4/1/2022,5,1,0,,,,R,,Oaktree,,2215690,,LA
+RE,Pegs,"Pegasus Cactus Self Storage Fund, LLC",Strat,Strategic Mager,2013,,100,32,ODCE,K,,FALSE,,,,,,,,,R,RCLCO,Pegasus,TRUE,110000,,
+RE,PEP,"PEP-Cactus Student Housing, LLC",Strat,Strategic Mager,2013,,200,96,ODCE,K,,FALSE,,,,,,,,,R,RCLCO,Pierce,TRUE,105000,,
+RE,PLAres3,"PLA Residential Fund III, L.P.",HgRP,High Return ,2008,,50,0,ODCE,PreK,,FALSE,2/25/2012,2/2/2018,2,1,1,,,,R,,Prudential,TRUE,485400,,
+RE,PLAret1,"PLA Retail Fund I, LP",HgRP,High Return ,2006,,60,0,ODCE,PreK,,FALSE,6/30/2012,6/30/2013,2,1,2,,,,R,,Prudential,TRUE,395800,,
+RE,PRISA2,PRISA II,EnRP,Enhanced Return,2007,,0,0,ODCE,PreK,,FALSE,,,0,0,0,,,,R,,Prudential,TRUE,6996510,,
+RE,RelEng,"Related Energy Focused Real Estate Fund, L.P.",HgRP,High Return ,2014,,17,3,ODCE,K,,FALSE,12/31/2015,12/31/2018,,,,,,,R,RCLCO,Related,,212060,,
+RE,RREEF2,"RREEF Global Opportunities Fund II, LLC",HgRP,High Return ,2005,,50,0,ODCE,PreK,,FALSE,8/24/2007,10/15/2014,2,1,0,,,,R,,RREEF,TRUE,1617250,,
+RE,SeaV,SV Mesquite Investor LLC,Strat,Strategic Mager,2015,,200,200,ODCE,K,,FALSE,,,,,,,,,R,RCLCO,SeaVest,TRUE,,,
+RE,Tish6,"Tishman Speyer Real Estate Venture VI, L.P.",HgRP,High Return ,2004,,25,0,ODCE,PreK,,FALSE,12/10/2008,12/10/2013,3,1,3,,,,R,,Tishman,,1017900,,
+RE,Tish7,"Tishman Speyer Real Estate Venture VII, L.P.",HgRP,High Return ,2007,,50,1,ODCE,PreK,,FALSE,5/3/2011,5/3/2016,3,1,1,,,,R,,Tishman,TRUE,1467270,,
+RE,Twr3300,3300 Tower,AZ,Arizona Owned,2004,,23,0,ODCE,PreK,,FALSE,,,,,,0,0.05,,R,,AZ,,,,
+RE,Twr3JV,Tower III Joint Venture Parcel,AZ,Arizona Owned,2004,,1,0,ODCE,PreK,,FALSE,,,,,,0,0,,R,,AZ,,,,
+RE,Urdng,*Urdang REIT,CorePb,Core Public,2005,,0,0,ODCE,PreK,,TRUE,,,,,,,,,R,,,,50660,,
+RE,USAA,US Cactus Industrial/Logistics Fund LP,Strat,Strategic Mager,2013,,115,8,ODCE,K,,FALSE,,,0,0,0,,,,R,RCLCO,USAA,TRUE,100000,,
+RE,VDC,"Vestar Retail Properties III, LLC",Strat,Strategic Mager,2015,,300,184,ODCE,K,,FALSE,,,,,,,,,R,RCLCO,Vestar,TRUE,306120,,
+RE,VTRAZ,"VTRAZ Holdings, LLC",Strat,Strategic Mager,2013,,79,11,ODCE,K,,FALSE,,,0,0,0,,,,R,RCLCO,Ventas,TRUE,266670,,
+RE,Wstbk7,"Westbrook Real Estate Fund VII, L.P.",HgRP,High Return ,2006,,44,0,ODCE,PreK,,FALSE,9/28/2009,9/29/2014,2,1,0,,,,R,,Westbrook,TRUE,1650000,,
+RE,Wstbk8,"Westbrook Real Estate Fund VIII, L.P.",HgRP,High Return ,2008,,50,4,ODCE,PreK,,FALSE,9/28/2012,9/28/2017,2,1,0,,,,R,,Westbrook,TRUE,2276800,,
+RE,Wtrtn11,"Waterton Residential Property Venture XI, L.P.",HgRP,High Return ,2011,,50,0,ODCE,K,,FALSE,2/3/2014,2/3/2018,3,1,1,,,,R,,Waterton,TRUE,500000,,

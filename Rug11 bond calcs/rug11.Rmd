@@ -1,0 +1,562 @@
+---
+title: "Bond Calculations"
+output:
+  html_document: default
+  html_notebook: default
+  pdf_document: default
+---
+## Introduction
+
+We look at some calculations related to bonds including valuation, performance analysis and risk characteristics.  
+
+This post will illustrate a number of techniques including:   
+    *    Using LaTeX to format formulas   
+    *    calculations with time series   
+    *    npv.z and irr.z functions 
+    *    list data type
+    *    the `sapply` and `lapply` functions
+    *    `for` loops
+    *    the `Deriv` package 
+    *    more practice working with dates
+
+### Background
+
+Bonds are fixed income securities where a borrower receives proceeds and agrees to make periodic interest payments for a stated term.  At the end of the term, the "maturity", the borrower repays the principal amoun of the loan.  In some cases, bonds are issued as "zero coupon bonds" meaning there is no periodic interest payment, just a final payment of a face amount.  Such bonds are purchased at a discount to the face value.
+
+### Defined terms
+
+$face$ is the is the face amount of the loan.
+
+$coupon$ is the periodic interest payment.
+
+$r$ is the market interest rate, expressed as a decimal, not a percent.  
+
+$C$ is the coupon rate, i.e. $\frac{coupon}{face}$
+
+$n$ is the number of periods in the loan.  
+
+$d$, a discounting factor for determing present values, is $\frac{1}{1+r}$.  $d^n$ is the required discount to convert a payment in period $n$ to its present value.
+
+$f$, a factor to convert a current value to a future value is $1+r$.  $f^n$ is the future value factor for period $n$
+
+Some useful identities follow:
+
+$f=\frac{1}{d}$
+
+$r=\frac{1}{d}-1 = \frac{1-d}{d}$
+
+$\frac{1}{r}= \frac{d}{1-d}$
+
+## Valuing a bond
+
+In order to value a bond, we break it in to two parts -- a valuation of the final payment of principal and a valuation of the periodic payments. 
+
+### Valuing a zero coupon bond
+
+The value of a zero coupon bond is simply
+
+$value_{zero} = face \cdot d^n$ **(0)**
+
+
+### Derivation of value of perpetuity
+
+Let's consider the case where $n = \infty$
+
+$perp= \sum_{i=1}^{\infty} coupon \cdot d^i$
+
+$d \cdot perp = \sum_{i=2}^{\infty} coupon \cdot d^i$
+
+$perp \cdot (1-d) = coupon \cdot d$
+
+$perp = coupon \cdot \frac{d}{1-d} = \frac {coupon}{r} \:$ **(1)**
+
+### Derivation of value of finite stream of payments
+
+$value_{annuity} = \sum_{t=1}^{n} coupon \cdot d^t$
+
+$d \cdot value_{annuity} = \sum_{t=2}^{n+1} coupon \cdot d^t$
+
+$value_{annuity} \cdot (1-d) = coupon \cdot d - coupon \cdot d^{n+1}$
+
+$value_{annuity} = \frac {coupon}{r} - coupon \cdot d^n \cdot \frac {d}{1-d}$
+
+$value_{annuity} = \frac {coupon}{r} - \frac {coupon}{r} \cdot d^n = \frac {coupon}{r} \cdot (1 - d^n) = \frac  {coupon}{r} \cdot (1-{(\frac{1}{1+r})}^n) = perp - perp \cdot d^n \:$ **(2)**
+
+Note:  this formula amounts to saying the value of an annuity for n payments at time zero is the same as the value of a perpetuity at time zero minus the present value (at time zero) of a sale of a perpetuity at time n
+
+### Valuation of a coupon bond
+
+Using formulas **0** and **2**, the value of a coupon bond is:
+
+$face \cdot d^n + \frac {coupon}{r} \cdot (1 - d^n)$
+
+Rearranging, normalizing the face value of the bond to 1 and stating the formula in terms of $r$, the formula can be restated as
+
+$\frac{C}{r} + (1-\frac{C}{r}) \cdot \frac{1}{(1+r)^n}$ **(3)**
+
+### Bond valuation function
+
+Let's create a simple bond valuation function.
+
+```{r}
+bondval=function(r,C,n,freq=1) {
+  #simplified bond valuation
+  #values bond at issuance or immediately after a coupon payment normalized to a face value of 1
+  #where:
+  #r is the market interest rate, decimal value (i.e. .02 for 2%)
+  #C is the contractual coupon rate, decimal value
+  #n is the number of time periods in years, can be fractional
+  #freq is the frequency of payments, one for annual, two for semi-annual, etc
+  #example call: bondval(.02,.04,2+1/2,2) #evaluates 4% coupon, semi-annual payments, 2% market rate, 2 1/2 years left
+  r=r/freq
+  C=C/freq
+  n=n*freq
+  C/r+((1-C/r)*(1+r)^-n)
+}
+bondval(.03,.04,20) #value of a 20 year bond, annual payments, 4% coupon, 3% market
+```
+
+### Using `sapply` to generate a sensitivity analysis
+
+`sapply` can be used to generate a sensitivity analysis of a bond valuation at multiple market interest rates.  `sapply` takes two required arguments -- the values to be used for sensitivity analysis and the function they are applied to.  You can supply additional arguments which are passed through to the called function.  The sensitivity values are applied to the first argument of the function.  If you want to apply to a different argument, you will need to right a convenience function that changes the order of the call.    
+
+```{r, message=FALSE, warning=FALSE}
+require(ggplot2)
+require(scales)
+r=seq(.01,.15,.001)
+C=.08
+n=30
+bond1val=sapply(r,bondval,C,n)
+ggplot()+geom_line(aes(x=r,y=bond1val))+
+  xlab("Market Interest Rate")+
+  ylab("Bond Value")+
+  scale_x_continuous(labels=scales::percent)+ #note use of scales to format x axis as percent
+  ggtitle(paste0("Value of a ",n," year bond with ",100*C,"% annual coupon"))
+```
+
+## Calculating duration and convexity
+
+Duration and convexity are common risk measures of bonds that further analyze the sensitivity of bonds to changes in interest rates.  
+
+It's apparent from the sensitivity analysis above that bond prices are sensitive to changes in interest rates.  Duration is a multiplier that tells you for a given change in the interest rate what is an estimate of a change in the bond price.
+
+Mathematically, the definition of duration is the first derivative of the bond price with respect to the interest rate divided by the bond price and times -1.  The formula is:
+
+$duration = -1 \cdot \frac{\partial{bond price}}{\partial{interest rate}} \cdot \frac{1}{bond price}$ **(4)**
+
+If you look up duration in a finance text book, you will likely find the following two additional definitions.  Macauly duration is the weighted average by contribution to bond value of the maturities of all the payments on the bond.  Modified duration is the Macauly duration times $\frac{1}{1+r}$.  We will demonstrate below that modified duration is the same as the formula we started with.
+
+### The `Deriv` package
+
+There is a package called `Deriv` that calculates the derivatives of functions.  Using this package we can define a function for duration using formula 3.
+
+
+
+```{r, message=FALSE, warning=FALSE}
+require(Deriv)
+bond1deriv=Deriv(bondval,"r") #take the first derivative with respect to r
+duration=function(r,C,n) {
+  (-1/bondval(r,C,n))*(bond1deriv(r,C,n))
+}
+bond1dur=sapply(r,duration,C,n)
+durplot=ggplot()+geom_line(aes(x=r,y=bond1dur))+
+  xlab("Market Interest Rate")+
+  ylab("Duration")+
+  scale_x_continuous(labels=scales::percent)+ #note use of scales to format x axis as percent
+  ggtitle(paste0("Duration of a ",n," year bond with ",100*C,"% annual coupon"))
+durplot
+
+# definie macauly and modified duration functions
+macauly_dur=function(r,C,n) {
+  i=1:n
+  d=1/(1+r)
+  v=C/r+((1-C/r)*(1+r)^-n)
+  sum(i*(C*d^i/v))+n*d^n/v
+}
+mod_dur=function (r,C,n) {
+  macauly_dur(r,C,n)*(1/(1+r))
+}
+
+#plot modified duration on top of duration plot
+r2=seq(.01,.15,.01)
+bond1moddur=sapply(r2,mod_dur,C,n)
+durplot+geom_point(aes(x=r2,y=bond1moddur))
+```
+
+Duration is a reliable indicator of bond price sensitivity to interest rates only within a narrow band.  At wider intervals, the forecast of price change can be pretty far off.  Let's consider the 8%, 30 year bond.  At a market rate of 8% of course it is priced at par.  From the graph above, we can see that the price would be around 1.7 at 4% interest rate.  Looking at duration, we see that the durartion of the bond at 8% is around 12.  So, with a 4% change in interest rates, we would forecast an increase in value to 1.48 which is well below the actual value.  The problem is that the rate of change in value is constantly increasing as you move left on the curve.  This phenomenon is called "convexity".  When bonds have positive convexity, the sensitivity to an interest rate decline is greater than an interest rate increase of the same amount.
+
+The formula for convexity is the second derivative of the bond price with respect to rates divided by the price of the bond.  
+
+$convexity=\frac{\partial^2{bond price}}{\partial{rate}^2} \cdot \frac{1}{bond price}$ **(5)**
+
+If you check textbooks, you may find the following formula for convexity.  It is equivalent to formula 5.
+
+$convexity=duration^2 - \frac{\partial{duration}}{\partial{rate}}$
+
+```{r}
+#create two versions of the convexity function
+bond2deriv=Deriv(bondval,"r",nderiv=2)
+convexity=function(r,C,n) {
+  (1/bondval(r,C,n))*(bond2deriv(r,C,n))
+}
+durderiv=Deriv(mod_dur,"r")
+convexity2=function(r,C,n) {
+  d=mod_dur(r,C,n)
+  d^2-durderiv(r,C,n)
+}
+
+bond1convex=sapply(r,convexity,C,n)
+
+conplot=ggplot()+geom_line(aes(x=r,y=bond1convex))+
+  xlab("Market Interest Rate")+
+  ylab("Convexity")+
+  scale_x_continuous(labels=scales::percent)+ #note use of scales to format x axis as percent
+  ggtitle(paste0("Convexity of a ",n," year bond with ",100*C,"% annual coupon"))
+conplot
+
+bond1convex2=sapply(r2,convexity2,C,n)
+conplot+geom_point(aes(x=r2,y=bond1convex2))
+
+```
+
+## Bond values with irregular settlement dates
+
+The above formulas make the simplifying assumption that you only buy a bond on a coupon date so the period of time until the next coupon is exactly equal to the frequency of payments in the bond terms.  While this allows the formulas to reveal the underling mathematical elegance of bond characteristics, this constraint is too restrictive for a practical context.  
+
+We will show a way to calculate the value of the bond on alternate settlement dates.  We will use time series and the npv.z function discussed in last weeks work to perform this task.
+
+We will also use the irr.z calculation to show how to calculate yield to maturity.
+
+```{r, warning=FALSE, message=FALSE}
+require(zoo)
+require(lubridate)
+require(Rmpfr)
+source("dcf_funs.r")
+#Let's define a function that values bond on alternate settlement dates
+bondval_ts=function(r,C,n,freq=1,dtInit,dtSettle) {
+  #calculate bond value, normalized to face=1000
+  #r=rate
+  #C=Coupon
+  #n=maturity in years
+  #freq=frequency (must 1,2,4, or 12)
+  #dtInit=last coupon date for bond
+  #dtSettle=settlement date for bond purchase
+  if(!freq%in%c(1,2,4,12)) stop("freq must 1,2,4 or 12")
+  if(!is.Date(dtInit)) stop("dtInit must be a Date")
+  if(!is.Date(dtSettle)) stop("dtSettle must be a Date")
+  if(dtSettle<dtInit) stop("dtSettle must be same as or after dtInit")
+  #create a time series for the payments
+  interval=12/freq
+  ncoupons=n*freq
+  coupons=zoo(1000*C/freq,dtInit+months(interval*1:ncoupons))
+  principal=zoo(1000,dtInit+months(interval*ncoupons))
+  bondcf=zoosum(coupons,principal)
+  bondval=as.numeric(npv.z(r/freq,bondcf,freq=freq,apr=FALSE,now=dtSettle))
+  accrued=1000*C*as.numeric((dtSettle-dtInit)/365)
+  bondprice=bondval-accrued
+  ans=list(price=bondprice,value=bondval,accrued=accrued,cashflow=bondcf)
+  return(ans)
+}
+
+bond2params=bondval_ts(r=.05,C=.05,n=10,freq=1,dtInit=as.Date("2017-1-1"),dtSettle=as.Date("2017-1-1"))
+bond2params
+bond2params=bondval_ts(r=.05,C=.05,n=10,freq=1,dtInit=as.Date("2017-1-1"),dtSettle=as.Date("2017-2-14"))
+bond2params
+
+```
+
+Note the calculated value of the bond is 999.79, which is 2bp lower than the 1000  you would expect buying a 5% bond at a 5% discount rate.  The reason for the slight discrepancy is the two leap years during the term of bond.  Minor discrepancies due to the precise mechanics of calculations are common in bond space.  We regularly see differences in the valuation models of Barra and Bloomberg, for example.  
+
+Let's say we bought this bond for 980 (including accrued interest) on February 1, 2017.  What is the yield to maturity?
+
+```{r}
+bondcf2=zoosum(bond2params$cashflow,zoo(-980,as.Date("2017-2-1")))
+bondcf2
+irr.z(bondcf2)
+```
+
+## Calculating bond investment returns
+
+Bond returns are seemingly simple, but in reality quite complex.  Even if interest rates were static, with each passing day the maturity of a bond declines and its risk characteristics constantly evolve.  While the average return of a bond over its term is the coupon, the experienced returns for each year or quarter during the hold period vary as the required return for the remaining maturity diverges from the coupon.
+
+### Term Structure of Interest Rates and Implied Forward Rates
+
+A few lessons ago, we showed how to retrieve interest rate data from the Federal Reserve data base.  Let's pull that up.
+
+```{r, warning=FALSE, message=FALSE}
+#load packages
+require(quantmod)
+require(tidyr)
+require(lubridate)
+require(ggplot2)
+
+#define a convenience function to get more than one ticker from Fred and return as a data frame
+#more advanced stuff (anonymous function to create a list) -- study or take the function as a "given" for your work
+getSymbols_multi=function(tickers) {
+  n=length(tickers)
+  int.dat=lapply(1:n,function(x) getSymbols(tickers[x],src="FRED",auto.assign=FALSE))
+  int.df=do.call(merge,int.dat)
+}
+
+#get the constant maturity interest rate data from Fred
+durs=c(1,2,3,5,7,10,20,30)
+tickers=paste0("DGS",durs) #create a ticker list
+int.df=getSymbols_multi(tickers) #get the data
+#convert to data frame with time as a column
+int.df=as.data.frame(int.df)
+int.df$Time=as.Date(rownames(int.df))
+rownames(int.df)=NULL
+
+#convert to long format and add the duration column
+int.dflong=gather(int.df,ticker,yield,-Time)
+int.dflong$Duration=durs[match(int.dflong$ticker,tickers)] # add the duration column
+
+#plot the last interest rate curve
+dates=int.df$Time
+ggplot(subset(int.dflong,int.dflong$Time==max(dates)),
+        aes(x=Duration,y=yield))+
+  geom_line()+
+  geom_point()+
+  ggtitle(paste("Yield curve as of",max(dates)))
+
+#get the last curve data
+last_curve=tail(int.df,1)
+```
+
+The idea of an implied forward rate is straight forward.  From the data above we know that the current interest rate for a one year U.S. obligation is `r last_curve[1]`%, while the interest for two years is `r last_curve[2]`%.  From this information we want to know an estimate of the rate on a one year obligation starting one year from now.  The following calculations in R show how to calculate this.  
+
+```{r}
+oneyear=last_curve[1]/100
+twoyear=last_curve[2]/100
+(1+twoyear)^2/(1+oneyear) # calculate the one year forward rate
+```
+
+So, the one year forward rate is simply the two year rate squared divided by the one year rate.  Under this calculation, an investment in a one year bond followed by an investment in another one year bond at the expiration of this first bond earns the same total return as an investment in a two year bond at the outset.
+
+### Calculating the annual returns on a bond investment
+
+Let's say we buy a 30 year bond at the rate in the latest curve.  We now want to calculate, based on information in the current yield , the annual returns cumulative IRRs for the bond over the hold period.
+
+Two views (among many) on the information in the yield curve are sometimes called the "rational expectations" view and the "liquidity premium" view.  Under the rational expectations view, there is no arbitrage across time periods and the two year rate is simply the one year rate combined with an implied forward rate for the second year which, when chained to the return of the first year, equiibrates the two one year returns with the two year return.  Under the liquidity premium view, the yield doesn't carry information about future returns and simply reflects, in the market at the moment, the pricing for taking on the additional risk of the longer duration.  
+
+Before that, we have to estimate missing data because we don't have a value for every year on the curve.  The `na.spline` function from the `zoo` package helps us out.  
+
+```{r}
+#fill in missing values in the yield curve
+yieldcurve=.01*zoo(c(as.matrix(last_curve[,1:8])),as.integer(durs))
+nacurve=zoo(NA,(1:30)[!1:30%in%durs])
+yieldcurve2=zoosum(yieldcurve,nacurve)
+yieldcurve2[yieldcurve2==0]=NA
+yieldcurve2=na.spline(yieldcurve2)
+ycplot=ggplot()+geom_point(aes(x=time(yieldcurve),y=coredata(yieldcurve)))+
+  geom_line(aes(x=time(yieldcurve2),y=coredata(yieldcurve2)),color="blue")+
+  xlab("Years")+
+  ylab("Interest Rate")+
+  scale_y_continuous(labels=scales::percent)+
+  ggtitle("Yield Curve with Interpolated Interim Values")
+ycplot
+```
+
+Now that we have a yield curve, next thing we need to do is calculate the forward rates.  After 1 year, we need the 29 year implied forward rate.  After 2 years, we need the 28 year forward rate and so forth.
+
+Let's write a function and calculate it.
+
+```{r}
+implied_forward=function(i,yieldcurve) {
+  #function to calculate an implied forward rate
+  #i = the number of years forward; so if 30 years of yield curve data is provided and i is 3, then the function will calculate the implied forward 27 year rate after 3 years
+  #yieldcurve = a zoo object of annual yields in decimal values (a fancier version of this function would handle other periodicity -- leave that for later)
+  maxmat=length(yieldcurve)
+  if(i>length(yieldcurve)) stop("i must be less than equal to number of years in yield curve")
+  if(i==1) return(as.numeric(yieldcurve[maxmat]))
+  i=i-1
+  yieldcurve=coredata(yieldcurve)
+  ((((1+yieldcurve[maxmat])^maxmat)/((1+yieldcurve[i])^i))^(1/(maxmat-i)))-1 #do the calculation
+}
+#now use sapply to calculate the forward yields
+forw_yields=sapply(1:30,implied_forward,yieldcurve=yieldcurve2)
+ycplot+geom_line(aes(y=forw_yields,x=1:30),color="red")+
+  geom_line(aes(x=1:30,y=rev(coredata(yieldcurve2))),color="green")+
+  ggtitle("Yield Curve (blue) and Implied Forward rate for remaining term (red)\nNo Change in Yield curve (green)")
+```
+
+Now let's put together together the cash flows for the bond with a face value of 1000 and calculate annual return and cumulative IRR for a hold to maturity.  First, let's go with the case of an unchanging yield curve, which we will call the Liquidity Premium WOrld.
+
+```{r,message=FALSE, warning=FALSE}
+bond3cf=zoosum(zoo(forw_yields[1]*1000,1:30),zoo(1000,as.integer(30)),zoo(0,as.integer(0)))
+forw_yields2=as.numeric(rev(yieldcurve2))
+values=vector()
+cashreturn=vector()
+rollreturn=vector()
+totalreturn=vector()
+cumirr=vector()
+values[1]=1000
+cashreturn[1]=rollreturn[1]=totalreturn[1]=cumirr[1]=NA
+for (i in 2:31) {
+  if(i==31) {
+    values[i]=0} else {
+      values[i]=npv.z(forw_yields2[i],zoosum(bond3cf[(i+1):31],zoo(0,i-1)))
+    }
+  rollreturn[i]=-1+values[i]/values[i-1]
+  cashreturn[i]=as.numeric(bond3cf[i])/values[i-1]
+  totalreturn[i]=rollreturn[i]+cashreturn[i]
+  cumirr[i]=irr.z(zoosum(zoo(-1000,0),bond3cf[1:i],zoo(values[i],i-1)))
+}
+ggplot()+
+  geom_line(aes(x=0:30,y=cumirr),color='red')+
+  geom_line(aes(x=0:30,y=totalreturn),color='green')+
+  geom_line(aes(x=1:30,y=yieldcurve2),color='blue')+
+  xlab("Years")+
+  ylab("Return")+
+  ggtitle("Returns in Liqudity Premium World\nCumulative IRR (red), Annual Return (green), Yield Curve (blue)")+
+  scale_y_continuous(labels=scales::percent)
+  
+
+
+
+```
+
+
+
+```{r,message=FALSE, warning=FALSE}
+bond3cf=zoosum(zoo(forw_yields[1]*1000,1:30),zoo(1000,as.integer(30)),zoo(0,as.integer(0)))
+values=vector()
+cashreturn=vector()
+rollreturn=vector()
+totalreturn=vector()
+cumirr=vector()
+values[1]=1000
+cashreturn[1]=rollreturn[1]=totalreturn[1]=cumirr[1]=NA
+for (i in 2:31) {
+  if(i==31) {
+    values[i]=0} else {
+      values[i]=npv.z(forw_yields[i],zoosum(bond3cf[(i+1):31],zoo(0,i-1)))
+    }
+  rollreturn[i]=-1+values[i]/values[i-1]
+  cashreturn[i]=as.numeric(bond3cf[i])/values[i-1]
+  totalreturn[i]=rollreturn[i]+cashreturn[i]
+  cumirr[i]=irr.z(zoosum(zoo(-1000,0),bond3cf[1:i],zoo(values[i],i-1)))
+}
+ggplot()+
+  geom_line(aes(x=0:30,y=cumirr),color='red')+
+  geom_line(aes(x=0:30,y=totalreturn),color='green')+
+  geom_line(aes(x=1:30,y=yieldcurve2),color='blue')+
+  xlab("Years")+
+  ylab("Return")+
+  ggtitle("Returns in Rational Expectations World\nCumulative IRR (red), Annual Return (green), Yield Curve (blue)")+
+  scale_y_continuous(labels=scales::percent)
+```
+
+### Calculating returns from historic data
+
+Finally, we will calculate what really happened had we purchased a 30 year bond on the first business day of 1987 and held it to maturity.  For simplicity, we will treat the bond as though it had annual coupons.  But otherwise, this analysis is "real world".
+
+Procedurally we need to    
+  1 figure out the first business day of each year   
+  2 grab the yield curve for those days   
+  3 interpolate the missing values and create a vector of market returns for the remaining maturity   
+  4 calculate the value of the bond at the beginning of each year   
+  5 calculate the annual returns and the cumulative irr   
+  6 plot the results   
+  
+Here is the code and the result.
+
+```{r, message=FALSE, warning=FALSE}
+#step 1
+int.df2=subset(int.df,!is.na(int.df$DGS1))
+int.df2=subset(int.df2,year(int.df2$Time)>1986)
+int.df2=subset(int.df2,year(int.df2$Time)<2017)
+int.df2=subset(int.df2,month(int.df2$Time)==1)
+firstinvec=function(x) x[1]
+firstdays=aggregate(int.df2$Time,by=list(as.yearmon(int.df2$Time)),firstinvec)
+firstdays=firstdays$x
+firstdays
+
+#step 2
+int.df2=int.df2[int.df2$Time%in%firstdays,]
+head(int.df2)
+
+#step 3
+dointerp= function(curv,dur=durs) {
+  cdata=.01*c(as.matrix(curv[,1:8]))
+  intdur=as.integer(dur)
+  yieldcurve=zoo(cdata,intdur)
+  nacurve=zoo(NA,(1:30)[!1:30%in%dur])
+  yieldcurve2=zoosum(yieldcurve,nacurve)
+  yieldcurve2[yieldcurve2==0]=NA
+  yieldcurve3=zoo(coredata(yieldcurve2),year(curv$Time)+time(yieldcurve2))
+  na.spline(yieldcurve3)
+}
+curvelistincomplete=split(int.df2,int.df2$Time)
+curvelist=lapply(curvelistincomplete,dointerp)
+curvemat=do.call(merge,curvelist)
+curve2017=curvemat["2017",]
+disrates=c(as.matrix(curve2017))
+ggplot()+
+  geom_line(aes(x=1987:2016,y=disrates),color="blue")+
+  ylab("Yield")+
+  xlab("")+
+  ggtitle("Yield for Remaining Maturity")+
+  scale_y_continuous(labels=scales::percent)
+
+#step 4
+bond4cf=zoosum(zoo(disrates[1]*1000,1988:2017),zoo(1000,2017))
+bond4val=function(i,cf=bond4cf,dr=disrates) {
+  npv.z(dr[i],zoosum(bond4cf[i:length(bond4cf)],zoo(0,-1+time(bond4cf)[i])))
+}
+bond4value=sapply(1:length(disrates),bond4val,cf=bond4cf,dr=disrates)
+ggplot()+
+  geom_line(aes(x=1987:2017,y=c(bond4value,1000)),color="blue")+
+  ylab("Value")+
+  xlab("")+
+  ggtitle("Bond Value")
+
+#step 5
+bond4rollreturn=-1+exp(diff(log(c(coredata(bond4value),1000))))
+bond4cashreturn=(coredata(bond4cf[1]))/bond4value
+bond4totalreturn=bond4rollreturn+bond4cashreturn
+irrcf=zoo(c(-1000,coredata(bond4cf)),1987:2017)
+irrval=zoo(c(bond4value[-1],0),1988:2017)
+irrfun=function(i,cf,val) {
+  irr.z(zoosum(cf[1:(i+1)],val[i]))
+}
+bond4irr=sapply(1:30,irrfun,cf=irrcf,val=irrval)  
+returndf=data.frame(year=1988:2017,bond4rollreturn,bond4cashreturn,bond4totalreturn,bond4irr)
+head(returndf)
+
+#step 6
+require(tidyr)
+returndflong=gather(returndf,return_category,return,-year)
+ggplot(returndflong,aes(x=year,y=return,group=return_category,color=return_category))+
+  geom_line()+
+  scale_color_discrete(name="Returns",
+                       breaks=c("bond4cashreturn","bond4rollreturn","bond4totalreturn","bond4irr"),
+                       labels=c("Cash Return","Roll Return","Total Return","Inception IRR"))+
+  xlab("")+
+  ylab("Return")+
+  ggtitle("Bond returns over hold period")+
+  scale_y_continuous(labels=scales::percent)
+```
+
+
+
+
+## Homework
+
+### Level 1
+
+Learn how to load and use the bond valuation shiny app.  What is the relation among term, interest rate and duration?  Does a longer term cause duration to go up?  Does a higher interest rate cause duration to go up?
+
+### Level 2
+
+Practice doing formulas using $\LaTeX$.  Help Eric improve the appearance of his commodities valuation formula in the "house views" document.
+
+Learn how to use the bond valuation, duration and covexity functions.  What is the value, duration and convexity of a bond with annual coupon of 3%, market rate of 4% and term of 23 years.  Calculate with annual payments and quarterly payments.
+
+Using algebra, derive formula 3 from the formula immediately above.  Code the proof in $\LaTeX$
+
+### Level 3
+
+Change the code to calculate the value and return on the bond purchased in 1987 with daily marks.  Plot the value and daily returns for the first year of the hold. 
+
+Prove that modified duration is the same as formula 4.  Requires calculus, but you can google it and look up the proof.  Write the proof in $\LaTeX$.

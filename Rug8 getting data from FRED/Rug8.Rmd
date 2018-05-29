@@ -1,0 +1,172 @@
+---
+title: "Getting Data from FRED; More Practice with data frames and ggplot"
+output:
+  html_document: default
+  html_notebook: default
+---
+### Introduction
+
+"FRED" is a website <https://fred.stlouisfed.org/>  managed by the St. Louis branch of the Federal Reserve Bank which contains a comprehensive set of economic and financial statistics from various branches of the federal government.  It's free and very easy to use.
+
+We will illustrate fetching data from Fred.  We will then review techniques for formatting this data in to a data frame, will review long versus wide formats and how to convert between them and will create several plots from the data using ggplot.
+
+### Get the data and convert to data frame
+
+We use the quantmod package to get the data.  The quantmod is probably not the best package but it is the only one I can find that is not blocked by ASRS security measures.  
+
+Quantmod is designed to only be able to grab one ticker at a time (yuck!).  So, I've created a convenience function to grab multiple tickers and return them in a multicolumn (wide) time series object.  We will convert this time series object to a long data frame so it is read for use by ggplot2.
+
+You don't need to undestand the convenience function to be able to use it.  But if you are wanting to advance your skills beyond the scope of this lesson, it illustrates the use of an anonymous function to build a list of the individual ticker data and merges them in to a multi-column data frame.
+
+```{r, warning=FALSE, message=FALSE}
+#load packages
+require(quantmod)
+require(tidyr)
+require(lubridate)
+require(ggplot2)
+
+#define a convenience function to get more than one ticker from Fred and return as a data frame
+#more advanced stuff (anonymous function to create a list) -- study or take the function as a "given" for your work
+getSymbols_multi=function(tickers) {
+  n=length(tickers)
+  int.dat=lapply(1:n,function(x) getSymbols(tickers[x],src="FRED",auto.assign=FALSE))
+  int.df=do.call(merge,int.dat)
+}
+
+#get the constant maturity interest rate data from Fred
+durs=c(1,2,3,5,7,10,20,30)
+tickers=paste0("DGS",durs) #create a ticker list
+int.df=getSymbols_multi(tickers) #get the data
+tail(int.df)  #show part of the data
+```
+
+Now we have what looks like a wide data frame, but really it is a multi-column time series object.  Note the date column doesn't.  The dates aren't treated as data.  They are attributes of the data, sort of like a name is an attribute.  We will study time series in more detail later.
+
+So, we need to convert the time series to a data frame.  The column names are the FRED tickers for the constant maturity interest rates for 1, 2, 3, 5, 7, 10, 20 and 30 years.  When we convert to long form those columne names will become data in the ticker column.  We will also convert the dates from attribute status to data status.  Finally, we will add a new column which is a numeric value for duration associated with each ticker.
+
+Finally, we plot the yield curve as of the last date in the data set.
+
+```{r, warning=FALSE, message=FALSE}
+#convert to data frame with time as a column
+int.df=as.data.frame(int.df)
+int.df$Time=as.Date(rownames(int.df))
+rownames(int.df)=NULL
+
+#convert to long format and add the duration column
+int.dflong=gather(int.df,ticker,yield,-Time)
+dim(int.dflong) #aren't you glad you aren't trying to do this in Excel?
+int.dflong$Duration=durs[match(int.dflong$ticker,tickers)] # add the duration column
+
+#plot the last interest rate curve
+dates=int.df$Time
+ggplot(subset(int.dflong,int.dflong$Time==max(dates)),
+        aes(x=Duration,y=yield))+
+  geom_line()+
+  ggtitle(paste("Yield curve as of",max(dates)))
+
+```
+
+
+Next, we will illustrate plotting multiple yield curves on various to compare them over time.
+
+This takes us down the path of working with dates.  You may have noticed that this is daily data (going back to 1962 which is why there are over 115,000 observations).  Naturally, there are no observations on Saturdays, Sundays and holidays.  So, we need a way to deal with this so we can match up the date we want with a nearby available date.  So, I created the function check_dates to do that.  Again, this uses methods a little beyond what we have introduced so far because it uses a "while" control structure.  Basically, it checks to see if any dates you are looking for are not in the data, and if there are it adds one day to any non-matching dates and repeats this until all the dates have a match in the data set.  It returns the dates with any revisions needed.
+
+We then plot the last yield curve and yield curves on the same day of the month (adjusted for weekends and holidays) for the prior five months.
+
+
+```{r, warning=FALSE, message=FALSE}
+#plot multiple curves
+dates_plot=max(dates)-months(0:5) #last 6 months of curves
+dates_plot%in%dates #valid dates?
+#problem not all the dates are good
+#write a function that checks and for any invalid dates find the next valid date
+check_dates=function(datestocheck,dateslist) {
+  if(any(datestocheck>max(dateslist))) stop("datestocheck has date later than the datelist range")
+  while(any(!datestocheck%in%dateslist)) datestocheck=datestocheck+!(datestocheck%in%dateslist)
+  return(datestocheck)
+}
+dates_revised=check_dates(dates_plot,dates)
+ggplot(subset(int.dflong,int.dflong$Time%in%dates_revised),
+       aes(x=Duration,y=yield,color=factor(Time)))+
+  geom_line(aes(group=Time))+
+  ggtitle("Historic Yield Curves")+
+  labs(color="Date")
+
+```
+
+Now we plot the same thing at intervals of five years.
+
+```{r, warning=FALSE, message=FALSE}
+dates_plot=check_dates(max(dates)-years(5*0:7),dates) 
+ggplot(subset(int.dflong,int.dflong$Time%in%dates_plot),
+       aes(x=Duration,y=yield,color=factor(Time)))+
+  geom_line(aes(group=Time))+
+  ggtitle("Historic Yield Curves")+
+  labs(color="Date")
+
+
+```
+
+Finally, we plot a comparison of the historic interest rates for 1, 5, and 10 year durations.
+
+```{r, warning=FALSE, message=FALSE}
+#plot historic values for 1, 5, and 10 year Durations
+ggplot(subset(int.dflong,int.dflong$Duration%in%c(1,5,10)),
+       aes(x=Time,y=yield,color=factor(Duration)))+
+  geom_line(aes(group=Duration))+
+  xlab("")+
+  ggtitle("Historic Interest Rates")+
+  labs(color="Duration")
+```
+
+### Ideas for Homework
+
+Download CPI data from FRED and explore real interest rates over time (i.e. nominal rates minus inflation).  There is some trickiness to this because interest rate data is daily while inflation data is monthly.  Perhaps the easiest way to handle this is to convert the CPI data to a specific day of the month that matches up with the interest rate data.  You probably want to do the first business day of the month (rather than the last) because interest rates are looking forward while inflation looks back.
+
+Another idea is to download GDP data or unemployment data and see how they relate to interest rates.  Pull out your old macroeconomics text book and check out what it says.  Test the theory in the book against the data.  For a more advanced challenge, figure out how to put recession shading on a chart -- google it and you find examples where people show how to do this.
+
+
+### Taking stock of what we have done so far
+
+#### Data types and data manipulation
+
+We have learned about vectors and data frames.  We have learned how to create them inside R code, by reading CSV files and how to read them from the internet from Bloomberg, Yahoo Finance and FRED.  We have learned about numeric, logical, character and date values.
+
+We have spent a fair amount of time with data frames.  Data frames are the main way of storing and manipulating data in R.  We learned about long and wide representations in data frames and learned how to use the tidyr package to convert between these formats. 
+
+We created a simple hospital revenue application to illustrate how to use merge to match up multiple data frames on common columns.  We learned how to use logical expressions in indexing and the subset function to select elements from a data frame.  We learned how to use aggregate to perform calculations on a data frame by one or more levels of factors.  We learned how to use table to get counts of observations in a vector or data frame.
+
+We have touched on time series, lists and factors in our examples.  We will study these in more depth as we go.
+
+#### Calculations and Operations
+
+We have learned the core arithmetic functions of R and also how to use various functions to do calculations.  We learned how to perform logical operations
+
+#### Graphics
+
+We have introduced various methods for creating graphs in ggplot2.  Plotting is a deep capability in R.  We will learn only a small subset of the capabilities of ggplot2, not to mention other graphics packages available in R.
+
+#### Statistics
+
+We have introduced various statistical to illustrate how to use R, include descriptive statistics and linear regression.  At its heart, R is a statistical language and its deepest resources are in this realm.  We will continue to expand exposure to statistical methods with various, but these will be nowhere near a comprehensive exploration of R's capabilities.
+
+#### Programming
+
+We have examined R's syntax and how to write single and multiple line programs in R.  We introduced magritter pipes.  We introduced how to write your own functions.
+
+#### Presentation methods
+
+We have learned how to make presentation in R markdown, the beamer class of LaTeX and the article class of LaTeX.  We learned how to incorporate R code in LaTeX documents using a parallel R file.
+
+### Where we are headed
+
+We will continue to work with data frames, but we have already covered most of what you need to know to work with them.  Now you just need practice.  We will focus more on time series, lists and factor objects and applications that illustrate their use.  
+
+We will spend more time on programming introducing the control structures for, while and if/then/else.
+
+Over the next several weeks, we will do the following:    
+*  Next week, Micheal Copeland will do a sort of capstone data frame illustration showing how we do Brinson style return attribution for the ASRS portfolio.  We will do this as a real application with real data so the coding will be more extensive than our prior examples, but it will show the power of techniques you have already learned.  
+*  In two weeks, I will commence a deeper dive in to time series objects, showing the basics of how to create and manipulate them and will present a cash flow modeling example illustrating how to analyze a real estate investment.   
+*  The week after that, I will go further with time series to develop examples for analyzing loans and fixed income investment.  I will use the interest data we learned how to retrieve from FRED this week as part of an illustration of calculations to value a bond and how bond values changes based on the shape of the yield curve.
+
+

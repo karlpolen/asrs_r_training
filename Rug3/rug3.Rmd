@@ -1,0 +1,96 @@
+---
+title: "R Users Group Week 3"
+output:
+  html_document: default
+  html_notebook: default
+---
+
+# Introduction
+
+This week we will begin working with data frames.  Data frames are the heart of R and you will work with to use the statistical and graphical functionality of R.  
+
+If you have experience with Access, a data frame is like a table in access.  Each row is an observation about something.  Multiple data frames like a relational data base.
+
+For example, if you run a hospital you will want to keep track of your patients.  One data frame could be a patient list.  You'd have a separate row for each patient with their name, address, insurance company, etc.  You might want to link that to medical data.  So, another data frame could be measurements such as temperature, blood pressure, heart rate, and other items that constitute a health assessment and whether tha patient is getting sicker or improving.  A third data base would track of procedures both for billing and clinical purposes.  In that data frame you would keep track of what was done, by whom, billing codes, etc.  
+
+R has terrific facilities for doing analytical on data in this type of structure.  Since medical data is structured much like I described above, R has become a leading analytical platform for medical and health researchers.  R is taught for this purpose at leading medical schools including John Hopkins and Vanderbilt.
+
+Back to finance. . .
+
+# Data Set
+
+Last week, we worked with stock prices and calculated returns for Apple, IBM and Microsoft.  This week, we continue to look at the same securities, but I have added PE ratio.  "PE" stands price/earnings and it is the ratio of the price stock divided by the earnings or profit per share.  It is a measure of value.  If two companies both have $1 per share in earnings, but one stock trades for $10 and the other trades for $15 then the respective PE ratios are 10 and 15.  Other things equal, the 15 PE stock would be regarded as more expensive than the 10 PE stock.
+
+Let's read in the data.
+
+```{r}
+stockdat=read.csv("longstockdat.csv")
+stockdat$date=as.Date(stockdat$date)
+head(stockdat)
+```
+
+This data is in "long" format.  Each row represents an observation about a security (tracking the price and PE) as of a particular date.  By the way, this is an unmodified version of how Bloomberg delivered the data; so, Bloomberg operates by default in long data mode.
+
+Another way to look at the data is to convert it to wide format.  R has a package called "tidyr" that helps you make this conversion.  Let's look at the PE data in "wide" format.
+
+```{r}
+require(tidyr)
+widepe=spread(stockdat[,c(2,3,5)],ticker,PE_RATIO) #I am only operating on the columns 2, 3, and 5 of the data frame
+head(widepe)
+```
+
+Now it is arranged with the tickers as column headers facilitating a human readable comparison of the PE ratios of the three stocks on a given date.  In addition to improved human readability, you will find wide format easier to work with for certain types of number crunching.
+
+Notice what you have lost, by converting to wide format.  First we've lost the price data all together.  In wide format, you can only present one type of observation.  If you want to represent two (or more) pieces of information (price and PE in our case), you will need a long format for your data.  Additionally the data set itself no longer identifies that the values in the data are PE ratios.  You have to know that or keep track of that outside the data set.  For these reasons, data scientists generally regard long format data as the way to go.  As a practical matter, you will want to be able to work with both long and wide formats and know how to convert back and forth.
+
+By the way the gather function allows you to convert from wide to long data.  Here you go!
+
+```{r}
+backtolong=gather(widepe,ticker,pe,-date)
+head(backtolong)
+```
+
+This is tricky and you need to practice it.  The R users group from Milano, Italy has a nice blog post on this.  Go to [Milano R Users Group](www.milanor.net) and search their blog for "tidyr".
+
+
+# Working with long form data
+
+```{r}
+unique(stockdat$ticker)  # what stocks are in the data set?
+length(unique(stockdat$ticker))   # how many different stocks are there?
+apple=subset(stockdat,ticker=="AAPL US EQUITY") # extract apple
+head(apple)
+aggregate(stockdat$PE_RATIO,by=list(stockdat$ticker),mean)
+```
+
+
+#working with wide form data
+
+```{r}
+colnames(widepe)
+colnames(widepe)[-1]  #what are the tickers
+ncol(widepe)-1  #how many are there
+apple=widepe$`AAPL US EQUITY`  #extract apple
+apply(widepe[,-1],2,mean)  #calculate the mean PE for each stock
+
+
+```
+
+#Using ggplot to plot long form data
+
+Note:  ggplot only works with long form data.  If you have wide form, you need to convert to long form.
+
+```{r}
+require(ggplot2)
+ggplot(stockdat,aes(x=date,y=TOT_RETURN_INDEX_GROSS_DVDS,group=ticker,color=ticker))+
+  geom_line()
+```
+
+
+# Homework
+
+Write a report about these three stocks using both the PE data and return information from last week.  Is there a relationship between PE and returns?  
+
+Prepare a barplot using ggplot2 comparing the mean PEs of the three stocks.
+
+Prepare a line chart of the three comparing growth of a dollar instead of the prices above.

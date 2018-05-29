@@ -1,0 +1,871 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\begin_modules
+knitr
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<set-options, echo=FALSE, cache=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+read_chunk('Rug6.r')
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<setup, echo=FALSE, message=FALSE, warning=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+More Data Frames, Merge and Plotting
+\end_layout
+
+\begin_layout Author
+R Users Group
+\end_layout
+
+\begin_layout Date
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(today(),"%A %B %d, %Y")}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+for info on formatting dates in R, google it.
+ You'll find lot's of posts, for example 
+\begin_inset CommandInset href
+LatexCommand href
+name "https://www.r-bloggers.com/date-formats-in-r/"
+target "https://www.r-bloggers.com/date-formats-in-r/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+In this lesson, we will gain some additional practice with data frames and
+ introduce the Article document class in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+.
+ We will be working with actual ASRS Private Equity data and will use the
+ merge command to do some portfolio composition analysis.
+ We illustrate how to control the order of factor levels.
+ We use ggplot2 to present the results graphically.
+\end_layout
+
+\begin_layout Section
+The Article Document Class
+\end_layout
+
+\begin_layout Subsection
+The Article Class
+\end_layout
+
+\begin_layout Standard
+The Article class in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+ is the last type of document we are going to introduce.
+ The good news is that it is probably the easiest of all of them.
+ 
+\end_layout
+
+\begin_layout Standard
+Article class is the default in \SpecialChar LyX
+.
+ So, if you click File/New from the dropdown menus, you will get an Article
+ class document.
+ The only thing you need to do is go to Document/Settings/Modules and add
+ Rnw (knitr) to the installed modules.
+ This will allow you to call R from inside the document just as we did in
+ the Beamer class.
+ The 
+\backslash
+Sexpr command works the same way in Article class as it does in Beamer.
+ Note the use of this technique to insert the date of this document.
+\end_layout
+
+\begin_layout Standard
+We will illustrate the basics of formatting in the Article class in this
+ tutorial.
+ To learn more, go to the Help menu in \SpecialChar LyX
+.
+ You will find a series of manuals.
+ These manuals are presented as \SpecialChar LyX
+ files.
+ Hit the 
+\begin_inset Quotes eld
+\end_inset
+
+eyeballs
+\begin_inset Quotes erd
+\end_inset
+
+ to turn them in to a PDF.
+ Then look at them side by side to understand the formatting you get from
+ the \SpecialChar LyX
+ file.
+\end_layout
+
+\begin_layout Subsection
+Floating Figures
+\end_layout
+
+\begin_layout Standard
+When in working on Article, you don't need to worry about pagination.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+ manages that for you.
+ You will generally insert graphs or tables in to your report as 
+\begin_inset Quotes eld
+\end_inset
+
+floating figures
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Use Insert/float/figure to accomplish this.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+ will automatically number your figures.
+ You type a name for your figure, move the cursor outside the name box,
+ hit return and then insert a code to incorporate your R code.
+ The procedure incorporating R code from a separate file is identical to
+ what we showed for Beamer.
+ We illustrate floating figures later in this document.
+\end_layout
+
+\begin_layout Subsection
+Recap of document types
+\end_layout
+
+\begin_layout Standard
+Since we are not going to introduce any new document types, now is a good
+ time to recap them.
+ Here are the document types we have learned:
+\end_layout
+
+\begin_layout Enumerate
+R Markdown/R Notebook
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Use this document type for quick and dirty analysis and informal presentations
+\end_layout
+
+\begin_layout Enumerate
+Formatting options are limited compared to 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+, but you can create a decent looking document
+\end_layout
+
+\begin_layout Enumerate
+If you need to generate an MS-Word file because you are collaborating on
+ a larger where this is the expectation, R Markdown is the way to go.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Beamer
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+This is how you generate polished slide presentations
+\end_layout
+
+\begin_layout Enumerate
+Many formatting options
+\end_layout
+
+\begin_layout Enumerate
+Can incorporate images, tables and graphs generated by R
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Article
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Generates a polished technical report with figures of graphs and tables.
+\end_layout
+
+\begin_layout Enumerate
+Many formatting options
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Show the growth of the ASRS private markets portfolio
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ASRS Private Markets Portfolio
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "byportfolio"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<plot_priv_market, echo=FALSE, warning=FALSE, message=FALSE, fig.height=6,
+ fig.width=9>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "byportfolio"
+
+\end_inset
+
+ we illustrate several things.
+ First, this figure is inserted in the document as a floating figure.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+ decides where to place the figure in the document by the space available
+ on the page.
+ Second, we show that you can put two charts on the page aligned by vertically
+ by simply placing two charts in the code chunk.
+ Third, we illustrate the use of a label/cross-reference feature.
+ Note the label 
+\begin_inset Quotes eld
+\end_inset
+
+byportfolio
+\begin_inset Quotes erd
+\end_inset
+
+ inside the floating.
+ I can now refer to that label in subsequent text and it inserts 
+\begin_inset Quotes eld
+\end_inset
+
+1
+\begin_inset Quotes erd
+\end_inset
+
+ after the word 
+\begin_inset Quotes eld
+\end_inset
+
+figure
+\begin_inset Quotes erd
+\end_inset
+
+ in the first sentence of this paragraph.
+ This is handy, because if you move things around the figure numbering remains
+ coordinated with you text.
+\end_layout
+
+\begin_layout Standard
+The two graphs here show:
+\end_layout
+
+\begin_layout Itemize
+the growth of the ASRS private markets portfolio in dollar, and
+\end_layout
+
+\begin_layout Itemize
+the composition of that portfolio 
+\end_layout
+
+\begin_layout Standard
+As you can see, the portfolio has grown substantially and has become well
+ diversified across multiple strategies.
+\end_layout
+
+\begin_layout Standard
+Note the use of the 
+\begin_inset Quotes eld
+\end_inset
+
+clear page
+\begin_inset Quotes erd
+\end_inset
+
+ (insert/formatting/clear page) following this paragraph.
+ This forces the graphics related to this section to appear in this section.
+ Otherwise, it might 
+\begin_inset Quotes eld
+\end_inset
+
+float
+\begin_inset Quotes erd
+\end_inset
+
+ to a later section.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Analyzing the ASRS PE Portfolio
+\end_layout
+
+\begin_layout Subsection
+By Category
+\end_layout
+
+\begin_layout Standard
+Here we show the private equity portfolio by strategy.
+ As you can see, the bulk of the portfolio is held in 
+\begin_inset Quotes eld
+\end_inset
+
+buyout
+\begin_inset Quotes erd
+\end_inset
+
+ generalists.
+ But a healthy portion of the portfolio is invested with industry or strategy
+ specialists.
+\end_layout
+
+\begin_layout Standard
+I also illustrate here how you plot two graphs side by side using the 
+\begin_inset Quotes eld
+\end_inset
+
+gridExtra
+\begin_inset Quotes erd
+\end_inset
+
+ package.
+ You need to install this package from RStudio.
+ In the lower right panel, pick packages/install then type 
+\begin_inset Quotes eld
+\end_inset
+
+gridExtra
+\begin_inset Quotes erd
+\end_inset
+
+ in the dialogue box.
+ Look at the R code carefully here.
+ I used 
+\begin_inset Quotes eld
+\end_inset
+
+theme(legend.position.
+ .
+ .
+\begin_inset Quotes erd
+\end_inset
+
+ to eliminate the legend the left graph.
+ I used 
+\begin_inset Quotes eld
+\end_inset
+
+widths
+\begin_inset Quotes erd
+\end_inset
+
+ in the grid.arrange to balance the width of the graphs with and without
+ legend.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ASRS PE Portolio by Category
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<plot_by_strategy, echo=FALSE, warning=FALSE, message=FALSE, fig.height=6,
+ fig.width=9>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+You can decide for yourself which looks better.
+ By the way, there is another way to do this by inserting floats in side
+ the float – check out the User Manual under the help tab.
+ The advantage to this is some additional labeling flexibility.
+ Also, note that I typed this paragraph under the figure float in the \SpecialChar LyX
+ file.
+ But that's not where it ended up in the output.
+ That's what we mean by 
+\begin_inset Quotes eld
+\end_inset
+
+float
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+By Vintage
+\end_layout
+
+\begin_layout Standard
+Here we present the portfolio composition by vintage year of the fund.
+ Vintage year is one of the most important determinants of fund performance
+ and always needs to be kept in mind in order to understand performance.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ASRS PE Portfolio by Vintage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<plot_by_vintage, echo=FALSE, warning=FALSE, message=FALSE, fig.height=6,
+ fig.width=9>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+By Age
+\end_layout
+
+\begin_layout Standard
+Here, we present the portfolio by age.
+ We are analyzing at each point in time, what is the average holding period
+ for the composition of the portfolio.
+ Because we only started private equity within the last ten years, in the
+ early years of this analysis the portfolio is young.
+ This has two implications.
+ In a young portfolio, you will have more 
+\begin_inset Quotes eld
+\end_inset
+
+J curve
+\begin_inset Quotes erd
+\end_inset
+
+ effect meaning fee drag will be more pronounced in such a portfolio.
+ Secondly, it takes time for private equity management strategies to generate
+ value.
+ So, a young portfolio will tend to have a higher portion of holdings held
+ at cost.
+ As a portfolio matures both of these effects are mitigated.
+ In order to compare the performance of private equity portfolios to peers
+ or benchmarks, you need to pay attention to vintages and average portfolio
+ age to produce a meaningful analysis.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ASRS PE Portfolio by Age
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<plot_by_age, echo=FALSE, warning=FALSE, message=FALSE, fig.height=6, fig.width=9
+>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Homework
+\end_layout
+
+\begin_layout Standard
+We suggest the following exercises to continue learning R and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Repeat the analysis we did for private equity for the real estate portfolio
+\end_layout
+
+\begin_layout Enumerate
+Convert this presentation with the same graphs to a Beamer deck
+\end_layout
+
+\end_body
+\end_document

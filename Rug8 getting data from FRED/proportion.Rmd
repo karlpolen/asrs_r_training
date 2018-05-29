@@ -1,0 +1,17 @@
+---
+title: "Convert a portfolio in $$$s to proportion"
+output:
+  html_document: default
+  html_notebook: default
+---
+
+
+```{r}
+portfolio.dollar=matrix(1:12,ncol=4)
+rownames(portfolio.dollar)=c("Stocks","Bonds","Real Estate")
+colnames(portfolio.dollar)=paste("Year",1:4)
+portfolio.dollar
+portfolio.weight=prop.table(portfolio.dollar,2)
+portfolio.weight
+```
+

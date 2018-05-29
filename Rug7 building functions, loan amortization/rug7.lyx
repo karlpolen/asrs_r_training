@@ -1,0 +1,1574 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+
+
+\usetheme{Warsaw}
+%
+%start of text to add page numbers
+%
+\setbeamercolor{mycolor}{fg=white,bg=black}
+\defbeamertemplate*{footline}{shadow theme}{%
+\leavevmode%
+\hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm plus1fil,rightskip=.3cm]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\hfill\insertshortauthor
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=.4\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle\hfill%
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=.1\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{mycolor}%
+\hfill\insertframenumber\,/\,\inserttotalframenumber
+\end{beamercolorbox}}%
+\vskip0pt%
+}
+%
+%end of text to add page numbers
+%
+
+
+%\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+
+
+%
+%below removes navigation symbols
+%you might want this is a version for live presentation
+\setbeamertemplate{navigation symbols}{}
+%\setbeamertemplate{footline}[page number]
+
+%
+%sets the page size a little bigger to get more text in a default font size
+\geometry{paperwidth=141mm,paperheight=106mm} 
+
+%comment out next two lines for screen viewing with active hyperlinks 
+\usepackage{pgfpages}
+\pgfpagesuselayout{resize to}[letterpaper,border shrink=5mm,landscape]
+
+%
+%hyperlink settings
+%
+%\usepackage{hyperref}
+%\hypersetup{colorlinks=true,citecolor=green}
+\definecolor{links}{HTML}{2A1B81}
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
+
+%\usepackage[english]{babel}
+\usepackage{blindtext}
+\end_preamble
+\use_default_options false
+\begin_modules
+knitr
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "times" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 10
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<set-options, echo=FALSE,warning=FALSE,message=FALSE,cache=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+read_chunk("rug7.r")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<setup, echo=FALSE,warning=FALSE,message=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Computer Programming
+\end_layout
+
+\begin_layout Subtitle
+Foundations for Understanding and Writing Quality Code in R
+\end_layout
+
+\begin_layout Author
+Investment Management Division
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Appears in Lower Left
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+IMD
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(today(),"%B %d, %Y")}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Itemize
+Either use conference name or its abbreviation.
+ 
+\end_layout
+
+\begin_layout Itemize
+Not really informative to the audience, more for people (including yourself)
+ who are reading the slides online
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(today(),"%m/%d/%Y")}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+optional, should be abbreviation of conference name
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Institute
+Arizona State Retirement System
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginSection[]{%
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+frame<beamer>{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+frametitle{Outline}   
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tableofcontents[currentsection,currentsubsection] 
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginSubsection[]{%
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+frame<beamer>{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+frametitle{Outline}   
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tableofcontents[currentsection,currentsubsection] 
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+If you wish to uncover everything in a step-wise fashion, uncomment the
+ following command:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+beamerdefaultoverlayspecification{<+->}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Outline
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Computer Programming
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Why write computer programs?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A computer program is one or more lines of 
+\begin_inset Quotes eld
+\end_inset
+
+code
+\begin_inset Quotes erd
+\end_inset
+
+ providing instructions to a computer to do something you want to do
+\end_layout
+
+\begin_layout Itemize
+We write programs for a number reasons, among them
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+to save time
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+If tasks are repetitive it can save time and money to automate them
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+to take advantage of sophisticated methods that are impractical to do otherwise
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+quantitative methods involving large data sets have revolutionized many
+ fields, including finance
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+for transparency and reproducibility
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+reproducible research presents code along with data allowing readers to
+ form their own judgment on the validity of the work
+\end_layout
+
+\begin_layout Itemize
+transparent coding improves quality by exposing and reducing model error
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+What makes a program good?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+It does something useful
+\end_layout
+
+\begin_layout Itemize
+It does it correctly
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+with transparency about methods and assumptions
+\end_layout
+
+\begin_layout Itemize
+ideally with open source code allowing for verification
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+It is usable
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+with documentation and workable interfaces suitable to the context
+\end_layout
+
+\begin_layout Itemize
+with clearly defined 
+\begin_inset Quotes eld
+\end_inset
+
+data contracts
+\begin_inset Quotes erd
+\end_inset
+
+ defining
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+requirements for inputs stating what can and can't be processed and how
+ it needs to be formatted
+\end_layout
+
+\begin_layout Itemize
+data validation and clear error messages for data that don't meet the requiremen
+ts
+\end_layout
+
+\begin_layout Itemize
+clear definition for the form and content of the data returned by the process
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+It is intuitive
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+the architecture contemplates how the data arrives and how the outputs will
+ be used
+\end_layout
+
+\begin_layout Itemize
+doesn't need (a lot of) pre or post processing
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+A Sample Program
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Let's write a program to convert between fahrenheit and celsius
+\end_layout
+
+\begin_layout Itemize
+Recall
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $F=32+1.8*C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $C=\frac{F-32}{1.8}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+A function that does this is on the next page
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout FragileFrame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<fundef, size="footnotesize">>=
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+permitted values for size = c("normalsize", "tiny", "scriptsize", "footnotesize"
+, "small", "large", "Large", "LARGE", "huge", "Huge")
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout FragileFrame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example use of function
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Note the function meets the requirements for being 
+\begin_inset Quotes eld
+\end_inset
+
+good
+\begin_inset Quotes erd
+\end_inset
+
+ including
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+documentation describing how to use it 
+\end_layout
+
+\begin_layout Itemize
+data validation with OK error messages
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<exuse, size="tiny">>=
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<< echo=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+cdegree=0
+\end_layout
+
+\begin_layout Plain Layout
+
+fdegree=temp_convert(cdegree,"C")
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{cdegree}
+\end_layout
+
+\end_inset
+
+ Celsius is the same as 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{paste(fdegree,names(fdegree))}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+R Syntax
+\end_layout
+
+\begin_layout FragileFrame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Special Characters
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size scriptsize
+\begin_inset Quotes eld
+\end_inset
+
+=
+\begin_inset Quotes erd
+\end_inset
+
+ assigns a value to an object
+\end_layout
+
+\begin_layout Itemize
+
+\size scriptsize
+\begin_inset Quotes eld
+\end_inset
+
++
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+-
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+/
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+*
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+^
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+.
+\begin_inset Quotes erd
+\end_inset
+
+ are the standard arithmetic operators
+\end_layout
+
+\begin_layout Itemize
+
+\size scriptsize
+\begin_inset Quotes eld
+\end_inset
+
+:
+\begin_inset Quotes erd
+\end_inset
+
+ generates a sequence; 1:4 is 1,2,3,4
+\end_layout
+
+\begin_layout Itemize
+
+\size scriptsize
+logic operators
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size scriptsize
+\begin_inset Quotes eld
+\end_inset
+
+&
+\begin_inset Quotes erd
+\end_inset
+
+ is and
+\end_layout
+
+\begin_layout Itemize
+
+\size scriptsize
+\begin_inset Quotes eld
+\end_inset
+
+|
+\begin_inset Quotes erd
+\end_inset
+
+ is or
+\end_layout
+
+\begin_layout Itemize
+
+\size scriptsize
+\begin_inset Quotes eld
+\end_inset
+
+!
+\begin_inset Quotes erd
+\end_inset
+
+ is not
+\end_layout
+
+\begin_layout Itemize
+
+\size scriptsize
+\begin_inset Quotes eld
+\end_inset
+
+==
+\begin_inset Quotes erd
+\end_inset
+
+ for logical equals (different from assignment)
+\end_layout
+
+\begin_layout Itemize
+
+\size scriptsize
+\begin_inset Quotes eld
+\end_inset
+
+<
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+<=
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+>
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+>=
+\begin_inset Quotes erd
+\end_inset
+
+ are less than, less than or equal, greater than, greater than or equal
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\size scriptsize
+parenthesis 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size scriptsize
+act as delimiters for the beginning and end of arguments to a function
+\end_layout
+
+\begin_layout Itemize
+
+\size scriptsize
+also act to control order of calculation
+\end_layout
+
+\begin_layout Itemize
+
+\size scriptsize
+both of these work the same as what you may be used to with excel
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\size scriptsize
+\begin_inset Quotes eld
+\end_inset
+
+,
+\begin_inset Quotes erd
+\end_inset
+
+ separates arguments to a function
+\end_layout
+
+\begin_layout Itemize
+
+\size scriptsize
+\begin_inset Quotes eld
+\end_inset
+
+[
+\begin_inset Quotes eld
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+]
+\begin_inset Quotes erd
+\end_inset
+
+ (brackets)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size scriptsize
+used to index in to vectors, data frames or arrays
+\end_layout
+
+\begin_layout Itemize
+
+\size scriptsize
+double brackets 
+\begin_inset Quotes eld
+\end_inset
+
+[[
+\begin_inset Quotes eld
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+]]
+\begin_inset Quotes erd
+\end_inset
+
+ index in to lists
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\size scriptsize
+\begin_inset Quotes eld
+\end_inset
+
+{
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+}
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size scriptsize
+delimiters for code chunks
+\end_layout
+
+\begin_layout Itemize
+
+\size scriptsize
+used in function definitions, if/else constructs, etc
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\size scriptsize
+\begin_inset Quotes eld
+\end_inset
+
+%
+\begin_inset Quotes erd
+\end_inset
+
+ is used for in line functions like 
+\begin_inset Quotes eld
+\end_inset
+
+%in%
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+%*%
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size scriptsize
+\begin_inset Quotes eld
+\end_inset
+
+$
+\begin_inset Quotes erd
+\end_inset
+
+ grabs a column from a data frame (or an element of a list) by name as in
+ 
+\begin_inset Flex Alert
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+my_dataframe$col_name
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size scriptsize
+\begin_inset Quotes eld
+\end_inset
+
+#
+\begin_inset Quotes erd
+\end_inset
+
+ indicates the beginning of a 
+\begin_inset Quotes eld
+\end_inset
+
+comment
+\begin_inset Quotes erd
+\end_inset
+
+ in code which should be explanatory and is not executed as R code
+\end_layout
+
+\begin_layout Itemize
+
+\size scriptsize
+\begin_inset Quotes eld
+\end_inset
+
+~
+\begin_inset Quotes erd
+\end_inset
+
+ is function notation, as in 
+\begin_inset Flex Alert
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+lm ( y ~ x )
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout FragileFrame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Assign to Create Objects
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<assign,size="footnotesize">>=
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout FragileFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout FragileFrame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Indexing and Subsetting
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<indexing,size="footnotesize">>=
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout FragileFrame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+More Indexing and Subsetting
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<indexing2,size="footnotesize">>=
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout FragileFrame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Nesting
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<nesting,size="footnotesize">>=
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout FragileFrame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Pipes (optional)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Nesting too deeply makes code hard to read.
+ For example:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<pipes1,size="footnotesize">>=
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When this happens, break your code in to multiple lines and store intermediate
+ results.
+ Alternatively, use the magrittr
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "https://en.wikipedia.org/wiki/The_Treachery_of_Images"
+target "https://en.wikipedia.org/wiki/The_Treachery_of_Images"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ package which implements a 
+\begin_inset Quotes eld
+\end_inset
+
+pipe
+\begin_inset Quotes erd
+\end_inset
+
+ coding construct in R.
+ The same calculation as above implemented with this technique:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<pipes2,size="tiny">>=
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Homework
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Write a function to calculate the monthly payment on a mortgage
+\end_layout
+
+\begin_layout Itemize
+The formula is as follows
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $payment=balance*monthly.rate*\frac{1}{1-(\frac{1}{1+monthly.rate})^{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $monthly.rate=annual.rate/12$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n=years.in.mortgage*12$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+So, the arguments to the function are the balance, the stated annual rate
+ and the number of years
+\end_layout
+
+\begin_layout Itemize
+The function returns the payment
+\end_layout
+
+\begin_layout Itemize
+Read the files loanamort.html and loanamort.rmd in the rug7 folder for derivations
+ and a fancy version of this function
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

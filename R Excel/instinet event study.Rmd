@@ -1,0 +1,116 @@
+---
+title: "Equity Event Study"
+output:
+  html_document: default
+  html_notebook: default
+---
+
+A script to process the events in the instinet.csv file.  Summary of process:    
+1    Read the csv file and process dates to date format    
+2    Start a bloomberg session    
+3    Calculate daily return for indices for needed date range    
+4    Calculate daily retuns for each event from announce through effective+10    
+5    Create factors for announce+x and effective+x trading days    
+6    Merge factors, security returns and index returns with ticker, date and benchmark data    
+7    Write csv file    
+8    end bloomberg session    
+
+
+```{r, warning=FALSE, message=FALSE}
+require(Rbbg)
+require(lubridate)
+require(tidyr)
+require(zoo)
+#read event file
+inst.data=read.csv("./instinet quarterly rebal projections/instinet.csv",stringsAsFactors = FALSE)
+inst.data$Eff_Date=as.Date(inst.data$Eff_Date)
+inst.data$An_Date=as.Date(inst.data$An_Date)
+#open BBG
+conn=blpConnect(verbose=FALSE)
+
+#get index data
+firstdate=min(inst.data$An_Date)-4
+lastdate=min(today()-1,max(inst.data$Eff_Date)+20)
+field="PX_LAST"
+indices=unique(inst.data$Portfolio)
+indtickers=vector()
+indtickers[match("S&P 500",indices)]="SPX Index"
+indtickers[match("S&P 600",indices)]="SML Index"
+indtickers[match("S&P 400",indices)]="MID Index"
+inst.data$bbgbench=indtickers[match(inst.data$Portfolio,indices)]
+bbgdat=bdh(conn,indtickers,field,start_date=firstdate,end_date=lastdate)
+bbgdat2=spread(bbgdat[!is.na(bbgdat$PX_LAST),],ticker,PX_LAST)
+bbgdatz=zoo(bbgdat2[,-1],as.Date(bbgdat2$date))
+bbgdatz=log(bbgdatz)
+bbgdatz=diff(bbgdatz)
+bbgdat3=data.frame(date=time(bbgdatz),coredata(bbgdatz))
+indexmu=gather(bbgdat3,index,indmu,-date)
+indexmu$index=gsub("\\."," ",indexmu$index)
+#initiate empty result data frame
+result.df=data.frame(date=vector(),
+                     index=vector(),
+                     Ticker=vector(),
+                     Trade.Value=vector(),
+                     Liqudity=vector(),
+                     Category=vector(),
+                     secmu=vector(),
+                     AnncPlus=vector(),
+                     EffPlus=vector(),
+                     IsEff=vector(),
+                     indmu=vector(),
+                     excessmu=vector(),
+                     cum_annc_mu=vector(),
+                     cum_eff_mu=vector())
+bad.tickers=vector()
+
+#process events
+for (i in 1:length(inst.data$Ticker)) {
+  firstdate=inst.data$An_Date[i]-4
+  lastdate=inst.data$Eff_Date[i]+15
+  bbgdat=bdh(conn,
+             paste(inst.data$Ticker[i],"US EQUITY"),
+             field,
+             start_date=firstdate,
+             end_date=lastdate)
+  if (0==length(bbgdat$PX_LAST)) {
+    bad.tickers=c(bad.tickers,inst.data$Ticker[i])
+    next(i)
+  }
+  bbgdat=bbgdat[!is.na(bbgdat$PX_LAST),]
+  bbgdatz=zoo(bbgdat$PX_LAST,as.Date(bbgdat$date))
+  bbgdatz=diff(log(bbgdatz))
+  bbgdatz=bbgdatz[time(bbgdatz)>as.Date(inst.data$An_Date[i])]
+  #aplus=paste0("Annc+",0:(length(bbgdatz)-1))
+  aplus=1:length(bbgdatz)
+  eplus=time(bbgdatz)>=inst.data$Eff_Date[i]
+  eplus=cumsum(eplus)
+  eplus[eplus==0]=NA
+  eplus=eplus-1
+  iseff=!is.na(eplus)
+  #eplus=paste0("Eff+",eplus)
+  eplus[grep("NA",eplus)]=NA
+  df=data.frame(date=time(bbgdatz),Ticker=inst.data$Ticker[i],
+                Trade.Value=inst.data$Trade.Value[i],
+                Liquidity=inst.data$Liquidity[i],
+                Category=inst.data$Category[i],
+                secmu=coredata(bbgdatz),AnncPlus=aplus,EffPlus=eplus,IsEff=iseff,
+                index=inst.data$bbgbench[i])
+  df=merge(df,indexmu)
+  df$excessmu=df$secmu-df$indmu
+  df$cum_annc_mu=cumsum(df$excessmu)
+  eind=which(!is.na(df$EffPlus))
+  df$cum_eff_mu=NA
+  df[eind,"cum_eff_mu"]=cumsum(df$excessmu[eind])
+  #add to result data frame
+  result.df=rbind(result.df,df)
+}
+write.csv(result.df,"event results.csv")
+x=blpDisconnect(conn)
+#
+# The following tickers were not recognized by BBG
+bad.tickers
+btdf=data.frame(bad.tickers,good.tickers=NA)
+write.csv(btdf,"bad ticker replacements.csv")
+```
+
+

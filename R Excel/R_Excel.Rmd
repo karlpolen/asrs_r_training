@@ -1,0 +1,103 @@
+---
+title: "Reading and processing excel files"
+output:
+  html_document: default
+  html_notebook: default
+---
+
+## Background
+
+The following script reads the instinet files and converts to a long form data frame ready to process as an event study. 
+
+A quick google search reveals numerous packages for reading and writing excel files from R.  I selected the `readxl` package by Hadley Wickham because of the high quality of his work and the streamlined nature of the package.  It is designed to handle pretty clean tabular data.  Other packages have more functionality (e.g. XLConnect).  But I have found them very slow with larger files.  
+
+I intended to create an example problem, but I once I looked at the target problem I decided to go ahead and solve it.  The data cleaning once you read in the file is pretty tricky.
+
+
+```{r}
+require(readxl)
+#get a list of the files in the directory
+directory="./instinet quarterly rebal projections/"  #DATACONTRACT -- fixed directory name
+files=list.files(directory)
+#drop any csv files
+files=files[-grep("~|.csv",files)]
+# initiate an empty list to hold the results for each file
+xldflist=list()
+colnam=c("Ticker","Name","Trade Value","Liquidity","Category")
+# loop through each file in the directory
+for (file in files) {
+  #get a list of the sheets in the file
+  sheets=excel_sheets(paste0(directory,file))
+  # which sheet has "TopN" in its name  (DATACONTRACT -- sheet we want must have "TopN")
+  sheetind=grep("TopN",sheets)
+  #read that sheet
+  xl=read_excel(paste0(directory,file),sheet=sheets[sheetind])
+  #convert the result to a data frame (because I know how to work with them and don't want to learn "tibbles")
+  xldf=as.data.frame(xl)
+  #find the date for this(DATACONTRACT -- leading text before date must match the below test)
+  dateind=grep("Effective at the close on ",xldf[,1]) 
+  datechr=xldf[dateind,1]
+  #strip out the extraneous text
+  datechr=gsub("Effective at the close on ","",datechr)
+  #convert to a date format (DATACONTRACT -- assumes date format is long month<space>numeric day<comma><space>long year)
+  effdate=as.Date(datechr,format="%B %d, %Y")
+  #what row has my trade categories?
+  categind=grep("Most Illiquid",xldf[,1]) #DATACONTRACT -- "Most Illiquid" is in the first category name
+  #which columns have my category names
+  categcind=which(!is.na(xldf[categind,]))
+  for (i in 1:length(categcind)) {
+    categ=xldf[categind,categcind[i]]
+    xldf[,categcind[i]+4]=categ
+  }
+  tickind=which(xldf[,1]=="Ticker") #DATACONTRACT -- header before data in first column is "Ticker"
+  #get rid of unnecessary rows
+  #everything ticker and above
+  xldf2=xldf[-1:-tickind,]
+  #everything first NA and below
+  naind=which(is.na(xldf2[,1]))[1]
+  xldf3=xldf2[-naind:-nrow(xldf2),]
+  #convert data to long form by categories
+  xldf4=xldf3[,categcind[1]+0:4]
+  colnames(xldf4)=colnam
+  for (i in 2:length(categcind)) {
+    xldsub=xldf3[,categcind[i]+0:4]
+    colnames(xldsub)=colnam
+    xldf4=rbind(xldf4,xldsub)
+  }
+  #now add the S&P index as a portfolio identifier
+  #which rows have S&P in them (DATACONTRACT -- assumes no tickers include the string "S&P")
+  portind=grep("S&P",xldf4[,1])
+  if (length(portind)>0) {
+    #create a vector of portfolio identifiers and add to the dataframe
+    portrep=diff(c(portind,nrow(xldf4)+1))
+    xldf4$Portfolio=rep(xldf4[portind,1],portrep)
+    #delete the rows that had the portfolio index identifiers
+    xldf5=xldf4[-portind,]
+  } else {
+    xldf4$Portfolio="S&P 500"  #DATACONTRACT -- if no index specified assume everything is S&P500
+    xldf5=xldf4
+  }
+  #add the date to the data frame
+  xldf5$Eff_Date=effdate
+  #add the answer to the list
+  #
+  #Now we are going to add the announcement date
+  #
+  xloverall=read_excel(paste0(directory,file),sheet="Overall")
+  xloverall=as.data.frame(xloverall)
+  #find a cell that starts with "Price "
+  greptest=function(x) grep("^Price ",x)
+  result=unlist(apply(xloverall,2,greptest))
+  #get the contents of the cell
+  an_date=xloverall[result,names(result)]
+  #convert to a date
+  an_date=as.Date(an_date,format="Price (%d%b%y)")
+  #add to the data
+  xldf5$An_Date=an_date
+  xldflist=c(xldflist,list(xldf5))
+}
+#convert the elements of the list to a single data frame
+xldf6=do.call(rbind,xldflist)
+write.csv(xldf6,paste0(directory,"instinet.csv"))
+```
+

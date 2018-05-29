@@ -1,0 +1,30 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+```{r}
+require(magrittr)
+monthly.rate=.05/12
+n=12*36
+balance=100000
+
+#pipe where you need it
+balance*monthly.rate%>%
+  divide_by(1%>%
+    subtract(1%>%
+               divide_by(1%>%
+                           add(monthly.rate)%>%
+                           raise_to_power(n))))
+
+
+```
+```{r}
+(1+monthly.rate)%>%
+  raise_to_power(-n)%>%
+  multiply_by(-1)%>%
+  add(1)%>%
+  raise_to_power(-1)%>%
+  multiply_by(balance*monthly.rate)
+```
+
+

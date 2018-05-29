@@ -1,0 +1,1366 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+
+
+\usetheme{Warsaw}
+%
+%start of text to add page numbers
+%
+\setbeamercolor{mycolor}{fg=white,bg=black}
+\defbeamertemplate*{footline}{shadow theme}{%
+\leavevmode%
+\hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm plus1fil,rightskip=.3cm]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\hfill\insertshortauthor
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=.4\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle\hfill%
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=.1\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{mycolor}%
+\hfill\insertframenumber\,/\,\inserttotalframenumber
+\end{beamercolorbox}}%
+\vskip0pt%
+}
+%
+%end of text to add page numbers
+%
+
+
+%\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+
+
+%
+%below removes navigation symbols
+%you might want this is a version for live presentation
+\setbeamertemplate{navigation symbols}{}
+%\setbeamertemplate{footline}[page number]
+
+%
+%sets the page size a little bigger to get more text in a default font size
+\geometry{paperwidth=141mm,paperheight=106mm} 
+
+%comment out next two lines for screen viewing with active hyperlinks 
+\usepackage{pgfpages}
+\pgfpagesuselayout{resize to}[letterpaper,border shrink=5mm,landscape]
+
+%
+%hyperlink settings
+%
+%\usepackage{hyperref}
+%\hypersetup{colorlinks=true,citecolor=green}
+\definecolor{links}{HTML}{2A1B81}
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
+
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\end_preamble
+\use_default_options false
+\begin_modules
+knitr
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "times" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 10
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Intro to Beamer
+\end_layout
+
+\begin_layout Subtitle
+With Illustrations of Integration with R programming
+\end_layout
+
+\begin_layout Date
+March 9, 2017
+\end_layout
+
+\begin_layout Author
+R Users Group
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+RUG
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Institute
+Arizona State Retirement System
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginSection[]{%
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+frame<beamer>{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+frametitle{Outline}   
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tableofcontents[currentsection,currentsubsection] 
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginSubsection[]{%
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+frame<beamer>{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+frametitle{Outline}   
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+tableofcontents[currentsection,currentsubsection] 
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+If you wish to uncover everything in a step-wise fashion, uncomment the
+ following command:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+beamerdefaultoverlayspecification{<+->}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Outline
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Introduction to Beamer
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Introduction
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Why Do We Use Beamer?
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Why Beamer?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Why do we use Beamer?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Beamer is a document class in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+ used for making slide presentations
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Quotes eld
+\end_inset
+
+Themes
+\begin_inset Quotes erd
+\end_inset
+
+ provide automatic formatting and color schemes making it easy to adopt
+ brand standards for presentation style
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+You declare a theme once at the beginning of your document
+\end_layout
+
+\begin_layout Enumerate
+You can change that theme and the change the look for your whole document
+ with a single edit
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Beamer has good tools for academic style presentations with math formulas,
+ footnotes and bibliographies
+\end_layout
+
+\begin_layout Enumerate
+Beamer allows integration with R code and data structures making it easy
+ to incorporate tables and graphs from internal databases or internet sources
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Creates a 
+\begin_inset Quotes eld
+\end_inset
+
+dynamic
+\begin_inset Quotes erd
+\end_inset
+
+ document that automatically updates itself as new data arrives
+\end_layout
+
+\begin_layout Enumerate
+Implement 
+\begin_inset Quotes eld
+\end_inset
+
+reproducible research
+\begin_inset Quotes erd
+\end_inset
+
+ since the data and code for analyzing it are transparent and incorporated
+ with the source file or files that create the document
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Setting Up a Beamer Presentation
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Template File
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+We provide a template file called 
+\begin_inset Quotes eld
+\end_inset
+
+beamer template.lyx
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Open this file in Lyx to get started on a new presentation
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The Title Page
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+You will notice the title page is pre-populated with entries for Title,
+ Subtitle, Author, Date and Institute
+\end_layout
+
+\begin_layout Itemize
+The Title will appear in the lower right of each page
+\end_layout
+
+\begin_layout Itemize
+The Author will appear in the lower left of each page
+\end_layout
+
+\begin_layout Itemize
+So, you will always want to use these two items
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+But you can substitute something else for 
+\begin_inset Quotes eld
+\end_inset
+
+Author
+\begin_inset Quotes erd
+\end_inset
+
+ if you want
+\end_layout
+
+\begin_layout Itemize
+You might use ASRS, for example, if that's what you want to appear in the
+ footer
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+If a 
+\begin_inset Quotes eld
+\end_inset
+
+short author
+\begin_inset Quotes erd
+\end_inset
+
+ is specified, the shortened version will be used in the footer
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+You insert a 
+\begin_inset Quotes eld
+\end_inset
+
+short author
+\begin_inset Quotes erd
+\end_inset
+
+ from the insert menu
+\end_layout
+
+\begin_layout Itemize
+The menu is context sensitive and short author will only appear as an option
+ if you are in an author type to begin with
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Table of Contents
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Lyx can automatically generate a table of contents for you
+\end_layout
+
+\begin_layout Itemize
+It is based on the 
+\begin_inset Quotes eld
+\end_inset
+
+Section
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+Subsection
+\begin_inset Quotes erd
+\end_inset
+
+ labels you create throughout the document
+\end_layout
+
+\begin_layout Itemize
+You ask for it by inserting table of contents in a blank frame (more on
+ frames in a moment)
+\end_layout
+
+\begin_layout Itemize
+The template is set up to include a table of contents, which is repeated
+ for context at the beginning of each section
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Creating a Frame
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+First you enter a frame environment by selecting 
+\begin_inset Quotes eld
+\end_inset
+
+Frame
+\begin_inset Quotes erd
+\end_inset
+
+ from the drop down list
+\end_layout
+
+\begin_layout Itemize
+Add a title to the frame, move the cursor outside the frame title, hit return
+\end_layout
+
+\begin_layout Itemize
+Then hit tab to initiate the first level of indentation
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+this creates a vertical red line to the left
+\end_layout
+
+\begin_layout Itemize
+everything inside a frame needs to be inside at least one level of indentation
+\end_layout
+
+\begin_layout Itemize
+not sure this is how I would have done it, but this is how it works
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Now you (most likely) will hit the 
+\begin_inset Quotes eld
+\end_inset
+
+enumerate
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+itemize
+\begin_inset Quotes erd
+\end_inset
+
+ to start a bullet or numbered list
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+This is the bulk of most slide presentations
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+You need to end your frame
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Hit return enough times that you exit your bulleted list and all levels
+ of indentationk
+\end_layout
+
+\begin_layout Itemize
+Make sure are in a 
+\begin_inset Quotes eld
+\end_inset
+
+Standard
+\begin_inset Quotes erd
+\end_inset
+
+ environment – look at the drop down tab
+\end_layout
+
+\begin_layout Itemize
+Hit return one more time
+\end_layout
+
+\begin_layout Itemize
+And you should get a horizontal 
+\begin_inset Quotes eld
+\end_inset
+
+separator
+\begin_inset Quotes erd
+\end_inset
+
+ line
+\end_layout
+
+\begin_layout Itemize
+You are ready to start a new slide
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Uncovering Bullet Points One at a Time
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+This slide gets shown three times, first only with this point
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+1-
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Now we add this one – this is done using the Insert/Item Overlay Specification
+ 
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+2-
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Note the minus sign in the red box – you need that
+\begin_inset Argument item:2
+status open
+
+\begin_layout Plain Layout
+3-
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+You Can Show Things in Columns
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+4cm
+\end_layout
+
+\begin_layout Itemize
+You can split a page to multiple columns
+\end_layout
+
+\begin_layout Itemize
+This is tricky
+\end_layout
+
+\begin_layout Itemize
+pay careful attention to how the indentation levels work
+\end_layout
+
+\begin_layout Column
+6cm
+\end_layout
+
+\begin_layout Standard
+You can include a picture or graph stored in a file with insert/graphics
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 20150627_123347_resized.png
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Blocks Help You Dress Up Your Presentation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+The First Block on the Page
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+First Point
+\end_layout
+
+\begin_layout Itemize
+Second Point
+\end_layout
+
+\end_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+The Second Block on the Page
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Note the pause (on the drop down menu) between the blocks causes them to
+ be uncovered one block at a time on two slides
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Changing Themes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Go to Document/Settings then latex preamble 
+\end_layout
+
+\begin_layout Itemize
+first line is 
+\backslash
+usetheme{Warsaw}
+\end_layout
+
+\begin_layout Itemize
+Itry changing Warsaw to Berkeley
+\end_layout
+
+\begin_layout Itemize
+recompile your document and you will get the official University of California
+ look to your presentation
+\end_layout
+
+\begin_layout Itemize
+check out 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+mpetroff.net
+\end_layout
+
+\end_inset
+
+ for a gallery of themes and color schemes for presentations
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+add 
+\backslash
+usecolortheme{ } to the latex preamble to change the colors, putting whatever
+ color theme you select between the braces
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The ability to change themes for presentations and articles is a key feature
+ of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+ valued by its users
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Academic publications and conference sponsors usually have very specific
+ requirements about formatting documents for their consideration
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+ has hundreds of document classes and styles that manage the typesetting
+ requirements allowing the author to focus on the content
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Integrating Beamer with R
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Getting Started
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+To use R with Lyx, the following have to be set up correctly
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+You need to have R installed on your computer
+\end_layout
+
+\begin_layout Itemize
+The Path variable in Lyx Tools/Settings needs to provide a correct path
+ to R
+\end_layout
+
+\begin_layout Itemize
+The Rnw(knitr) module needs to be loaded at Document/modules
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+This module is loaded as a default in our template document
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The knitr package needs to be installed in R
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Invoking R through a code box
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+One way to invoke R is through a code box like below.
+ Say we have forgotten what 2+2 is.
+ R can answer that for us like this.
+\end_layout
+
+\begin_layout Itemize
+R, please tell me what the answer to 2+2.
+ .
+ .
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<echo=false>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+2+2
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+note the <<.
+ .
+ .>>= in the first and @ in the last line
+\end_layout
+
+\begin_layout Itemize
+these are required text that signal to Lyx that what is in between is R
+ code
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+echo=false
+\begin_inset Quotes erd
+\end_inset
+
+ is a 
+\begin_inset Quotes eld
+\end_inset
+
+chunk option
+\begin_inset Quotes erd
+\end_inset
+
+ that instructs not to include the R code in the final document
+\end_layout
+
+\begin_layout Itemize
+more on chunk options later
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Invoking R 
+\begin_inset Quotes eld
+\end_inset
+
+in line
+\begin_inset Quotes erd
+\end_inset
+
+ with your text
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+You can invoke R in line 
+\end_layout
+
+\begin_layout Itemize
+Again we have forgotten what 2+2 is and invoke R using the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+ command 
+\begin_inset Quotes eld
+\end_inset
+
+Sexpr
+\begin_inset Quotes erd
+\end_inset
+
+ to find out that the sum of these two integers is 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{2+2}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The reason the command for this is 
+\begin_inset Quotes eld
+\end_inset
+
+Sexpr
+\begin_inset Quotes erd
+\end_inset
+
+ as opposed to, say, 
+\begin_inset Quotes eld
+\end_inset
+
+Rexpr
+\begin_inset Quotes erd
+\end_inset
+
+ is that the original name for R was S.
+ S was a statistical language developed at Bell Labs in the 1970's.
+ When it became open source, it was renamed R.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+You create a code box with ctrl-L
+\end_layout
+
+\begin_layout Itemize
+the R code is placed between braces following 
+\backslash
+Sexpr
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+This is a powerful feature that you should use a lot to make your documents
+ dynamic so they update themselves as data change
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+We will illustrate this with more compelling examples in the coming slides
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Invoking R using a parallel script file
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+This is the best way to do it that will save you a lot of time in debugging
+ if you have more than a trivial amount of R code
+\end_layout
+
+\begin_layout Itemize
+We have provided a separate file working with the books data base called
+ books.r
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+note this is an R script, not markdown or a notebook
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

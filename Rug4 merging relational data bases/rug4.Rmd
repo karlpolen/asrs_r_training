@@ -1,0 +1,146 @@
+---
+title: "R Users Group Week 4"
+output:
+  html_document: default
+  html_notebook: default
+---
+
+# More Fun with Data Frames
+
+We continue learning about data frames.  We start with examples of querying a data base to calculate population statistics.  Then we show an example of working with multiple data frames as a relational data base, illustrate the merge command and show how it can be useful in common tasks.  Our homework for this week is based on an actual ASRS data base of private markets investments.
+
+# Logic Variables
+
+First we need to learn some more R to have the tools needed to search and query databases.  Logical values are data type in R.  Here are some examples that illustrate this including truth tables for basic logic functions.  
+
+```{r}
+tf=c(TRUE,FALSE) # All caps TRUE and FALSE invoke logic values
+str(tf)
+```
+
+```{r}
+sum(tf) #summing on a logic variable returns the count of TRUE values
+```
+
+```{r}
+vec=c('this is true','this is false')
+vec[tf]  #indexing with a logic vector returns the true values
+```
+
+Here are truth tables for the basic logic functions.
+
+```{r}
+names(tf)=c('true','false')
+outer(tf,tf,'==') #logical equals
+```
+
+```{r}
+!tf   # not
+```
+
+```{r}
+outer(tf,tf,'&')  # and
+```
+
+```{r}
+outer(tf,tf,'|')  # or
+```
+
+When dealing with quantities, standard inequality expressions return logical results.  Here is an example that combines quantities, factors and logic operations.
+
+```{r}
+ages=c(20,23,6,50)
+sex=c("F","M","F","F")
+name=c("Sally","Tom","Betty","Lois")
+sex=="M"  # logical vector showing who is male
+which(sex=="M") # index of the males
+ages[sex=="F"] # ages of the females
+sum(sex=="M")  # how many men
+sum(ages>23) #how many older than 23
+sum(ages>=23) #how many 23 or older
+sum((ages>21)&(sex=="M"))  #how many older than 21 and male
+name[max(ages)==ages] #name of the oldest person
+name[min(ages[sex=="F"])==ages]  #name of the youngest female
+```
+
+# Summarizing a book list with the table command
+
+Here is a data frame of books that have won various awards and appeared on best books list.  Let's read it in.
+
+```{r}
+books=read.csv("books.csv")
+dim(books)
+colnames(books)
+```
+
+Let's answer some questions about the book list.
+
+
+```{r}
+authorcount=table(books$Author)  #count the number of books appearing on the list by each author on the list
+authorcount=authorcount[order(authorcount,decreasing=TRUE)]  #sort the list so the authors with the largest number of books are on top
+head(authorcount)
+table(authorcount)  #now show how many authors by count of books on the list
+read=books$read  #we are curious about which books have been read
+head(read)  #but the data isn't formatted perfectly for our use
+read[read==1]="read"  #cleaning it up by converting to a factor read/not read
+read[is.na(read)]="not read"
+x=table(books$Author,read)  #do the counting to create a table object
+head(x)
+str(x)
+xdf=data.frame(Read=x[,which(colnames(x)=="read")],Books=rowSums(x))  #convert to a dataframe
+xdf=xdf[order(xdf$Books,decreasing=TRUE),]  #sort with high count authors on top
+head(xdf)  
+```
+
+# A relational database and the merge command
+
+Build a implified database describing a hospital revenue context.  Populate with some random info using the sample command.
+
+```{r}
+patients=data.frame(patient=c("A","B","C","D","E"),insurance=c("UHC","Aetna","UHC","Aetna","UHC"))
+patients
+procedure_price=data.frame(procedure=c('a','b','c','d','a','b','c','d'),
+                           insurance=c(rep("UHC",4),rep("Aetna",4)),
+                           price=sample(10:20,8))
+procedure_price
+procedures_done=data.frame(patient=sample(patients$patient,20,replace=TRUE),
+                           procedure=sample(procedure_price$procedure,20,replace=TRUE),
+                           date=sample(c("Mon","Tue","Wed","Thu","Fri"),20,replace=TRUE))
+procedures_done
+```
+
+These three dataframes constitue a relational database.  Note there are common columns in each.  Let's illustrate the merge command.
+
+```{r}
+procedures_done_ins=merge(procedures_done,patients)
+procedures_done_ins
+```
+
+Note it has added the insurance company to the list of procedures done.  Now let's add the prices.
+
+```{r}
+hospital_revenue=merge(procedures_done_ins,procedure_price)
+hospital_revenue
+```
+
+Now I have long data frame with all my procedures and prices.  I have what I need to analyze revenue.  Here we go.
+
+```{r}
+attach(hospital_revenue)  #allows me to refer to the database columns as variables -- saves typing but be careful
+sum(price) #total revenue
+aggregate(price,by=list(date),sum) #revenue by date
+aggregate(price,by=list(patient),sum) #revenue by patient
+aggregate(price,by=list(procedure),mean) #average revenue for each procedure
+aggregate(price,by=list(insurance,procedure),sum) #revenue by insurance and procedure
+```
+
+
+
+# Homework
+
+Answer some more questions about the book database.  Use the table command to find out how many books there are by score and then ask for each score how many have been read.  Have high score books been prioritized by the reader?
+
+In the hospital example, add another dataframe to the database.  Suppose procedures a and b are by the oncology department and procedures c and d are done by pediatrics.  Create a dataframe that reflects that information, merge it, and analyze revenue by hospital department.
+
+Read the fundinfo.csv file in the rug4 folder.  This is an actual ASRS file regarding private market investments.  It has columns showing investment names, portfolio assignments, portfolio categories, commitment amounts, unfunded amounts, etc.  Do some analysis on this dataframe -- how many investments are in each portfolio.  What is the commitment amount by portfolio.  Prepare a summary by portfolio of unfunded amounts in investments still in there investment periods (today() is less than expiration date of the investment period -- you need the lubridate package for this).

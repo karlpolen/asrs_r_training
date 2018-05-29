@@ -1,0 +1,117 @@
+---
+title: "Homework Week 9"
+author: "Mike Copeland"
+date: "April 13, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+require(xts)
+require(PerformanceAnalytics)
+require(lubridate)
+require(scales)
+require(RColorBrewer)
+colorpalette=brewer.pal(8, 'Set1')
+require(zoo)
+require(ggplot2)
+require(reshape2)
+require(gridExtra)
+require(xtable)
+source(file = "P:/IMD/Karl/R projects/Public Performance/Scripts/Functions.R")
+```
+
+
+
+```{r, echo=FALSE, include=FALSE}
+n <- 120
+set.seed(1234)
+stocks = rnorm(n=120,mean=(.09/12), sd=(.15/sqrt(12)))
+bonds = rnorm(n=120, mean=(.04/12), sd=(.06/sqrt(12)))
+timeline=as.yearmon("Feb 2017")-0:119/12
+data = zoo(cbind(stocks,bonds),timeline)
+weight.s = rnorm(n=120, mean=.6, sd=.03)
+weight.b = 1 - weight.s
+weights = zoo(cbind(weight.s,weight.b),timeline)
+target.weights = zoo(data.frame("Stock Target"=rep(.6,120),
+                                "Bond Target"= rep(.4,120)),timeline)
+sp500 = rnorm(n=120, mean=(.085/12), sd=(.16/sqrt(12)))
+lba = rnorm(n=120, mean=(.039/12), sd=(.057/sqrt(12)))
+bms = zoo(cbind(sp500,lba), timeline)
+composite.actual = zoo(rowSums(data * weights), timeline)
+composite.benchmark=zoo(rowSums(bms * target.weights),timeline)
+assets=c("stocks","bonds")
+over.under=weights-target.weights
+```
+
+
+
+```{r, echo=FALSE, warnings=FALSE, results='asis'}
+selection <- target.weights*(data-bms)
+#selection <- na.fill(selection, fill = 0)
+colnames(selection)=paste0(assets,".sel")
+
+#allocation effect
+allocation <- bms*(weights-target.weights)
+#allocation <- na.fill(allocation, fill = 0)
+colnames(allocation)=paste0(assets,".allo")
+
+#interaction effect
+interaction <- (data-bms)*(weights-target.weights)
+#interaction <- na.fill(interaction, fill = 0)
+colnames(interaction)=paste0(assets,".inter")
+
+attrib.df=merge(selection,allocation,interaction)
+attrib.fr=frong(attrib.df,composite.actual,composite.benchmark)
+attrib.sum <- sumdfbycol(attrib.fr,c(".sel",".allo",".inter"),                         c("Selection","Allocation","Interaction"))
+attrib.sum <- cumsum(attrib.sum)
+attrib.sum <- gg(attrib.sum,"Attribution","Growth_of_Dollar")
+attrpos <- subset(attrib.sum,Growth_of_Dollar>=0)
+attrneg <- subset(attrib.sum,Growth_of_Dollar<0)
+summary = ggplot()+
+  geom_bar(data=attrpos,aes(x=Date,y=Growth_of_Dollar,fill=Attribution),stat="identity")+
+  geom_bar(data=attrneg,aes(x=Date,y=Growth_of_Dollar,fill=Attribution),stat="identity")+
+  scale_fill_manual(values = colorpalette) +  ylab("Cumulative Excess Return")+
+  scale_y_continuous(labels=percent) + ggtitle("Brinson Return Attribution")+
+  theme(plot.title = element_text(hjust = 0.5))
+print(summary)
+allo.gd=subset(attrib.sum, Attribution=='Allocation')
+alloc.de=gg(over.under,"Allocation","Difference")
+allpos=subset(alloc.de,Difference>0)
+allneg=subset(alloc.de,Difference<0)
+allocation=ggplot()+
+  geom_bar(data=allpos,aes(x=Date,y=Difference,fill=Allocation),stat="identity")+
+  geom_bar(data=allneg,aes(x=Date,y=Difference,fill=Allocation),stat="identity")+
+  geom_line(data = allo.gd, aes(x=Date, y=Growth_of_Dollar), colour='blue') +
+  scale_y_continuous(labels=percent) + labs(fill='Sub-Asset Class') + 
+  scale_fill_manual(values = colorpalette) + theme(plot.title = element_text(hjust = 0.5))+
+  ggtitle("Over/Under Weights & Cumulative Allocation Effect (Line)")+ylab('Active Exposure / Allocation Excess Return')
+attrib.sel=attrib.fr[,grep(".sel",colnames(attrib.fr))]
+colnames(attrib.sel)=assets
+attrib.sel=cumsum(attrib.sel)
+attrib.sel=gg(attrib.sel,"Selection","Growth_of_Dollar")
+attrpos=subset(attrib.sel,Growth_of_Dollar>=0)
+attrneg=subset(attrib.sel,Growth_of_Dollar<0)
+selection=ggplot()+
+  geom_bar(data=attrpos,aes(x=Date,y=Growth_of_Dollar,fill=Selection),stat="identity")+
+  geom_bar(data=attrneg,aes(x=Date,y=Growth_of_Dollar,fill=Selection),stat="identity")+
+  scale_y_continuous("Selection Effect Excess Return",labels=percent) + 
+  scale_fill_manual(values = colorpalette) + ggtitle('Cumulative Selection Effect')+
+  theme(plot.title = element_text(hjust = 0.5))
+print(allocation)
+print(selection)
+attrib.sel=attrib.fr[,grep(".inter",colnames(attrib.fr))]
+colnames(attrib.sel)=assets
+attrib.sel=cumsum(attrib.sel)
+attrib.sel=gg(attrib.sel,"Interaction","Growth_of_Dollar")
+attrpos=subset(attrib.sel,Growth_of_Dollar>=0)
+attrneg=subset(attrib.sel,Growth_of_Dollar<0)
+interaction=ggplot()+
+  geom_bar(data=attrpos,aes(x=Date,y=Growth_of_Dollar,fill=Interaction),stat="identity")+
+  geom_bar(data=attrneg,aes(x=Date,y=Growth_of_Dollar,fill=Interaction),stat="identity")+
+  scale_y_continuous("Interaction Effect Excess Return",labels=percent) + 
+  scale_fill_manual(values = colorpalette) + ggtitle('Cumulative Interaction Effect')+
+  theme(plot.title = element_text(hjust = 0.5))
+print(interaction)
+```
+
+

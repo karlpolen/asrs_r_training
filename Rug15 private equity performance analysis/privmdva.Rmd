@@ -1,0 +1,109 @@
+---
+title: Private Markets Dollar Value Add
+output: html_notebook
+---
+
+A method for calculating dollar value add for private markets investments.  Uses PME, which a terminal wealth measure compared a benchmark asset.  
+
+$pme = \frac{wealth_{priv}}{wealth_{bench}}$
+
+What we want to know is $wealth_{priv} - wealth_{bench}$
+
+From our financial reporting,  we know $wealth_{priv}$ and $pme$.  From the first formula we know that $wealth_{bench} = \frac{wealth_{priv}}{pme}$
+
+So, we have a formula for dollar value add as 
+
+$dollarvaladd=wealth_{priv} \cdot (1-\frac{1}{pme})$
+
+We want to measure this for each of the total private composites, plus a special composite allocating the private opportunistic portfolio to the real estate and private equity portfolios depending on the source of the co-investments.
+
+Here is the code:
+
+```{r, message=FALSE, warning=FALSE}
+load("../private investment performance/pmedata.rdata")
+require(zoo)
+require(lubridate)
+require(tidyr)
+require(ggplot2)
+source("../basic financial.r")
+
+#build the composites for current real estate and private equity by adding the related private opportunistic investments
+fundinfo=read.csv("../private investment performance/fundinfo.csv")
+reind=which(fundinfo$Portfolio=="POPP" & fundinfo$DVACat=="R")
+peind=which(fundinfo$Portfolio=="POPP" & fundinfo$DVACat=="P")
+
+recurrentcf=do.call(zoosum,y.cf[c("Total RE Current Portfolio",as.character(fundinfo$Short[reind]))])
+recurrentv=do.call(zoosum,y.v[c("Total RE Current Portfolio",as.character(fundinfo$Short[reind]))])
+recurrenthv=do.call(zoosum,y.hv[c("Total RE Current Portfolio",as.character(fundinfo$Short[reind]))])
+recurrenthv=recurrenthv[time(recurrenthv)<time(recurrentv)]
+recurrentval=mergesum.z(recurrenthv,recurrentv)
+
+pecf=do.call(zoosum,y.cf[c("Total PE",as.character(fundinfo$Short[peind]))])
+pev=do.call(zoosum,y.v[c("Total PE",as.character(fundinfo$Short[peind]))])
+pehv=do.call(zoosum,y.hv[c("Total PE",as.character(fundinfo$Short[peind]))])
+pehv=pehv[time(pehv)<time(pev)]
+peval=mergesum.z(pehv,pev)
+
+#custom composites complete
+#now grab prebuilt composites
+complist=c("Total RE Legacy Portfolio","Total OPP", "Total PD","Total FARM")
+allcomplist=c("Total PE","Total RE Current Portfolio",complist)
+
+compcf=c(list(pecf,recurrentcf),y.cf[complist])
+names(compcf)=allcomplist
+compv=c(list(pev,recurrentv),y.v[complist])
+names(compv)=allcomplist
+comphv=c(list(pehv,recurrenthv),y.hv[complist])
+names(comphv)=allcomplist
+
+#build the combined value list
+compval=list()
+for (i in 1:length(allcomplist)) {
+  portv=compv[[allcomplist[i]]]
+  porthv=comphv[[allcomplist[i]]]
+  porthv=porthv[time(porthv)<valdate]
+  compval[[i]]=mergesum.z(portv,porthv)
+}
+names(compval)=allcomplist
+
+benchmarks=c("^RUT","ODCE","ODCE","Fixed8","LevLoan.250","CPIxFE.350")
+
+#build the combined value list
+addvalue=list()
+totalvalue=list()
+for(i in 1:length(allcomplist)) {
+  cf.i=compcf[[allcomplist[i]]]
+  val.i=compval[[allcomplist[i]]]
+  bench.i=bench.lst[[benchmarks[i]]]
+  addval.i=vector()
+  totval.i=vector()
+  for (j in 1:length(val.i)) {
+    val.j=val.i[j]
+    cf.j=cf.i[time(cf.i)<=time(val.j)]
+    cf.j=mergesum.z(cf.j,val.j)
+    bench.j=bench.i[time(cf.j)]
+    pes.j=pestats(cf.j,bench.j)
+    addval.i[j]=val.j*(1-1/pes.j$pme)
+    totval.i[j]=sum(cf.j)
+  }
+  addvalue[[i]]=zoo(addval.i,time(val.i))
+  totalvalue[[i]]=zoo(totval.i,time(val.i))
+}
+names(addvalue)=allcomplist
+names(totalvalue)=allcomplist
+
+#create a data.frame and plot
+addvalue.df=unzoo(do.call(merge,addvalue))
+addvalue.df=cbind(addvalue.df,Total.Privates=rowSums(addvalue.df[,-1],na.rm=TRUE))
+addvalue.long=gather(addvalue.df,Portfolio,value,-Date)
+
+totalvalue.df=unzoo(do.call(merge,totalvalue))
+totalvalue.df=cbind(totalvalue.df,rowSums(totalvalue.df[,-1],na.rm=TRUE))
+totalvalue.long=gather(totalvalue.df,Portfolio,value,-Date)
+
+ggplot(addvalue.long,aes(x=Date,y=value,group=Portfolio,color=Portfolio))+geom_line()
+
+#write csv files
+write.csv(addvalue.df,"private add value.csv")
+write.csv(totalvalue.df,"private total value.csv")
+```

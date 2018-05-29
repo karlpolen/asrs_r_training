@@ -1,0 +1,1241 @@
+"","Ticker","Name","Trade Value","Liquidity","Category","Portfolio","Eff_Date","An_Date"
+"6","PRGO","Perrigo Company plc","145.17760655193229","0.84300012603963204","Most Illiquid Net Buys","S&P 500",2014-12-19,2014-12-05
+"7","BRK/B","Berkshire Hathaway B","265.2661080529241","0.60663250604041119","Most Illiquid Net Buys","S&P 500",2014-12-19,2014-12-05
+"8","HCN","Health Care REIT Inc","55.206008546371073","0.41485897908826663","Most Illiquid Net Buys","S&P 500",2014-12-19,2014-12-05
+"9","URI","United Rentals Inc","64.116553738668159","0.40695463937417481","Most Illiquid Net Buys","S&P 500",2014-12-19,2014-12-05
+"10","MET","Metlife Inc","113.93265867239587","0.40601840870876793","Most Illiquid Net Buys","S&P 500",2014-12-19,2014-12-05
+"11","AVB","AvalonBay Communities Inc","38.428318130555795","0.3813804103455018","Most Illiquid Net Buys","S&P 500",2014-12-19,2014-12-05
+"12","VRTX","Vertex Pharmaceuticals Inc","56.963874607283728","0.37735222501959992","Most Illiquid Net Buys","S&P 500",2014-12-19,2014-12-05
+"13","ROP","Roper Industries Inc","17.480883681620909","0.37210313394075206","Most Illiquid Net Buys","S&P 500",2014-12-19,2014-12-05
+"14","CRM","Salesforce.com","107.49309428808793","0.37129189751804187","Most Illiquid Net Buys","S&P 500",2014-12-19,2014-12-05
+"15","ESS","Essex Property Trust","23.875373574682087","0.34906411164244677","Most Illiquid Net Buys","S&P 500",2014-12-19,2014-12-05
+"17","RJF","Raymond James Financial Inc","18.474785457963499","0.68860732787230006","Most Illiquid Net Buys","S&P 400",2014-12-19,2014-12-05
+"18","HME","Home Properties of New York","10.129910873517549","0.55949740526100089","Most Illiquid Net Buys","S&P 400",2014-12-19,2014-12-05
+"19","ARE","Alexandria Real Estate Eqty","17.029171810130382","0.50076818123265976","Most Illiquid Net Buys","S&P 400",2014-12-19,2014-12-05
+"20","SAIC","Science Applications International Corp","4.8923787314375318","0.48809238217324907","Most Illiquid Net Buys","S&P 400",2014-12-19,2014-12-05
+"21","ESL","Esterline Technologies","9.1206929893676794","0.48652562597129762","Most Illiquid Net Buys","S&P 400",2014-12-19,2014-12-05
+"22","UDR","UDR Inc","19.062797886022825","0.48443544978383091","Most Illiquid Net Buys","S&P 400",2014-12-19,2014-12-05
+"23","SXT","Sensient Technologies Corp","4.2167464099980263","0.45647426592382029","Most Illiquid Net Buys","S&P 400",2014-12-19,2014-12-05
+"24","BMR","BioMed Realty Trust Inc","11.442744107142387","0.43242361228533244","Most Illiquid Net Buys","S&P 400",2014-12-19,2014-12-05
+"25","AJG","Gallagher Arthur J. & Co","11.445830802054113","0.42694399904278796","Most Illiquid Net Buys","S&P 400",2014-12-19,2014-12-05
+"26","ACC","American Campus Communities Inc","10.678373852508329","0.4056703358721378","Most Illiquid Net Buys","S&P 400",2014-12-19,2014-12-05
+"28","HMN","Horace Mann Educators","2.5479918313356178","0.88359203634258543","Most Illiquid Net Buys","S&P 600",2014-12-19,2014-12-05
+"29","ALE","Allete Inc","6.1319857055067573","0.70734211379154011","Most Illiquid Net Buys","S&P 600",2014-12-19,2014-12-05
+"30","EPAY","Bottomline Technologies Inc","2.6649171714180744","0.57359130385269197","Most Illiquid Net Buys","S&P 600",2014-12-19,2014-12-05
+"31","PMC","PharMerica Corp","3.4251171620740872","0.57291246232648185","Most Illiquid Net Buys","S&P 600",2014-12-19,2014-12-05
+"32","MRCY","Mercury Systems Inc","0.65338113585352264","0.54707583173192531","Most Illiquid Net Buys","S&P 600",2014-12-19,2014-12-05
+"33","UTI","Universal Technical Institute","0.25449438139893155","0.46859171015435819","Most Illiquid Net Buys","S&P 600",2014-12-19,2014-12-05
+"34","PFS","Provident Financial Services","0.98703717903443744","0.43032408912920417","Most Illiquid Net Buys","S&P 600",2014-12-19,2014-12-05
+"35","SJI","South Jersey Industries Inc","2.911219896072299","0.38714954357935966","Most Illiquid Net Buys","S&P 600",2014-12-19,2014-12-05
+"36","INDB","Independent Bank Cp (MA)","0.80404654449651225","0.37131948514752638","Most Illiquid Net Buys","S&P 600",2014-12-19,2014-12-05
+"37","CBR","CIBER Inc","0.22409575655878589","0.36494742420539772","Most Illiquid Net Buys","S&P 600",2014-12-19,2014-12-05
+"61","PNC","PNC Finl Services Group","-134.69521792828252","-0.81911998385837692","Most Illiquid Net Sells","S&P 500",2014-12-19,2014-12-05
+"71","ALL","Allstate Corp","-103.26241436388202","-0.79836762440495279","Most Illiquid Net Sells","S&P 500",2014-12-19,2014-12-05
+"81","AN","AutoNation Inc","-23.967823290084048","-0.68030061572083589","Most Illiquid Net Sells","S&P 500",2014-12-19,2014-12-05
+"91","HIG","Hartford Finl Services Group","-74.375540424789321","-0.65797005303366685","Most Illiquid Net Sells","S&P 500",2014-12-19,2014-12-05
+"101","MSI","Motorola Solutions Inc","-67.414337235694049","-0.6375442821550491","Most Illiquid Net Sells","S&P 500",2014-12-19,2014-12-05
+"111","NOC","Northrop Grumman Corp","-99.141316769219912","-0.59299702380731745","Most Illiquid Net Sells","S&P 500",2014-12-19,2014-12-05
+"121","CB","Chubb Corp","-46.75814352906103","-0.56996048662097243","Most Illiquid Net Sells","S&P 500",2014-12-19,2014-12-05
+"131","CAT","Caterpillar Inc","-222.71126908800557","-0.55992728983788942","Most Illiquid Net Sells","S&P 500",2014-12-19,2014-12-05
+"141","XL","XL Group Plc","-27.988328359012115","-0.55779375464282654","Most Illiquid Net Sells","S&P 500",2014-12-19,2014-12-05
+"151","L","Loews Corp","-21.668395843692632","-0.50185662155673028","Most Illiquid Net Sells","S&P 500",2014-12-19,2014-12-05
+"171","WAFD","Washington Federal Inc.","-6.7441968610784091","-0.89803213421623262","Most Illiquid Net Sells","S&P 400",2014-12-19,2014-12-05
+"181","LECO","Lincoln Electric Hldgs","-15.648881684873238","-0.72634333339783852","Most Illiquid Net Sells","S&P 400",2014-12-19,2014-12-05
+"191","AHL","Aspen Insurance Holdings Ltd","-9.7704305462936301","-0.71766139914865501","Most Illiquid Net Sells","S&P 400",2014-12-19,2014-12-05
+"201","ASH","Ashland Inc","-61.500884566978925","-0.69923489049893284","Most Illiquid Net Sells","S&P 400",2014-12-19,2014-12-05
+"211","HCC","HCC Insurance Hldgs Inc","-10.816036111844815","-0.6830615227399387","Most Illiquid Net Sells","S&P 400",2014-12-19,2014-12-05
+"221","DCI","Donaldson Co","-14.086446027595578","-0.64959210662154288","Most Illiquid Net Sells","S&P 400",2014-12-19,2014-12-05
+"231","SFG","StanCorp Financial Group Inc","-7.6169037432375335","-0.64024850011162149","Most Illiquid Net Sells","S&P 400",2014-12-19,2014-12-05
+"241","WOR","Worthington Industries Inc","-4.2755755593523794","-0.6221589855895534","Most Illiquid Net Sells","S&P 400",2014-12-19,2014-12-05
+"251","MSCI","MSCI Inc","-17.825250046646687","-0.61687187856089953","Most Illiquid Net Sells","S&P 400",2014-12-19,2014-12-05
+"261","CLGX","CoreLogic Inc.","-9.6151505013927245","-0.60170299353252932","Most Illiquid Net Sells","S&P 400",2014-12-19,2014-12-05
+"281","ADC","Agree Realty Corp","-3.2660194065405066","-0.97843589896943339","Most Illiquid Net Sells","S&P 600",2014-12-19,2014-12-05
+"291","WDFC","WD-40 Co","-1.5006940881256412","-0.61445287258848669","Most Illiquid Net Sells","S&P 600",2014-12-19,2014-12-05
+"301","HLIT","Harmonic Inc","-1.6841403814776545","-0.60407937969861547","Most Illiquid Net Sells","S&P 600",2014-12-19,2014-12-05
+"311","COLB","Columbia Banking System Inc","-3.3290826399123548","-0.57150798162649985","Most Illiquid Net Sells","S&P 600",2014-12-19,2014-12-05
+"321","EXPO","Exponent Inc","-1.0318801823614918","-0.41300725669286487","Most Illiquid Net Sells","S&P 600",2014-12-19,2014-12-05
+"331","TDY","Teledyne Technologies Inc","-6.541919430398945","-0.39091492652721843","Most Illiquid Net Sells","S&P 600",2014-12-19,2014-12-05
+"341","ASGN","On Assignment Inc","-4.3079844647478662","-0.37982952004275006","Most Illiquid Net Sells","S&P 600",2014-12-19,2014-12-05
+"351","MASI","Masimo Corp","-3.4590892236950204","-0.37334456614527395","Most Illiquid Net Sells","S&P 600",2014-12-19,2014-12-05
+"361","SXC","SunCoke Energy Inc","-2.7726593359780054","-0.33206528045948286","Most Illiquid Net Sells","S&P 600",2014-12-19,2014-12-05
+"371","ENS","Enersys","-4.4245154168883758","-0.31067058174360479","Most Illiquid Net Sells","S&P 600",2014-12-19,2014-12-05
+"62","BRK/B","Berkshire Hathaway B","265.2661080529241","0.60663250604041119","Largest Net Buys by Trade Value","S&P 500",2014-12-19,2014-12-05
+"72","MSFT","Microsoft Corp","203.59890274713976","0.14990076460473226","Largest Net Buys by Trade Value","S&P 500",2014-12-19,2014-12-05
+"82","FB","Facebook Inc","190.48446729681891","0.10902335887003799","Largest Net Buys by Trade Value","S&P 500",2014-12-19,2014-12-05
+"92","CSCO","Cisco Systems Inc","179.7945001592102","0.22210557293481767","Largest Net Buys by Trade Value","S&P 500",2014-12-19,2014-12-05
+"102","GOOG","Google Inc C","175.08714125408272","0.21277321162434495","Largest Net Buys by Trade Value","S&P 500",2014-12-19,2014-12-05
+"112","GE","General Electric Co","168.94450284770352","0.23710584981923596","Largest Net Buys by Trade Value","S&P 500",2014-12-19,2014-12-05
+"122","VZ","Verizon Communications Inc","163.6419027731564","0.24780599819800497","Largest Net Buys by Trade Value","S&P 500",2014-12-19,2014-12-05
+"132","GOOGL","Google Inc A","157.09144442398315","0.17527159458163266","Largest Net Buys by Trade Value","S&P 500",2014-12-19,2014-12-05
+"142","PRGO","Perrigo Company plc","145.17760655193229","0.84300012603963204","Largest Net Buys by Trade Value","S&P 500",2014-12-19,2014-12-05
+"152","AMGN","Amgen Inc","118.29551403445015","0.23151099110062281","Largest Net Buys by Trade Value","S&P 500",2014-12-19,2014-12-05
+"172","SLG","SL Green Realty Corp","29.006339498085744","0.39186046559993981","Largest Net Buys by Trade Value","S&P 400",2014-12-19,2014-12-05
+"182","O","Realty Income Corp","24.575378041591932","0.34248972014833479","Largest Net Buys by Trade Value","S&P 400",2014-12-19,2014-12-05
+"192","CPT","Camden Property Trust","20.303912831024217","0.38768242470718267","Largest Net Buys by Trade Value","S&P 400",2014-12-19,2014-12-05
+"202","FL","Foot Locker Inc","19.57998787326094","0.11904193292689663","Largest Net Buys by Trade Value","S&P 400",2014-12-19,2014-12-05
+"212","UDR","UDR Inc","19.062797886022825","0.48443544978383091","Largest Net Buys by Trade Value","S&P 400",2014-12-19,2014-12-05
+"222","RJF","Raymond James Financial Inc","18.474785457963499","0.68860732787230006","Largest Net Buys by Trade Value","S&P 400",2014-12-19,2014-12-05
+"232","SWKS","Skyworks Solutions Inc","17.087572215409171","5.4054377830501675E-2","Largest Net Buys by Trade Value","S&P 400",2014-12-19,2014-12-05
+"242","ARE","Alexandria Real Estate Eqty","17.029171810130382","0.50076818123265976","Largest Net Buys by Trade Value","S&P 400",2014-12-19,2014-12-05
+"252","JLL","Jones Lang Lasalle Inc","15.644108590435227","0.40457213354502891","Largest Net Buys by Trade Value","S&P 400",2014-12-19,2014-12-05
+"262","EQIX","Equinix Inc","14.984368977608341","0.12971277517916055","Largest Net Buys by Trade Value","S&P 400",2014-12-19,2014-12-05
+"282","ALE","Allete Inc","6.1319857055067573","0.70734211379154011","Largest Net Buys by Trade Value","S&P 600",2014-12-19,2014-12-05
+"292","TQNT","Triquint Semiconductor","4.4411108475343397","5.6930169125168406E-2","Largest Net Buys by Trade Value","S&P 600",2014-12-19,2014-12-05
+"302","SKX","Skechers USA Inc A","4.0349620829886454","7.5622683673361057E-2","Largest Net Buys by Trade Value","S&P 600",2014-12-19,2014-12-05
+"312","GEO","Geo Group Inc","3.8476577046839147","0.21150645974988877","Largest Net Buys by Trade Value","S&P 600",2014-12-19,2014-12-05
+"322","MOH","Molina Healthcare","3.611470516962564","0.13802309525334183","Largest Net Buys by Trade Value","S&P 600",2014-12-19,2014-12-05
+"332","PMC","PharMerica Corp","3.4251171620740872","0.57291246232648185","Largest Net Buys by Trade Value","S&P 600",2014-12-19,2014-12-05
+"342","EXH","Exterran Holdings Inc","3.2102118160012445","6.5595215953996797E-2","Largest Net Buys by Trade Value","S&P 600",2014-12-19,2014-12-05
+"352","CASY","Casey's General Stores Inc","3.1987300370669427","0.16511408734861727","Largest Net Buys by Trade Value","S&P 600",2014-12-19,2014-12-05
+"362","AKRX","Akorn Inc","3.0443728147093054","5.1984788977702832E-2","Largest Net Buys by Trade Value","S&P 600",2014-12-19,2014-12-05
+"372","EPR","EPR Properties","2.9712598974540079","0.14332240448810127","Largest Net Buys by Trade Value","S&P 600",2014-12-19,2014-12-05
+"63","AAPL","Apple Inc.","-1259.0237274620033","-0.2377651310673814","Largest Net Sells by Trade Value","S&P 500",2014-12-19,2014-12-05
+"73","INTC","Intel Corp","-315.1026942131719","-0.29189538423502243","Largest Net Sells by Trade Value","S&P 500",2014-12-19,2014-12-05
+"83","YHOO","Yahoo Inc","-276.97119033980988","-0.23955071047525511","Largest Net Sells by Trade Value","S&P 500",2014-12-19,2014-12-05
+"93","HD","Home Depot Inc","-227.2406930391777","-0.43706495100054643","Largest Net Sells by Trade Value","S&P 500",2014-12-19,2014-12-05
+"103","CAT","Caterpillar Inc","-222.71126908800557","-0.55992728983788942","Largest Net Sells by Trade Value","S&P 500",2014-12-19,2014-12-05
+"113","AIG","American Intl Group Inc","-142.8778600220663","-0.39329713629556878","Largest Net Sells by Trade Value","S&P 500",2014-12-19,2014-12-05
+"123","MRK","Merck & Co Inc","-134.87844535686156","-0.25128611396320905","Largest Net Sells by Trade Value","S&P 500",2014-12-19,2014-12-05
+"133","PNC","PNC Finl Services Group","-134.69521792828252","-0.81911998385837692","Largest Net Sells by Trade Value","S&P 500",2014-12-19,2014-12-05
+"143","XOM","Exxon Mobil Corp","-134.58855504283724","-0.11310927236643363","Largest Net Sells by Trade Value","S&P 500",2014-12-19,2014-12-05
+"153","FOXA","Twenty-First Century Fox, Inc","-118.22916358025194","-0.30397372064480194","Largest Net Sells by Trade Value","S&P 500",2014-12-19,2014-12-05
+"173","ASH","Ashland Inc","-61.500884566978925","-0.69923489049893284","Largest Net Sells by Trade Value","S&P 400",2014-12-19,2014-12-05
+"183","OII","Oceaneering Intl Inc","-29.518154985061095","-0.29733951451392671","Largest Net Sells by Trade Value","S&P 400",2014-12-19,2014-12-05
+"193","TW","Towers Watson & Co","-18.952935709303723","-0.50126560680658372","Largest Net Sells by Trade Value","S&P 400",2014-12-19,2014-12-05
+"203","MSCI","MSCI Inc","-17.825250046646687","-0.61687187856089953","Largest Net Sells by Trade Value","S&P 400",2014-12-19,2014-12-05
+"213","RNR","RenaissanceRe Hldgs","-16.169047295782143","-0.43208391503455762","Largest Net Sells by Trade Value","S&P 400",2014-12-19,2014-12-05
+"223","LECO","Lincoln Electric Hldgs","-15.648881684873238","-0.72634333339783852","Largest Net Sells by Trade Value","S&P 400",2014-12-19,2014-12-05
+"233","DCI","Donaldson Co","-14.086446027595578","-0.64959210662154288","Largest Net Sells by Trade Value","S&P 400",2014-12-19,2014-12-05
+"243","DST","DST Systems Inc","-12.573156684568863","-0.59043945015314903","Largest Net Sells by Trade Value","S&P 400",2014-12-19,2014-12-05
+"253","SNV","Synovus Financial Corp (GA)","-12.519808673765905","-0.51638151540710919","Largest Net Sells by Trade Value","S&P 400",2014-12-19,2014-12-05
+"263","WDR","Waddell & Reed Finl A","-11.321091800846713","-0.36717314121330186","Largest Net Sells by Trade Value","S&P 400",2014-12-19,2014-12-05
+"283","TDY","Teledyne Technologies Inc","-6.541919430398945","-0.39091492652721843","Largest Net Sells by Trade Value","S&P 600",2014-12-19,2014-12-05
+"293","MMS","MAXIMUS Inc","-5.7497971184104202","-0.29614808657935676","Largest Net Sells by Trade Value","S&P 600",2014-12-19,2014-12-05
+"303","ENS","Enersys","-4.4245154168883758","-0.31067058174360479","Largest Net Sells by Trade Value","S&P 600",2014-12-19,2014-12-05
+"313","ASGN","On Assignment Inc","-4.3079844647478662","-0.37982952004275006","Largest Net Sells by Trade Value","S&P 600",2014-12-19,2014-12-05
+"323","OUTR","Outerwall Inc","-3.9685714811006294","-0.10065307379690319","Largest Net Sells by Trade Value","S&P 600",2014-12-19,2014-12-05
+"333","DIN","DineEquity Inc","-3.9094637124770597","-0.19050492544644665","Largest Net Sells by Trade Value","S&P 600",2014-12-19,2014-12-05
+"343","ALGT","Allegiant Travel Co","-3.6136285560331709","-0.18412343895009889","Largest Net Sells by Trade Value","S&P 600",2014-12-19,2014-12-05
+"353","MASI","Masimo Corp","-3.4590892236950204","-0.37334456614527395","Largest Net Sells by Trade Value","S&P 600",2014-12-19,2014-12-05
+"363","MANH","Manhattan Associates Inc","-3.3698505395365039","-0.2141602410497834","Largest Net Sells by Trade Value","S&P 600",2014-12-19,2014-12-05
+"373","COLB","Columbia Banking System Inc","-3.3290826399123548","-0.57150798162649985","Largest Net Sells by Trade Value","S&P 600",2014-12-19,2014-12-05
+"64","AVB","AvalonBay Communities Inc","102.74384488435149","0.74756420240233501","Most Illiquid Net Buys","S&P 500",2015-12-18,2015-12-04
+"74","VZ","Verizon Communications Inc","201.18498854670057","0.38560714754516467","Most Illiquid Net Buys","S&P 500",2015-12-18,2015-12-04
+"84","BRK/B","Berkshire Hathaway B","157.82534255909775","0.34317072967790879","Most Illiquid Net Buys","S&P 500",2015-12-18,2015-12-04
+"94","BMY","Bristol-Myers Squibb","120.19063741227967","0.34249672310800477","Most Illiquid Net Buys","S&P 500",2015-12-18,2015-12-04
+"104","LEN","Lennar Corp","34.77711755918191","0.33827406575658492","Most Illiquid Net Buys","S&P 500",2015-12-18,2015-12-04
+"114","DHR","Danaher Corp","73.190190257881625","0.32610143970737993","Most Illiquid Net Buys","S&P 500",2015-12-18,2015-12-04
+"124","CME","CME Group Inc","37.621087667622902","0.30320027276740696","Most Illiquid Net Buys","S&P 500",2015-12-18,2015-12-04
+"134","ADBE","Adobe Systems Inc","54.312749116600415","0.30204507932591929","Most Illiquid Net Buys","S&P 500",2015-12-18,2015-12-04
+"144","PM","Philip Morris International","106.9098231585526","0.29980733853473535","Most Illiquid Net Buys","S&P 500",2015-12-18,2015-12-04
+"154","ACN","Accenture plc","74.457032084321767","0.29497370905111864","Most Illiquid Net Buys","S&P 500",2015-12-18,2015-12-04
+"174","SFG","StanCorp Financial Group Inc","14.386745318948563","0.71640422419136562","Most Illiquid Net Buys","S&P 400",2015-12-18,2015-12-04
+"184","TW","Towers Watson & Co","28.733935429965378","0.65494563425304808","Most Illiquid Net Buys","S&P 400",2015-12-18,2015-12-04
+"194","BOH","Bank of Hawaii Corp","7.5584889014142149","0.65336157688699459","Most Illiquid Net Buys","S&P 400",2015-12-18,2015-12-04
+"204","ORI","Old Republic Intl Corp","15.421580406305619","0.58208729961676264","Most Illiquid Net Buys","S&P 400",2015-12-18,2015-12-04
+"214","WGL","WGL Holdings Inc","9.2296188808270685","0.57150067240465452","Most Illiquid Net Buys","S&P 400",2015-12-18,2015-12-04
+"224","OGS","ONE Gas Inc","4.5155648676248212","0.53151937754653678","Most Illiquid Net Buys","S&P 400",2015-12-18,2015-12-04
+"234","ACXM","Acxiom Corp","3.2776745291966636","0.51957378399305165","Most Illiquid Net Buys","S&P 400",2015-12-18,2015-12-04
+"244","ROL","Rollins Inc","2.9502904366535492","0.49877507853470643","Most Illiquid Net Buys","S&P 400",2015-12-18,2015-12-04
+"254","IBOC","Intl Bancshares Corp","2.5107388491939067","0.49368880832426926","Most Illiquid Net Buys","S&P 400",2015-12-18,2015-12-04
+"264","ATR","AptarGroup Inc","7.6132578063440892","0.47425814114939324","Most Illiquid Net Buys","S&P 400",2015-12-18,2015-12-04
+"284","FFIN","First Financial Bankshs (TX)","3.33363889029674","0.60722265800761588","Most Illiquid Net Buys","S&P 600",2015-12-18,2015-12-04
+"294","CBR","CIBER Inc","0.23027409437142193","0.54917170493083445","Most Illiquid Net Buys","S&P 600",2015-12-18,2015-12-04
+"304","ADC","Agree Realty Corp","1.2959845609236598","0.52263243614247179","Most Illiquid Net Buys","S&P 600",2015-12-18,2015-12-04
+"314","EPAY","Bottomline Technologies Inc","2.3500662120328402","0.46348936882755037","Most Illiquid Net Buys","S&P 600",2015-12-18,2015-12-04
+"324","SCHL","Scholastic Corp","2.5248630744295508","0.37150719229306844","Most Illiquid Net Buys","S&P 600",2015-12-18,2015-12-04
+"334","PNFP","Pinnacle Financial","3.1251345451059422","0.35481933170197916","Most Illiquid Net Buys","S&P 600",2015-12-18,2015-12-04
+"344","KELYA","Kelly Services A","0.42842568059421637","0.35054393397628208","Most Illiquid Net Buys","S&P 600",2015-12-18,2015-12-04
+"354","EPR","EPR Properties","6.093125777569198","0.34653916368199816","Most Illiquid Net Buys","S&P 600",2015-12-18,2015-12-04
+"364","HOMB","Home Bancshares","3.5408651465710421","0.33689240629740108","Most Illiquid Net Buys","S&P 600",2015-12-18,2015-12-04
+"374","MCS","Marcus Corp","0.27825582162032486","0.33001545064971399","Most Illiquid Net Buys","S&P 600",2015-12-18,2015-12-04
+"611","CSRA","CSRA Inc","-65.511504958540201","-0.87016512685609937","Most Illiquid Net Sells","S&P 500",2015-12-18,2015-12-04
+"711","BF/B","Brown-Forman Corp B","-46.343638496221402","-0.78142974322260428","Most Illiquid Net Sells","S&P 500",2015-12-18,2015-12-04
+"811","AIG","American Intl Group Inc","-371.68710947297421","-0.74526614987992146","Most Illiquid Net Sells","S&P 500",2015-12-18,2015-12-04
+"911","TEL","TE Connectivity Ltd.","-104.52790868252607","-0.68928293656937645","Most Illiquid Net Sells","S&P 500",2015-12-18,2015-12-04
+"1011","ABC","AmerisourceBergen Corp","-114.10347247440563","-0.64340154642500846","Most Illiquid Net Sells","S&P 500",2015-12-18,2015-12-04
+"1111","L","Loews Corp","-24.018089536355788","-0.62141125449661616","Most Illiquid Net Sells","S&P 500",2015-12-18,2015-12-04
+"1211","ALL","Allstate Corp","-87.396431509648522","-0.57630117739332798","Most Illiquid Net Sells","S&P 500",2015-12-18,2015-12-04
+"1311","INTU","Intuit Inc","-132.59025405685091","-0.56454697459888081","Most Illiquid Net Sells","S&P 500",2015-12-18,2015-12-04
+"1411","FOXA","Twenty-First Century Fox Inc A","-159.11484393502892","-0.55215739439901557","Most Illiquid Net Sells","S&P 500",2015-12-18,2015-12-04
+"1511","AMP","Ameriprise Financial Inc","-52.489445697468028","-0.51358925747635265","Most Illiquid Net Sells","S&P 500",2015-12-18,2015-12-04
+"1711","PRI","Primerica Inc","-10.406838815472199","-0.71368516271924576","Most Illiquid Net Sells","S&P 400",2015-12-18,2015-12-04
+"1811","NEU","NewMarket Corp","-9.6497340913652536","-0.69755502775744382","Most Illiquid Net Sells","S&P 400",2015-12-18,2015-12-04
+"1911","PLT","Plantronics Inc","-5.7385111657592809","-0.67680874439174266","Most Illiquid Net Sells","S&P 400",2015-12-18,2015-12-04
+"2011","RNR","RenaissanceRe Hldgs","-14.725533950202596","-0.62941654046515194","Most Illiquid Net Sells","S&P 400",2015-12-18,2015-12-04
+"2111","NTCT","Netscout Systems Inc","-11.260162427166314","-0.59788681139792343","Most Illiquid Net Sells","S&P 400",2015-12-18,2015-12-04
+"2211","POL","PolyOne Corp","-9.1506480982107554","-0.5963238379666983","Most Illiquid Net Sells","S&P 400",2015-12-18,2015-12-04
+"2311","MTX","Minerals Technologies Inc","-4.7674616526780174","-0.53387105833812198","Most Illiquid Net Sells","S&P 400",2015-12-18,2015-12-04
+"2411","LECO","Lincoln Electric Hldgs","-12.009080567276328","-0.53218963766418881","Most Illiquid Net Sells","S&P 400",2015-12-18,2015-12-04
+"2511","ESL","Esterline Technologies","-11.732131169999857","-0.5054391999386203","Most Illiquid Net Sells","S&P 400",2015-12-18,2015-12-04
+"2611","GGG","Graco Inc","-9.1289669670889744","-0.50193686387478331","Most Illiquid Net Sells","S&P 400",2015-12-18,2015-12-04
+"2811","DSPG","DSP Group","-0.27159771564673396","-0.84735948585214582","Most Illiquid Net Sells","S&P 600",2015-12-18,2015-12-04
+"2911","BKMU","Bank Mutual Corp","-0.33442746058686768","-0.47510013811923524","Most Illiquid Net Sells","S&P 600",2015-12-18,2015-12-04
+"3011","EVR","Evercore Partners A","-9.0213666689491454","-0.47114839919068652","Most Illiquid Net Sells","S&P 600",2015-12-18,2015-12-04
+"3111","CW","Curtiss-Wright Corp","-5.985559518365509","-0.45211116765335196","Most Illiquid Net Sells","S&P 600",2015-12-18,2015-12-04
+"3211","UEIC","Universal Electronics Inc","-2.2427605742420251","-0.41947625091352569","Most Illiquid Net Sells","S&P 600",2015-12-18,2015-12-04
+"3311","TNC","Tennant Co","-1.333861926632903","-0.35352786044925655","Most Illiquid Net Sells","S&P 600",2015-12-18,2015-12-04
+"3411","DEL","Deltic Timber","-0.88276363007154934","-0.34526150289980356","Most Illiquid Net Sells","S&P 600",2015-12-18,2015-12-04
+"3511","ENS","Enersys","-4.7429044176950415","-0.34302883890342289","Most Illiquid Net Sells","S&P 600",2015-12-18,2015-12-04
+"3611","PRSC","Providence Service","-1.4154958794530077","-0.28679278678787673","Most Illiquid Net Sells","S&P 600",2015-12-18,2015-12-04
+"3711","AWR","American States Water Co","-1.3118692252071469","-0.27251684542538013","Most Illiquid Net Sells","S&P 600",2015-12-18,2015-12-04
+"621","GE","General Electric Co","404.41964618829218","8.5025404695384763E-2","Largest Net Buys by Trade Value","S&P 500",2015-12-18,2015-12-04
+"721","FB","Facebook Inc","313.59840639964227","0.1213028110620417","Largest Net Buys by Trade Value","S&P 500",2015-12-18,2015-12-04
+"821","GOOGL","Alphabet Inc A","301.30390543714117","0.20165091914954625","Largest Net Buys by Trade Value","S&P 500",2015-12-18,2015-12-04
+"921","GOOG","Alphabet Inc C","292.07863617692465","0.20795991948452766","Largest Net Buys by Trade Value","S&P 500",2015-12-18,2015-12-04
+"1021","MSFT","Microsoft Corp","271.05263322884491","0.13910944584662754","Largest Net Buys by Trade Value","S&P 500",2015-12-18,2015-12-04
+"1121","AMZN","Amazon.com Inc","262.0312579395665","8.6279229999961876E-2","Largest Net Buys by Trade Value","S&P 500",2015-12-18,2015-12-04
+"1221","PFE","Pfizer Inc","224.73462273555441","0.1540409977547291","Largest Net Buys by Trade Value","S&P 500",2015-12-18,2015-12-04
+"1321","VZ","Verizon Communications Inc","201.18498854670057","0.38560714754516467","Largest Net Buys by Trade Value","S&P 500",2015-12-18,2015-12-04
+"1421","JNJ","Johnson & Johnson","168.56605279979999","0.24161964137097153","Largest Net Buys by Trade Value","S&P 500",2015-12-18,2015-12-04
+"1521","BRK/B","Berkshire Hathaway B","157.82534255909775","0.34317072967790879","Largest Net Buys by Trade Value","S&P 500",2015-12-18,2015-12-04
+"1721","JAH","Jarden Corp","31.498694443792004","0.26442829659040773","Largest Net Buys by Trade Value","S&P 400",2015-12-18,2015-12-04
+"1821","TW","Towers Watson & Co","28.733935429965378","0.65494563425304808","Largest Net Buys by Trade Value","S&P 400",2015-12-18,2015-12-04
+"1921","ORI","Old Republic Intl Corp","15.421580406305619","0.58208729961676264","Largest Net Buys by Trade Value","S&P 400",2015-12-18,2015-12-04
+"2021","FLO","Flowers Foods Inc","14.794578154816005","0.34322687510136396","Largest Net Buys by Trade Value","S&P 400",2015-12-18,2015-12-04
+"2121","INGR","Ingredion Inc","14.53308750648144","0.42437578480071475","Largest Net Buys by Trade Value","S&P 400",2015-12-18,2015-12-04
+"2221","SFG","StanCorp Financial Group Inc","14.386745318948563","0.71640422419136562","Largest Net Buys by Trade Value","S&P 400",2015-12-18,2015-12-04
+"2321","CASY","Casey's General Stores Inc","13.59198963467027","0.39009086336756604","Largest Net Buys by Trade Value","S&P 400",2015-12-18,2015-12-04
+"2421","POST","Post Holdings Inc.","13.516870107254196","0.27912341035217347","Largest Net Buys by Trade Value","S&P 400",2015-12-18,2015-12-04
+"2521","ATO","Atmos Energy Corp","12.660536182832569","0.37008832310650441","Largest Net Buys by Trade Value","S&P 400",2015-12-18,2015-12-04
+"2621","CSC","Computer Sciences","12.323029778678951","9.3707254905469342E-2","Largest Net Buys by Trade Value","S&P 400",2015-12-18,2015-12-04
+"2821","MDCO","The Medicines Company","6.1313610612187279","0.13347378042309022","Largest Net Buys by Trade Value","S&P 600",2015-12-18,2015-12-04
+"2921","EPR","EPR Properties","6.093125777569198","0.34653916368199816","Largest Net Buys by Trade Value","S&P 600",2015-12-18,2015-12-04
+"3021","NWE","Northwestern Corp","3.7740637680775482","0.32814714157467278","Largest Net Buys by Trade Value","S&P 600",2015-12-18,2015-12-04
+"3121","HOMB","Home Bancshares","3.5408651465710421","0.33689240629740108","Largest Net Buys by Trade Value","S&P 600",2015-12-18,2015-12-04
+"3221","FFIN","First Financial Bankshs (TX)","3.33363889029674","0.60722265800761588","Largest Net Buys by Trade Value","S&P 600",2015-12-18,2015-12-04
+"3321","KALU","Kaiser Aluminum","3.2528168684291163","0.24100228477599675","Largest Net Buys by Trade Value","S&P 600",2015-12-18,2015-12-04
+"3421","PNFP","Pinnacle Financial","3.1251345451059422","0.35481933170197916","Largest Net Buys by Trade Value","S&P 600",2015-12-18,2015-12-04
+"3521","ALE","Allete Inc","2.8065228671980176","0.26884454378955863","Largest Net Buys by Trade Value","S&P 600",2015-12-18,2015-12-04
+"3621","IBKR","Interactive Brokers Group A","2.6548076135922045","0.12728177968549376","Largest Net Buys by Trade Value","S&P 600",2015-12-18,2015-12-04
+"3721","SWX","Southwest Gas Corp","2.5442463300959623","0.21181253471448458","Largest Net Buys by Trade Value","S&P 600",2015-12-18,2015-12-04
+"631","AAPL","Apple Inc.","-1411.6680844941343","-0.31372346366629278","Largest Net Sells by Trade Value","S&P 500",2015-12-18,2015-12-04
+"731","QCOM","QUALCOMM Inc","-404.48764633504493","-0.46257528965270794","Largest Net Sells by Trade Value","S&P 500",2015-12-18,2015-12-04
+"831","AIG","American Intl Group Inc","-371.68710947297421","-0.74526614987992146","Largest Net Sells by Trade Value","S&P 500",2015-12-18,2015-12-04
+"931","DIS","Walt Disney Co","-291.95201320249419","-0.28366210103831485","Largest Net Sells by Trade Value","S&P 500",2015-12-18,2015-12-04
+"1031","MCD","McDonald's Corp","-211.21705414016071","-0.27320393755227756","Largest Net Sells by Trade Value","S&P 500",2015-12-18,2015-12-04
+"1131","GILD","Gilead Sciences Inc","-206.0612908640864","-0.24875010749694351","Largest Net Sells by Trade Value","S&P 500",2015-12-18,2015-12-04
+"1231","DD","E. I. du Pont de Nemours and Company","-181.96933498553148","-0.50523163757342293","Largest Net Sells by Trade Value","S&P 500",2015-12-18,2015-12-04
+"1331","ORCL","Oracle Corp","-168.22066281670072","-0.29692752633965441","Largest Net Sells by Trade Value","S&P 500",2015-12-18,2015-12-04
+"1431","FOXA","Twenty-First Century Fox Inc A","-159.11484393502892","-0.55215739439901557","Largest Net Sells by Trade Value","S&P 500",2015-12-18,2015-12-04
+"1531","CAT","Caterpillar Inc","-139.83180417086433","-0.37977297599307325","Largest Net Sells by Trade Value","S&P 500",2015-12-18,2015-12-04
+"1731","PII","Polaris Inds Inc","-17.654028390583534","-0.19475084878175247","Largest Net Sells by Trade Value","S&P 400",2015-12-18,2015-12-04
+"1831","TRMB","Trimble Navigation Ltd","-17.415239237999188","-0.46099791375743177","Largest Net Sells by Trade Value","S&P 400",2015-12-18,2015-12-04
+"1931","HFC","HollyFrontier Corporation","-16.573131853051745","-0.17412597258861834","Largest Net Sells by Trade Value","S&P 400",2015-12-18,2015-12-04
+"2031","RNR","RenaissanceRe Hldgs","-14.725533950202596","-0.62941654046515194","Largest Net Sells by Trade Value","S&P 400",2015-12-18,2015-12-04
+"2131","NVR","NVR Inc","-14.155917435449396","-0.38764970034602786","Largest Net Sells by Trade Value","S&P 400",2015-12-18,2015-12-04
+"2231","UGI","UGI Corp","-13.24391920809564","-0.39723279236528986","Largest Net Sells by Trade Value","S&P 400",2015-12-18,2015-12-04
+"2331","ODFL","Old Dominion Freight Line Inc","-12.609989178543302","-0.32397942113896883","Largest Net Sells by Trade Value","S&P 400",2015-12-18,2015-12-04
+"2431","RE","Everest Re Group Ltd","-12.351162667772558","-0.29383682026702623","Largest Net Sells by Trade Value","S&P 400",2015-12-18,2015-12-04
+"2531","IM","Ingram Micro Inc A","-12.299779076709509","-0.27720428837322086","Largest Net Sells by Trade Value","S&P 400",2015-12-18,2015-12-04
+"2631","LECO","Lincoln Electric Hldgs","-12.009080567276328","-0.53218963766418881","Largest Net Sells by Trade Value","S&P 400",2015-12-18,2015-12-04
+"2831","EVR","Evercore Partners A","-9.0213666689491454","-0.47114839919068652","Largest Net Sells by Trade Value","S&P 600",2015-12-18,2015-12-04
+"2931","DY","Dycom Industries Inc","-7.5626490769937522","-0.1124017564237965","Largest Net Sells by Trade Value","S&P 600",2015-12-18,2015-12-04
+"3031","CW","Curtiss-Wright Corp","-5.985559518365509","-0.45211116765335196","Largest Net Sells by Trade Value","S&P 600",2015-12-18,2015-12-04
+"3131","ENS","Enersys","-4.7429044176950415","-0.34302883890342289","Largest Net Sells by Trade Value","S&P 600",2015-12-18,2015-12-04
+"3231","HELE","Helen of Troy Ltd","-4.3905743404984783","-0.2041634831130309","Largest Net Sells by Trade Value","S&P 600",2015-12-18,2015-12-04
+"3331","SONC","Sonic Corp","-3.9899245853260892","-0.1626156765635984","Largest Net Sells by Trade Value","S&P 600",2015-12-18,2015-12-04
+"3431","POOL","Pool Corp","-3.249823941600896","-0.14607411106091764","Largest Net Sells by Trade Value","S&P 600",2015-12-18,2015-12-04
+"3531","OUTR","Outerwall Inc","-3.1196185695948806","-0.14778248883801109","Largest Net Sells by Trade Value","S&P 600",2015-12-18,2015-12-04
+"3631","TTWO","Take-Two Interactive Software","-3.0467975985201177","-5.3180674060528323E-2","Largest Net Sells by Trade Value","S&P 600",2015-12-18,2015-12-04
+"3731","HA","Hawaiian Holdings Inc","-3.0095959574240894","-6.4758885597468632E-2","Largest Net Sells by Trade Value","S&P 600",2015-12-18,2015-12-04
+"65","EOG","EOG Resources","336.61359774550152","0.75633746044905981","Most Illiquid Net Buys","S&P 500",2016-12-16,2016-12-05
+"75","NEE","NextEra Energy Inc","184.38956340111645","0.44790078611217266","Most Illiquid Net Buys","S&P 500",2016-12-16,2016-12-05
+"85","LEN","Lennar Corp A","45.929790275520105","0.42507721631166062","Most Illiquid Net Buys","S&P 500",2016-12-16,2016-12-05
+"95","PCG","PG&E Corporation","60.288678402188154","0.38875566448676147","Most Illiquid Net Buys","S&P 500",2016-12-16,2016-12-05
+"105","APC","Anadarko Petroleum Corp","119.76650315833496","0.34149391167362586","Most Illiquid Net Buys","S&P 500",2016-12-16,2016-12-05
+"115","FRT","Federal Realty Invt Trust","18.325907034066386","0.30928568116547184","Most Illiquid Net Buys","S&P 500",2016-12-16,2016-12-05
+"125","CXO","Concho Resources Inc","73.142227827594397","0.28696265993266212","Most Illiquid Net Buys","S&P 500",2016-12-16,2016-12-05
+"135","DNB","Dun & Bradstreet Corp","8.6083292111234826","0.25314097642442684","Most Illiquid Net Buys","S&P 500",2016-12-16,2016-12-05
+"145","HCN","Welltower Inc","42.722852855978985","0.23909115300186892","Most Illiquid Net Buys","S&P 500",2016-12-16,2016-12-05
+"155","AMG","Affiliated Managers Grp","19.752559983992398","0.20775841186319777","Most Illiquid Net Buys","S&P 500",2016-12-16,2016-12-05
+"175","CPRT","Copart Inc","17.891370541930119","0.47367994784716033","Most Illiquid Net Buys","S&P 400",2016-12-16,2016-12-05
+"185","CSAL","Communications Sales & Leasing Inc","7.8195393884318465","0.20080568423779166","Most Illiquid Net Buys","S&P 400",2016-12-16,2016-12-05
+"195","MD","Mednax Inc","7.8502204301314977","0.18062349815160711","Most Illiquid Net Buys","S&P 400",2016-12-16,2016-12-05
+"205","ARE","Alexandria Real Estate Eqty","11.454486472774397","0.17424685622653938","Most Illiquid Net Buys","S&P 400",2016-12-16,2016-12-05
+"215","CVLT","Commvault Systems","3.0854380635093959","0.17039153620883452","Most Illiquid Net Buys","S&P 400",2016-12-16,2016-12-05
+"225","HIW","Highwoods Properties","5.5399737637868123","0.16633224528536797","Most Illiquid Net Buys","S&P 400",2016-12-16,2016-12-05
+"235","GXP","Great Plains Energy Inc","14.465804034408629","0.14429317076284251","Most Illiquid Net Buys","S&P 400",2016-12-16,2016-12-05
+"245","ASB","Associated Banc-Corp (IL)","3.157359291044","0.13829350138047819","Most Illiquid Net Buys","S&P 400",2016-12-16,2016-12-05
+"255","BKH","Black Hills Corp","3.4399418708115812","0.13734343898313836","Most Illiquid Net Buys","S&P 400",2016-12-16,2016-12-05
+"265","ACC","American Campus Communities Inc","5.5051033335500401","0.12254794670944824","Most Illiquid Net Buys","S&P 400",2016-12-16,2016-12-05
+"285","AGYS","Agilysys Inc","0.15273308740304672","0.42063573365507545","Most Illiquid Net Buys","S&P 600",2016-12-16,2016-12-05
+"295","ESIO","Electro Scientific Inc","0.27297995964219873","0.40467018387595227","Most Illiquid Net Buys","S&P 600",2016-12-16,2016-12-05
+"305","SFNC","Simmons 1st Natl Corp A","2.6352049850714998","0.2768438279477492","Most Illiquid Net Buys","S&P 600",2016-12-16,2016-12-05
+"315","NWN","Northwest Natural Gas Co","2.6464394525675261","0.24414291013206055","Most Illiquid Net Buys","S&P 600",2016-12-16,2016-12-05
+"325","WWE","World Wrestling Fed Entmnt A","1.5602028538059729","0.24213002396657404","Most Illiquid Net Buys","S&P 600",2016-12-16,2016-12-05
+"335","MCF","Contango Oil & Gas Co","0.28109880390564401","0.23441999600651697","Most Illiquid Net Buys","S&P 600",2016-12-16,2016-12-05
+"345","GDOT","Green Dot Corp","1.6631271111420518","0.23335525925317308","Most Illiquid Net Buys","S&P 600",2016-12-16,2016-12-05
+"355","ADC","Agree Realty Corp","2.1504335747863057","0.18760014833732189","Most Illiquid Net Buys","S&P 600",2016-12-16,2016-12-05
+"365","TYPE","Monotype Imaging Holdings Inc","0.81111095273047418","0.16989155539091821","Most Illiquid Net Buys","S&P 600",2016-12-16,2016-12-05
+"375","CCMP","Cabot Microelectronics Corp","1.4679413771235852","0.15906837459947859","Most Illiquid Net Buys","S&P 600",2016-12-16,2016-12-05
+"612","AIG","American Intl Group Inc","-281.22195543685712","-0.6170528371271109","Most Illiquid Net Sells","S&P 500",2016-12-16,2016-12-05
+"712","COF","Capital One Financial","-221.11308467687257","-0.54980982910289189","Most Illiquid Net Sells","S&P 500",2016-12-16,2016-12-05
+"812","MCD","McDonald's Corp","-276.45718895694273","-0.5310358992052332","Most Illiquid Net Sells","S&P 500",2016-12-16,2016-12-05
+"912","CCL","Carnival Corp","-72.121488082241811","-0.37481686646726214","Most Illiquid Net Sells","S&P 500",2016-12-16,2016-12-05
+"1012","NAVI","Navient Corp","-25.266356140749636","-0.3636719700131259","Most Illiquid Net Sells","S&P 500",2016-12-16,2016-12-05
+"1112","CBS","CBS Corp B","-95.497318379521204","-0.35460755338067051","Most Illiquid Net Sells","S&P 500",2016-12-16,2016-12-05
+"1212","UTX","United Technologies Corp","-122.56683042964256","-0.34720754779933194","Most Illiquid Net Sells","S&P 500",2016-12-16,2016-12-05
+"1312","HIG","Hartford Finl Services Group","-37.974310939216437","-0.3458005805438763","Most Illiquid Net Sells","S&P 500",2016-12-16,2016-12-05
+"1412","DVA","DaVita Inc","-52.332286343170239","-0.33953040245360039","Most Illiquid Net Sells","S&P 500",2016-12-16,2016-12-05
+"1512","ESRX","Express Scripts Holding Co.","-101.24629174274904","-0.32762638494670054","Most Illiquid Net Sells","S&P 500",2016-12-16,2016-12-05
+"1712","ARW","Arrow Electronics Inc","-7.5675023596493478","-0.25895203597018512","Most Illiquid Net Sells","S&P 400",2016-12-16,2016-12-05
+"1812","NVR","NVR Inc","-10.728259806509458","-0.21911727801606556","Most Illiquid Net Sells","S&P 400",2016-12-16,2016-12-05
+"1912","RE","Everest Re Group Ltd","-14.045690903700903","-0.21859069057595318","Most Illiquid Net Sells","S&P 400",2016-12-16,2016-12-05
+"2012","SCI","Service Corp Intl","-5.6365671511092961","-0.19140054630251366","Most Illiquid Net Sells","S&P 400",2016-12-16,2016-12-05
+"2112","BID","Sotheby's","-4.8720588806648992","-0.18616375424865619","Most Illiquid Net Sells","S&P 400",2016-12-16,2016-12-05
+"2212","POOL","Pool Corp","-4.8943770032346015","-0.18274954107045066","Most Illiquid Net Sells","S&P 400",2016-12-16,2016-12-05
+"2312","JBL","Jabil Circuit Inc","-7.6748435525225558","-0.1810017272561017","Most Illiquid Net Sells","S&P 400",2016-12-16,2016-12-05
+"2412","CDNS","Cadence Design Systems Inc","-9.7466984742884168","-0.17910664590735684","Most Illiquid Net Sells","S&P 400",2016-12-16,2016-12-05
+"2512","WAFD","Washington Federal Inc.","-3.0751689395726181","-0.17345095636416377","Most Illiquid Net Sells","S&P 400",2016-12-16,2016-12-05
+"2612","SFM","Sprouts Farmers Markets Inc","-8.1884956143365084","-0.1689278144704689","Most Illiquid Net Sells","S&P 400",2016-12-16,2016-12-05
+"2812","GNCMA","General Communication A","-0.94086658882380003","-0.31633930207527028","Most Illiquid Net Sells","S&P 600",2016-12-16,2016-12-05
+"2912","CATO","Cato Corp A","-1.5985877909472688","-0.28370990624258047","Most Illiquid Net Sells","S&P 600",2016-12-16,2016-12-05
+"3012","DSPG","DSP Group","-0.18470823052000512","-0.23550244818667906","Most Illiquid Net Sells","S&P 600",2016-12-16,2016-12-05
+"3112","RUTH","Ruth's Hospitality Group, Inc.","-0.78077117764727832","-0.20411243661186826","Most Illiquid Net Sells","S&P 600",2016-12-16,2016-12-05
+"3212","EXPO","Exponent Inc","-1.4221220959425511","-0.18248671126888166","Most Illiquid Net Sells","S&P 600",2016-12-16,2016-12-05
+"3312","PLKI","Popeyes Louisiana Kitchen, Inc","-1.929773643560543","-0.17422124697442051","Most Illiquid Net Sells","S&P 600",2016-12-16,2016-12-05
+"3412","CLW","Clearwater Paper Corp","-0.99172597125035777","-0.17310721416005376","Most Illiquid Net Sells","S&P 600",2016-12-16,2016-12-05
+"3512","VRA","Vera Bradley Inc","-0.43916396268604846","-0.16362006350758385","Most Illiquid Net Sells","S&P 600",2016-12-16,2016-12-05
+"3612","MOG/A","Moog Inc A","-1.605221662029102","-0.16001014199903624","Most Illiquid Net Sells","S&P 600",2016-12-16,2016-12-05
+"3712","RRGB","Red Robin Gourmet Burgers","-1.2651016677068738","-0.15655433790247261","Most Illiquid Net Sells","S&P 600",2016-12-16,2016-12-05
+"622","FB","Facebook Inc A","354.84240252821593","0.10481741385144086","Largest Net Buys by Trade Value","S&P 500",2016-12-16,2016-12-05
+"722","EOG","EOG Resources","336.61359774550152","0.75633746044905981","Largest Net Buys by Trade Value","S&P 500",2016-12-16,2016-12-05
+"822","GOOGL","Alphabet Inc A","205.65301125918296","0.11546006925633548","Largest Net Buys by Trade Value","S&P 500",2016-12-16,2016-12-05
+"922","GOOG","Alphabet Inc C","204.8862351397527","0.13384574082299505","Largest Net Buys by Trade Value","S&P 500",2016-12-16,2016-12-05
+"1022","AMZN","Amazon.com Inc","201.36044435392171","5.1339304440985313E-2","Largest Net Buys by Trade Value","S&P 500",2016-12-16,2016-12-05
+"1122","NEE","NextEra Energy Inc","184.38956340111645","0.44790078611217266","Largest Net Buys by Trade Value","S&P 500",2016-12-16,2016-12-05
+"1222","PG","Procter & Gamble","159.71258033275674","0.18952587218810418","Largest Net Buys by Trade Value","S&P 500",2016-12-16,2016-12-05
+"1322","XOM","Exxon Mobil Corp","147.92566106489767","0.15329364509145671","Largest Net Buys by Trade Value","S&P 500",2016-12-16,2016-12-05
+"1422","BRK/B","Berkshire Hathaway B","127.60959904102143","0.17901279533425682","Largest Net Buys by Trade Value","S&P 500",2016-12-16,2016-12-05
+"1522","APC","Anadarko Petroleum Corp","119.76650315833496","0.34149391167362586","Largest Net Buys by Trade Value","S&P 500",2016-12-16,2016-12-05
+"1722","CPRT","Copart Inc","17.891370541930119","0.47367994784716033","Largest Net Buys by Trade Value","S&P 400",2016-12-16,2016-12-05
+"1822","AMD","Advanced Micro Devices","15.734744324446693","3.6952807746264117E-2","Largest Net Buys by Trade Value","S&P 400",2016-12-16,2016-12-05
+"1922","GXP","Great Plains Energy Inc","14.465804034408629","0.14429317076284251","Largest Net Buys by Trade Value","S&P 400",2016-12-16,2016-12-05
+"2022","ARE","Alexandria Real Estate Eqty","11.454486472774397","0.17424685622653938","Largest Net Buys by Trade Value","S&P 400",2016-12-16,2016-12-05
+"2122","SBNY","Signature Bank NY","10.319378535131497","8.9741628898848014E-2","Largest Net Buys by Trade Value","S&P 400",2016-12-16,2016-12-05
+"2222","X","United States Steel Corp","9.8471604458708679","1.3442088437849142E-2","Largest Net Buys by Trade Value","S&P 400",2016-12-16,2016-12-05
+"2322","MD","Mednax Inc","7.8502204301314977","0.18062349815160711","Largest Net Buys by Trade Value","S&P 400",2016-12-16,2016-12-05
+"2422","CSAL","Communications Sales & Leasing Inc","7.8195393884318465","0.20080568423779166","Largest Net Buys by Trade Value","S&P 400",2016-12-16,2016-12-05
+"2522","DRE","Duke Realty Corp","7.4686991103754581","8.5959951922500707E-2","Largest Net Buys by Trade Value","S&P 400",2016-12-16,2016-12-05
+"2622","MSCC","Microsemi Corp","5.8144948520251107","6.4562589897182415E-2","Largest Net Buys by Trade Value","S&P 400",2016-12-16,2016-12-05
+"2822","AKS","AK Steel Hldg Corp","5.4658743025564176","2.0229059854330864E-2","Largest Net Buys by Trade Value","S&P 600",2016-12-16,2016-12-05
+"2922","STL","Sterling Bancorp/DE","4.8413705874338975","0.14110058038045264","Largest Net Buys by Trade Value","S&P 600",2016-12-16,2016-12-05
+"3022","GIII","G-III Apparel Group Ltd","3.7360534247673187","0.10384993781180418","Largest Net Buys by Trade Value","S&P 600",2016-12-16,2016-12-05
+"3122","NWN","Northwest Natural Gas Co","2.6464394525675261","0.24414291013206055","Largest Net Buys by Trade Value","S&P 600",2016-12-16,2016-12-05
+"3222","SFNC","Simmons 1st Natl Corp A","2.6352049850714998","0.2768438279477492","Largest Net Buys by Trade Value","S&P 600",2016-12-16,2016-12-05
+"3322","ADC","Agree Realty Corp","2.1504335747863057","0.18760014833732189","Largest Net Buys by Trade Value","S&P 600",2016-12-16,2016-12-05
+"3422","MDCO","The Medicines Company","2.1277027933972708","3.9343418591537518E-2","Largest Net Buys by Trade Value","S&P 600",2016-12-16,2016-12-05
+"3522","AKR","Acadia Realty Trust","2.0293175651191824","0.15361049905836627","Largest Net Buys by Trade Value","S&P 600",2016-12-16,2016-12-05
+"3622","NKTR","Nektar Therapeutics","1.9982171947770253","9.3317235238973922E-2","Largest Net Buys by Trade Value","S&P 600",2016-12-16,2016-12-05
+"3722","TCBI","Texas Capital Bancshares","1.771848635439434","3.5373351264825971E-2","Largest Net Buys by Trade Value","S&P 600",2016-12-16,2016-12-05
+"632","AAPL","Apple Inc.","-474.48188486554227","-0.12612710577242287","Largest Net Sells by Trade Value","S&P 500",2016-12-16,2016-12-05
+"732","GE","General Electric Co","-301.89912056071199","-0.28549594196504191","Largest Net Sells by Trade Value","S&P 500",2016-12-16,2016-12-05
+"832","C","Citigroup Inc","-301.76327834861604","-0.18983902456106044","Largest Net Sells by Trade Value","S&P 500",2016-12-16,2016-12-05
+"932","AIG","American Intl Group Inc","-281.22195543685712","-0.6170528371271109","Largest Net Sells by Trade Value","S&P 500",2016-12-16,2016-12-05
+"1032","MCD","McDonald's Corp","-276.45718895694273","-0.5310358992052332","Largest Net Sells by Trade Value","S&P 500",2016-12-16,2016-12-05
+"1132","COF","Capital One Financial","-221.11308467687257","-0.54980982910289189","Largest Net Sells by Trade Value","S&P 500",2016-12-16,2016-12-05
+"1232","JPM","JP Morgan Chase & Co","-203.11667348758274","-0.10471969542835641","Largest Net Sells by Trade Value","S&P 500",2016-12-16,2016-12-05
+"1332","HD","Home Depot Inc","-197.87932044667116","-0.24466147574209879","Largest Net Sells by Trade Value","S&P 500",2016-12-16,2016-12-05
+"1432","BAC","Bank of America Corp","-161.88701698038091","-4.6040673474502983E-2","Largest Net Sells by Trade Value","S&P 500",2016-12-16,2016-12-05
+"1532","GS","Goldman Sachs Group Inc","-157.44154340263546","-0.13900677034407569","Largest Net Sells by Trade Value","S&P 500",2016-12-16,2016-12-05
+"1732","RE","Everest Re Group Ltd","-14.045690903700903","-0.21859069057595318","Largest Net Sells by Trade Value","S&P 400",2016-12-16,2016-12-05
+"1832","NVR","NVR Inc","-10.728259806509458","-0.21911727801606556","Largest Net Sells by Trade Value","S&P 400",2016-12-16,2016-12-05
+"1932","CDNS","Cadence Design Systems Inc","-9.7466984742884168","-0.17910664590735684","Largest Net Sells by Trade Value","S&P 400",2016-12-16,2016-12-05
+"2032","UTHR","United Therapeutics Corp","-9.32230516223464","-0.12921707382308459","Largest Net Sells by Trade Value","S&P 400",2016-12-16,2016-12-05
+"2132","MAN","ManpowerGroup","-8.3853673976341447","-0.12737824064175651","Largest Net Sells by Trade Value","S&P 400",2016-12-16,2016-12-05
+"2232","SFM","Sprouts Farmers Markets Inc","-8.1884956143365084","-0.1689278144704689","Largest Net Sells by Trade Value","S&P 400",2016-12-16,2016-12-05
+"2332","FDS","FactSet Research System Inc","-7.7767430494858685","-0.145321596936659","Largest Net Sells by Trade Value","S&P 400",2016-12-16,2016-12-05
+"2432","JBL","Jabil Circuit Inc","-7.6748435525225558","-0.1810017272561017","Largest Net Sells by Trade Value","S&P 400",2016-12-16,2016-12-05
+"2532","ARW","Arrow Electronics Inc","-7.5675023596493478","-0.25895203597018512","Largest Net Sells by Trade Value","S&P 400",2016-12-16,2016-12-05
+"2632","PNRA","Panera Bread Co A","-6.2633728028679201","-6.1759049518595885E-2","Largest Net Sells by Trade Value","S&P 400",2016-12-16,2016-12-05
+"2832","AIRM","Air Methods Corp","-2.8256813654949591","-0.14932578430657337","Largest Net Sells by Trade Value","S&P 600",2016-12-16,2016-12-05
+"2932","SONC","Sonic Corp","-2.5916478000500045","-0.11435295057444407","Largest Net Sells by Trade Value","S&P 600",2016-12-16,2016-12-05
+"3032","TIVO","TiVo Corporation","-2.5432025327310654","-0.14069867583283246","Largest Net Sells by Trade Value","S&P 600",2016-12-16,2016-12-05
+"3132","SSD","Simpson Manufacturing Co Inc","-1.975662258485869","-0.15429084640412596","Largest Net Sells by Trade Value","S&P 600",2016-12-16,2016-12-05
+"3232","PLCE","Children's Place, Inc","-1.9332274879960627","-2.5150382884946906E-2","Largest Net Sells by Trade Value","S&P 600",2016-12-16,2016-12-05
+"3332","PLKI","Popeyes Louisiana Kitchen, Inc","-1.929773643560543","-0.17422124697442051","Largest Net Sells by Trade Value","S&P 600",2016-12-16,2016-12-05
+"3432","BJRI","BJ's Restaurants Inc","-1.6201509696691132","-0.13708094566367757","Largest Net Sells by Trade Value","S&P 600",2016-12-16,2016-12-05
+"3532","MOG/A","Moog Inc A","-1.605221662029102","-0.16001014199903624","Largest Net Sells by Trade Value","S&P 600",2016-12-16,2016-12-05
+"3632","CATO","Cato Corp A","-1.5985877909472688","-0.28370990624258047","Largest Net Sells by Trade Value","S&P 600",2016-12-16,2016-12-05
+"3732","WNC","Wabash National Corp","-1.5193967926289182","-9.2637557889074823E-2","Largest Net Sells by Trade Value","S&P 600",2016-12-16,2016-12-05
+"66","D","Dominion Resources Inc","183.6333682339484","1.1259972172468673","Most Illiquid Net Buys","S&P 500",2016-06-17,2016-06-01
+"76","NWL","Newell Brands Inc","127.96502964346877","0.61801736599920365","Most Illiquid Net Buys","S&P 500",2016-06-17,2016-06-01
+"86","FRT","Federal Realty Invt Trust","26.80166264104022","0.50717055782433751","Most Illiquid Net Buys","S&P 500",2016-06-17,2016-06-01
+"96","SE","Spectra Energy Corp","56.671744536446461","0.48255305689825084","Most Illiquid Net Buys","S&P 500",2016-06-17,2016-06-01
+"106","DLR","Digital Realty Trust","150.44704325338691","0.46840359603471432","Most Illiquid Net Buys","S&P 500",2016-06-17,2016-06-01
+"116","O","Realty Income Corp","57.775202380835353","0.42605567494175867","Most Illiquid Net Buys","S&P 500",2016-06-17,2016-06-01
+"126","CB","Chubb Limited","79.332395107699469","0.39849904838580574","Most Illiquid Net Buys","S&P 500",2016-06-17,2016-06-01
+"136","MYL","Mylan NV","84.676674579908251","0.37615241051947046","Most Illiquid Net Buys","S&P 500",2016-06-17,2016-06-01
+"146","PG","Procter & Gamble","183.077099038169","0.34952465156058599","Most Illiquid Net Buys","S&P 500",2016-06-17,2016-06-01
+"156","ISRG","Intuitive Surgical Inc","60.921423724628831","0.29993814306809907","Most Illiquid Net Buys","S&P 500",2016-06-17,2016-06-01
+"176","TFX","Teleflex Inc","22.959082188925851","0.64362421695272265","Most Illiquid Net Buys","S&P 400",2016-06-17,2016-06-01
+"186","HNI","HNI Corp","3.9879953743871677","0.58030289710236427","Most Illiquid Net Buys","S&P 400",2016-06-17,2016-06-01
+"196","HR","Healthcare Realty Trust","6.1698296472723451","0.2429932426187375","Most Illiquid Net Buys","S&P 400",2016-06-17,2016-06-01
+"206","NNN","National Retail Properties Inc","9.9376721265943821","0.21046015222654038","Most Illiquid Net Buys","S&P 400",2016-06-17,2016-06-01
+"216","AMSG","Amsurg Corp","6.9254346025496449","0.18353507325866089","Most Illiquid Net Buys","S&P 400",2016-06-17,2016-06-01
+"226","WST","West Pharmaceutical Services Inc","4.3344468015356945","0.176228220662424","Most Illiquid Net Buys","S&P 400",2016-06-17,2016-06-01
+"236","ISIL","Intersil Corp A","2.1734587661100009","0.16521069881646022","Most Illiquid Net Buys","S&P 400",2016-06-17,2016-06-01
+"246","HIW","Highwoods Properties","4.7928940259624015","0.1676461878805898","Most Illiquid Net Buys","S&P 400",2016-06-17,2016-06-01
+"256","EDR","Education Realty Trust","8.7745063056375354","0.16906217938908999","Most Illiquid Net Buys","S&P 400",2016-06-17,2016-06-01
+"266","WRI","Weingarten Realty Investors","4.1384363013502217","0.16407816976778916","Most Illiquid Net Buys","S&P 400",2016-06-17,2016-06-01
+"286","STC","Stewart Information Services A","2.1204898962994867","0.46961019455215036","Most Illiquid Net Buys","S&P 600",2016-06-17,2016-06-01
+"296","FMBI","First Midwest Bancorp (IL)","2.9779823616026659","0.46717981644523604","Most Illiquid Net Buys","S&P 600",2016-06-17,2016-06-01
+"306","HZO","MarineMax Inc","1.3114407632571774","0.33944235235241976","Most Illiquid Net Buys","S&P 600",2016-06-17,2016-06-01
+"316","COHU","Cohu Inc","0.18938035847105786","0.26035819842344088","Most Illiquid Net Buys","S&P 600",2016-06-17,2016-06-01
+"326","PNFP","Pinnacle Financial","2.2003296769829674","0.25104254844198698","Most Illiquid Net Buys","S&P 600",2016-06-17,2016-06-01
+"336","OPB","OPUS BANK","1.9593383830096287","0.23549287084832285","Most Illiquid Net Buys","S&P 600",2016-06-17,2016-06-01
+"346","TYPE","Monotype Imaging Holdings Inc","0.77972422283693188","0.20342190223802339","Most Illiquid Net Buys","S&P 600",2016-06-17,2016-06-01
+"356","ORIT","Oritani Financial Corp","0.50728882236106698","0.19957563947399842","Most Illiquid Net Buys","S&P 600",2016-06-17,2016-06-01
+"366","SJI","South Jersey Industries Inc","5.223572944451111","0.17070510931035585","Most Illiquid Net Buys","S&P 600",2016-06-17,2016-06-01
+"376","MRCY","Mercury Systems Inc","0.75451327563467641","0.16620772692885921","Most Illiquid Net Buys","S&P 600",2016-06-17,2016-06-01
+"613","TEL","TE Connectivity Ltd.","-73.821175287666435","-0.7341945881170775","Most Illiquid Net Sells","S&P 500",2016-06-17,2016-06-01
+"713","BA","Boeing Co","-317.90331074941065","-0.63491490157019659","Most Illiquid Net Sells","S&P 500",2016-06-17,2016-06-01
+"813","AIZ","Assurant Inc","-26.056795107914041","-0.63249790181744447","Most Illiquid Net Sells","S&P 500",2016-06-17,2016-06-01
+"913","LOW","Lowe's Cos Inc","-238.56224037601905","-0.56567584103306878","Most Illiquid Net Sells","S&P 500",2016-06-17,2016-06-01
+"1013","COF","Capital One Financial","-112.80746490487822","-0.55427541612646758","Most Illiquid Net Sells","S&P 500",2016-06-17,2016-06-01
+"1113","FDX","FedEx Corp","-109.21019454744268","-0.50170391965705419","Most Illiquid Net Sells","S&P 500",2016-06-17,2016-06-01
+"1213","HBI","Hanesbrands Inc","-40.779737851010964","-0.46456592757322118","Most Illiquid Net Sells","S&P 500",2016-06-17,2016-06-01
+"1313","BBBY","Bed Bath & Beyond Inc","-36.838103873537356","-0.44691008524953074","Most Illiquid Net Sells","S&P 500",2016-06-17,2016-06-01
+"1413","CVS","CVS Health Corporation","-227.85320884711629","-0.44284583061121713","Most Illiquid Net Sells","S&P 500",2016-06-17,2016-06-01
+"1513","AIG","American Intl Group Inc","-174.54401061446052","-0.43895073138764684","Most Illiquid Net Sells","S&P 500",2016-06-17,2016-06-01
+"1713","HUBB","Hubbell Inc","-9.2678477554214922","-0.48207102821188152","Most Illiquid Net Sells","S&P 400",2016-06-17,2016-06-01
+"1813","ACIW","ACI Worldwide Inc","-3.3971498656667301","-0.39071897741067868","Most Illiquid Net Sells","S&P 400",2016-06-17,2016-06-01
+"1913","FBHS","Fortune Brands Home & Security Inc","-16.713078050543711","-0.32419100202587847","Most Illiquid Net Sells","S&P 400",2016-06-17,2016-06-01
+"2013","RGA","Reinsurance Group of America","-7.2618094644483868","-0.2961195652518685","Most Illiquid Net Sells","S&P 400",2016-06-17,2016-06-01
+"2113","LECO","Lincoln Electric Hldgs","-6.7684924452496498","-0.27233731252172466","Most Illiquid Net Sells","S&P 400",2016-06-17,2016-06-01
+"2213","NTCT","Netscout Systems Inc","-7.7486930427715723","-0.25964593509691636","Most Illiquid Net Sells","S&P 400",2016-06-17,2016-06-01
+"2313","MSCI","MSCI Inc","-10.83953083091574","-0.24353675964132385","Most Illiquid Net Sells","S&P 400",2016-06-17,2016-06-01
+"2413","ASH","Ashland Inc","-8.5467482854575838","-0.23270177586729549","Most Illiquid Net Sells","S&P 400",2016-06-17,2016-06-01
+"2513","FHN","First Horizon National Corp","-5.0831857103943712","-0.21812110310588345","Most Illiquid Net Sells","S&P 400",2016-06-17,2016-06-01
+"2613","SF","Stifel Financial Corp","-7.6493301251847532","-0.2180692267402434","Most Illiquid Net Sells","S&P 400",2016-06-17,2016-06-01
+"2813","MYE","Myers Industries Inc","-0.3256529474126546","-0.43481318722272133","Most Illiquid Net Sells","S&P 600",2016-06-17,2016-06-01
+"2913","MRTN","Marten Transport Ltd","-0.93887590038263591","-0.35558093039085648","Most Illiquid Net Sells","S&P 600",2016-06-17,2016-06-01
+"3013","FSS","Federal Signal Corp","-1.4605348139065604","-0.35373492142898094","Most Illiquid Net Sells","S&P 600",2016-06-17,2016-06-01
+"3113","GFF","Griffon Corp","-1.1473898528775894","-0.35123506946567523","Most Illiquid Net Sells","S&P 600",2016-06-17,2016-06-01
+"3213","RT","Ruby Tuesday Inc","-0.41003334111621947","-0.275341298093634","Most Illiquid Net Sells","S&P 600",2016-06-17,2016-06-01
+"3313","SANM","Sanmina Corp","-5.3284507917292334","-0.27504579184983213","Most Illiquid Net Sells","S&P 600",2016-06-17,2016-06-01
+"3413","CHE","Chemed Corp","-3.3249704574263381","-0.26886648067650271","Most Illiquid Net Sells","S&P 600",2016-06-17,2016-06-01
+"3513","SUP","Superior Industries Intl","-1.1724599022546744","-0.26509870572410527","Most Illiquid Net Sells","S&P 600",2016-06-17,2016-06-01
+"3613","INTL","INTL FCStone Inc.","-0.64179376517643394","-0.24645668140029614","Most Illiquid Net Sells","S&P 600",2016-06-17,2016-06-01
+"3713","PRSC","Providence Service","-1.1506322725470006","-0.24640375091937314","Most Illiquid Net Sells","S&P 600",2016-06-17,2016-06-01
+"623","FB","Facebook Inc A","354.68207271198412","0.14105892822759453","Largest Net Buys by Trade Value","S&P 500",2016-06-17,2016-06-01
+"723","GOOGL","Alphabet Inc A","192.22128210971417","0.16283840697072757","Largest Net Buys by Trade Value","S&P 500",2016-06-17,2016-06-01
+"823","AMZN","Amazon.com Inc","190.61411300733775","6.4319930094928687E-2","Largest Net Buys by Trade Value","S&P 500",2016-06-17,2016-06-01
+"923","D","Dominion Resources Inc","183.6333682339484","1.1259972172468673","Largest Net Buys by Trade Value","S&P 500",2016-06-17,2016-06-01
+"1023","PG","Procter & Gamble","183.077099038169","0.34952465156058599","Largest Net Buys by Trade Value","S&P 500",2016-06-17,2016-06-01
+"1123","PFE","Pfizer Inc","160.00390280778981","0.17535521577491348","Largest Net Buys by Trade Value","S&P 500",2016-06-17,2016-06-01
+"1223","DLR","Digital Realty Trust","150.44704325338691","0.46840359603471432","Largest Net Buys by Trade Value","S&P 500",2016-06-17,2016-06-01
+"1323","NWL","Newell Brands Inc","127.96502964346877","0.61801736599920365","Largest Net Buys by Trade Value","S&P 500",2016-06-17,2016-06-01
+"1423","T","AT&T Inc","125.85647749171481","0.18091333462014589","Largest Net Buys by Trade Value","S&P 500",2016-06-17,2016-06-01
+"1523","BRK/B","Berkshire Hathaway B","116.51462860713724","0.26708408742661277","Largest Net Buys by Trade Value","S&P 500",2016-06-17,2016-06-01
+"1723","TFX","Teleflex Inc","22.959082188925851","0.64362421695272265","Largest Net Buys by Trade Value","S&P 400",2016-06-17,2016-06-01
+"1823","NNN","National Retail Properties Inc","9.9376721265943821","0.21046015222654038","Largest Net Buys by Trade Value","S&P 400",2016-06-17,2016-06-01
+"1923","EDR","Education Realty Trust","8.7745063056375354","0.16906217938908999","Largest Net Buys by Trade Value","S&P 400",2016-06-17,2016-06-01
+"2023","QEP","QEP Resources","8.5797933578799395","0.11064175989165348","Largest Net Buys by Trade Value","S&P 400",2016-06-17,2016-06-01
+"2123","AKRX","Akorn Inc","7.8423914387857039","9.096779372288008E-2","Largest Net Buys by Trade Value","S&P 400",2016-06-17,2016-06-01
+"2223","AMSG","Amsurg Corp","6.9254346025496449","0.18353507325866089","Largest Net Buys by Trade Value","S&P 400",2016-06-17,2016-06-01
+"2323","HR","Healthcare Realty Trust","6.1698296472723451","0.2429932426187375","Largest Net Buys by Trade Value","S&P 400",2016-06-17,2016-06-01
+"2423","ESV","Ensco PLC - CL A","6.127340744761689","8.1789560485808988E-2","Largest Net Buys by Trade Value","S&P 400",2016-06-17,2016-06-01
+"2523","WBMD","WebMD Health Corp","5.8306785930415135","8.3846877307603651E-2","Largest Net Buys by Trade Value","S&P 400",2016-06-17,2016-06-01
+"2623","SKX","Skechers USA Inc A","5.2923065004358643","7.4714903271171584E-2","Largest Net Buys by Trade Value","S&P 400",2016-06-17,2016-06-01
+"2823","SJI","South Jersey Industries Inc","5.223572944451111","0.17070510931035585","Largest Net Buys by Trade Value","S&P 600",2016-06-17,2016-06-01
+"2923","LGND","Ligand Pharmaceutical Inc B","5.0986500708726581","0.12078567263422804","Largest Net Buys by Trade Value","S&P 600",2016-06-17,2016-06-01
+"3023","STMP","Stamps.com Inc","3.1585871692458056","3.6013722112957523E-2","Largest Net Buys by Trade Value","S&P 600",2016-06-17,2016-06-01
+"3123","FMBI","First Midwest Bancorp (IL)","2.9779823616026659","0.46717981644523604","Largest Net Buys by Trade Value","S&P 600",2016-06-17,2016-06-01
+"3223","LAD","Lithia Motors Inc A","2.7697105223993805","0.11469129128437316","Largest Net Buys by Trade Value","S&P 600",2016-06-17,2016-06-01
+"3323","PDCE","PDC Energy Inc","2.7603279479953571","3.6542496575402435E-2","Largest Net Buys by Trade Value","S&P 600",2016-06-17,2016-06-01
+"3423","COR","Coresite Realty Corp","2.493979801379131","5.6750336253963841E-2","Largest Net Buys by Trade Value","S&P 600",2016-06-17,2016-06-01
+"3523","PNFP","Pinnacle Financial","2.2003296769829674","0.25104254844198698","Largest Net Buys by Trade Value","S&P 600",2016-06-17,2016-06-01
+"3623","MDSO","Medidata Solutions Inc.","2.1385748193457603","0.14955580731980389","Largest Net Buys by Trade Value","S&P 600",2016-06-17,2016-06-01
+"3723","STC","Stewart Information Services A","2.1204898962994867","0.46961019455215036","Largest Net Buys by Trade Value","S&P 600",2016-06-17,2016-06-01
+"633","AAPL","Apple Inc.","-528.45246909667924","-0.13006194132880416","Largest Net Sells by Trade Value","S&P 500",2016-06-17,2016-06-01
+"733","GE","General Electric Co","-348.49352696543815","-0.3954430703966107","Largest Net Sells by Trade Value","S&P 500",2016-06-17,2016-06-01
+"833","BA","Boeing Co","-317.90331074941065","-0.63491490157019659","Largest Net Sells by Trade Value","S&P 500",2016-06-17,2016-06-01
+"933","GILD","Gilead Sciences Inc","-300.74442012176689","-0.38570206172273297","Largest Net Sells by Trade Value","S&P 500",2016-06-17,2016-06-01
+"1033","HD","Home Depot Inc","-292.53734235878636","-0.40550588505816765","Largest Net Sells by Trade Value","S&P 500",2016-06-17,2016-06-01
+"1133","MCD","McDonald's Corp","-288.32770400503261","-0.41940680548338138","Largest Net Sells by Trade Value","S&P 500",2016-06-17,2016-06-01
+"1233","LOW","Lowe's Cos Inc","-238.56224037601905","-0.56567584103306878","Largest Net Sells by Trade Value","S&P 500",2016-06-17,2016-06-01
+"1333","CVS","CVS Health Corporation","-227.85320884711629","-0.44284583061121713","Largest Net Sells by Trade Value","S&P 500",2016-06-17,2016-06-01
+"1433","WMT","Wal-Mart Stores","-204.35942731978349","-0.25576399295116853","Largest Net Sells by Trade Value","S&P 500",2016-06-17,2016-06-01
+"1533","AIG","American Intl Group Inc","-174.54401061446052","-0.43895073138764684","Largest Net Sells by Trade Value","S&P 500",2016-06-17,2016-06-01
+"1733","FBHS","Fortune Brands Home & Security Inc","-16.713078050543711","-0.32419100202587847","Largest Net Sells by Trade Value","S&P 400",2016-06-17,2016-06-01
+"1833","MSCI","MSCI Inc","-10.83953083091574","-0.24353675964132385","Largest Net Sells by Trade Value","S&P 400",2016-06-17,2016-06-01
+"1933","WAB","Wabtec","-9.324236883606325","-0.17938575376505164","Largest Net Sells by Trade Value","S&P 400",2016-06-17,2016-06-01
+"2033","HUBB","Hubbell Inc","-9.2678477554214922","-0.48207102821188152","Largest Net Sells by Trade Value","S&P 400",2016-06-17,2016-06-01
+"2133","LII","Lennox International Inc","-9.0292436985373197","-0.18511202117132414","Largest Net Sells by Trade Value","S&P 400",2016-06-17,2016-06-01
+"2233","ASH","Ashland Inc","-8.5467482854575838","-0.23270177586729549","Largest Net Sells by Trade Value","S&P 400",2016-06-17,2016-06-01
+"2333","ARRS","ARRIS International, plc","-8.0193606826110688","-0.15121711433414098","Largest Net Sells by Trade Value","S&P 400",2016-06-17,2016-06-01
+"2433","CPRT","Copart Inc","-7.8042857435578297","-0.20078093709873901","Largest Net Sells by Trade Value","S&P 400",2016-06-17,2016-06-01
+"2533","NTCT","Netscout Systems Inc","-7.7486930427715723","-0.25964593509691636","Largest Net Sells by Trade Value","S&P 400",2016-06-17,2016-06-01
+"2633","SF","Stifel Financial Corp","-7.6493301251847532","-0.2180692267402434","Largest Net Sells by Trade Value","S&P 400",2016-06-17,2016-06-01
+"2833","DY","Dycom Industries Inc","-7.4694759519375076","-0.11275494348222391","Largest Net Sells by Trade Value","S&P 600",2016-06-17,2016-06-01
+"2933","SANM","Sanmina Corp","-5.3284507917292334","-0.27504579184983213","Largest Net Sells by Trade Value","S&P 600",2016-06-17,2016-06-01
+"3033","PLCE","Children's Place, Inc","-4.2698718385427572","-6.0030230548003639E-2","Largest Net Sells by Trade Value","S&P 600",2016-06-17,2016-06-01
+"3133","CHE","Chemed Corp","-3.3249704574263381","-0.26886648067650271","Largest Net Sells by Trade Value","S&P 600",2016-06-17,2016-06-01
+"3233","EXPR","Express Inc","-2.7111266581462408","-5.0522883850225977E-2","Largest Net Sells by Trade Value","S&P 600",2016-06-17,2016-06-01
+"3333","SCSS","Select Comfort Corp","-2.5323175831620386","-0.14574383157959298","Largest Net Sells by Trade Value","S&P 600",2016-06-17,2016-06-01
+"3433","OSIS","OSI Systems Inc","-2.4988518516932108","-0.20297618814461929","Largest Net Sells by Trade Value","S&P 600",2016-06-17,2016-06-01
+"3533","TSRA","Tessera Technologies","-2.350334789890518","-0.16310477578933652","Largest Net Sells by Trade Value","S&P 600",2016-06-17,2016-06-01
+"3633","GDOT","Green Dot Corp","-2.2882069533717422","-0.15670937968089185","Largest Net Sells by Trade Value","S&P 600",2016-06-17,2016-06-01
+"3733","FINL","Finish Line A","-2.1586393536363646","-9.2115204699808578E-2","Largest Net Sells by Trade Value","S&P 600",2016-06-17,2016-06-01
+"67","HLT","Hilton Worldwide Holdings  Inc","1541.8796637638279","9.3740558639067952","Most Illiquid Net Buys","S&P 500",2017-06-16,2017-06-09
+"77","ANSS","ANSYS Inc","496.98838170109104","7.4391658963277605","Most Illiquid Net Buys","S&P 500",2017-06-16,2017-06-09
+"87","RE","Everest Re Group Ltd","505.15871451603857","7.3524420751079536","Most Illiquid Net Buys","S&P 500",2017-06-16,2017-06-09
+"97","ALGN","Align Technology Inc","515.53495042523787","3.8670398000901396","Most Illiquid Net Buys","S&P 500",2017-06-16,2017-06-09
+"107","XOM","Exxon Mobil Corp","974.86594271859053","1.0806610790604483","Most Illiquid Net Buys","S&P 500",2017-06-16,2017-06-09
+"117","ARE","Alexandria Real Estate Eqty","33.674276546836545","0.45680957992932114","Most Illiquid Net Buys","S&P 500",2017-06-16,2017-06-09
+"127","CCI","Crown Castle Intl Corp","77.874809321171085","0.36801166487320819","Most Illiquid Net Buys","S&P 500",2017-06-16,2017-06-09
+"137","HCN","Welltower Inc","39.315729753706457","0.33922378203451425","Most Illiquid Net Buys","S&P 500",2017-06-16,2017-06-09
+"147","CRM","Salesforce.com","157.88033117619918","0.31253484218594113","Most Illiquid Net Buys","S&P 500",2017-06-16,2017-06-09
+"157","GOOG","Alphabet Inc C","408.93385389391779","0.29968419462883378","Most Illiquid Net Buys","S&P 500",2017-06-16,2017-06-09
+"177","ANSS","ANSYS Inc","496.98838170109104","7.4391658963277605","Most Illiquid Net Buys","S&P 400",2017-06-16,2017-06-09
+"187","RE","Everest Re Group Ltd","505.15871451603857","7.3524420751079536","Most Illiquid Net Buys","S&P 400",2017-06-16,2017-06-09
+"197","ALGN","Align Technology Inc","515.53495042523787","3.8670398000901396","Most Illiquid Net Buys","S&P 400",2017-06-16,2017-06-09
+"207","PNFP","Pinnacle Financial","48.653809645614785","2.1477148245025002","Most Illiquid Net Buys","S&P 400",2017-06-16,2017-06-09
+"217","RYN","Rayonier Inc","14.939729850442797","1.1654555055990892","Most Illiquid Net Buys","S&P 400",2017-06-16,2017-06-09
+"227","ACIW","ACI Worldwide Inc","3.492639325817855","0.38119688938706547","Most Illiquid Net Buys","S&P 400",2017-06-16,2017-06-09
+"237","DEI","Douglas Emmett","8.7801121170522105","0.374589933446979","Most Illiquid Net Buys","S&P 400",2017-06-16,2017-06-09
+"247","POOL","Pool Corp","6.0132051168917489","0.36381244518441408","Most Illiquid Net Buys","S&P 400",2017-06-16,2017-06-09
+"257","WST","West Pharmaceutical Services Inc","8.441887557569224","0.3457528859211989","Most Illiquid Net Buys","S&P 400",2017-06-16,2017-06-09
+"267","CR","Crane Co","5.2861591916227164","0.34447334407742225","Most Illiquid Net Buys","S&P 400",2017-06-16,2017-06-09
+"287","AHH","Armada Hoffler Properties Inc","32.922483668443121","6.0968961586637151","Most Illiquid Net Buys","S&P 600",2017-06-16,2017-06-09
+"297","PNFP","Pinnacle Financial","48.653809645614785","2.1477148245025002","Most Illiquid Net Buys","S&P 600",2017-06-16,2017-06-09
+"307","HMST","HomeStreet Inc.","3.0852627636967274","0.6463094400461642","Most Illiquid Net Buys","S&P 600",2017-06-16,2017-06-09
+"317","DSPG","DSP Group","0.37046599462547714","0.38206229415781418","Most Illiquid Net Buys","S&P 600",2017-06-16,2017-06-09
+"327","NR","Newpark Resource Inc","1.7304446957499882","0.34646725627497388","Most Illiquid Net Buys","S&P 600",2017-06-16,2017-06-09
+"337","LKSD","LSC Communications","1.7136856566601548","0.32733383762033985","Most Illiquid Net Buys","S&P 600",2017-06-16,2017-06-09
+"347","CSGS","CSG Systems Intl Inc","2.2152274496706656","0.26669085360578504","Most Illiquid Net Buys","S&P 600",2017-06-16,2017-06-09
+"357","TYPE","Monotype Imaging Holdings Inc","0.63764747032642977","0.25925765549094149","Most Illiquid Net Buys","S&P 600",2017-06-16,2017-06-09
+"367","NFBK","NORTHFIELD BANCORP INC","0.36384751839105656","0.25560076762821754","Most Illiquid Net Buys","S&P 600",2017-06-16,2017-06-09
+"377","CVBF","CVB Financial Corp","2.0809675815416218","0.22699494360440217","Most Illiquid Net Buys","S&P 600",2017-06-16,2017-06-09
+"614","MJN","Mead Johnson Nutrition Co","-1910.5629106556394","-12.411299658638075","Most Illiquid Net Sells","S&P 500",2017-06-16,2017-06-09
+"714","YHOO","Yahoo Inc","-5476.8181267768077","-6.454833701401216","Most Illiquid Net Sells","S&P 500",2017-06-16,2017-06-09
+"814","TDC","Teradata Corp","-170.63475990052461","-4.4301790729535924","Most Illiquid Net Sells","S&P 500",2017-06-16,2017-06-09
+"914","R","Ryder System Inc","-162.88094324071196","-3.9238648840213601","Most Illiquid Net Sells","S&P 500",2017-06-16,2017-06-09
+"1014","CTSH","Cognizant Tech Solutions Corp","-138.32875682613874","-0.50562365038709156","Most Illiquid Net Sells","S&P 500",2017-06-16,2017-06-09
+"1114","HD","Home Depot Inc","-342.8597223486866","-0.49977652876398937","Most Illiquid Net Sells","S&P 500",2017-06-16,2017-06-09
+"1214","HBI","Hanesbrands Inc","-34.626458466585063","-0.43068810098901411","Most Illiquid Net Sells","S&P 500",2017-06-16,2017-06-09
+"1314","VFC","VF Corp","-63.887084564515668","-0.40302611914944153","Most Illiquid Net Sells","S&P 500",2017-06-16,2017-06-09
+"1414","CTXS","Citrix Systems Inc","-43.508465925322866","-0.37875582327630181","Most Illiquid Net Sells","S&P 500",2017-06-16,2017-06-09
+"1514","CAG","Conagra Brands, Inc","-36.163824525237644","-0.345649658348263","Most Illiquid Net Sells","S&P 500",2017-06-16,2017-06-09
+"1714","TDC","Teradata Corp","-170.63475990052461","-4.4301790729535924","Most Illiquid Net Sells","S&P 400",2017-06-16,2017-06-09
+"1814","R","Ryder System Inc","-162.88094324071196","-3.9238648840213601","Most Illiquid Net Sells","S&P 400",2017-06-16,2017-06-09
+"1914","BXS","BancorpSouth Inc (MS)","-2.4749179100396961","-0.14692583105985951","Most Illiquid Net Sells","S&P 400",2017-06-16,2017-06-09
+"2014","DST","DST Systems Inc","-2.3998414633215184","-0.12238501276175019","Most Illiquid Net Sells","S&P 400",2017-06-16,2017-06-09
+"2114","NCR","NCR Corp","-5.2321228877672201","-0.1190835750132655","Most Illiquid Net Sells","S&P 400",2017-06-16,2017-06-09
+"2214","AVT","Avnet Inc","-6.2729857699147642","-0.11812216135311296","Most Illiquid Net Sells","S&P 400",2017-06-16,2017-06-09
+"2314","SBH","Sally Beauty Co Inc","-5.9647422871928155","-0.11801381964543446","Most Illiquid Net Sells","S&P 400",2017-06-16,2017-06-09
+"2414","SYNA","Synaptics Inc","-2.5866355582211416","-8.4866596564440538E-2","Most Illiquid Net Sells","S&P 400",2017-06-16,2017-06-09
+"2514","AMCX","AMC Networks Inc.-A","-1.7831588831220622","-4.9980791795362661E-2","Most Illiquid Net Sells","S&P 400",2017-06-16,2017-06-09
+"2614","KLXI","KLX Inc","-0.56471402190190501","-2.8690701652618434E-2","Most Illiquid Net Sells","S&P 400",2017-06-16,2017-06-09
+"2814","PRSC","Providence Service","-1.4968004956224927","-0.48098156161914513","Most Illiquid Net Sells","S&P 600",2017-06-16,2017-06-09
+"2914","EPAY","Bottomline Technologies Inc","-2.3430415529730308","-0.29550268394151463","Most Illiquid Net Sells","S&P 600",2017-06-16,2017-06-09
+"3014","FORR","Forrester Research Inc","-0.53141181325704145","-0.21728340666117421","Most Illiquid Net Sells","S&P 600",2017-06-16,2017-06-09
+"3114","HCI","HCI Group Inc","-0.8740923190217561","-0.21693760913641827","Most Illiquid Net Sells","S&P 600",2017-06-16,2017-06-09
+"3214","OSIS","OSI Systems Inc","-1.8763255438010236","-0.20257499453521299","Most Illiquid Net Sells","S&P 600",2017-06-16,2017-06-09
+"3314","TILE","Interface Inc","-1.5809790031439495","-0.1721985804480527","Most Illiquid Net Sells","S&P 600",2017-06-16,2017-06-09
+"3414","UFCS","United Fire Group Inc.","-0.50950110148744132","-0.16439633480759211","Most Illiquid Net Sells","S&P 600",2017-06-16,2017-06-09
+"3514","CATO","Cato Corp A","-1.0388881894957795","-0.16149545402293825","Most Illiquid Net Sells","S&P 600",2017-06-16,2017-06-09
+"3614","GDOT","Green Dot Corp","-1.6329003293394526","-0.14951143094704886","Most Illiquid Net Sells","S&P 600",2017-06-16,2017-06-09
+"3714","HI","Hillenbrand Inc","-1.3318992149012563","-0.14864933390016341","Most Illiquid Net Sells","S&P 600",2017-06-16,2017-06-09
+"624","HLT","Hilton Worldwide Holdings  Inc","1541.8796637638279","9.3740558639067952","Largest Net Buys by Trade Value","S&P 500",2017-06-16,2017-06-09
+"724","XOM","Exxon Mobil Corp","974.86594271859053","1.0806610790604483","Largest Net Buys by Trade Value","S&P 500",2017-06-16,2017-06-09
+"824","ALGN","Align Technology Inc","515.53495042523787","3.8670398000901396","Largest Net Buys by Trade Value","S&P 500",2017-06-16,2017-06-09
+"924","RE","Everest Re Group Ltd","505.15871451603857","7.3524420751079536","Largest Net Buys by Trade Value","S&P 500",2017-06-16,2017-06-09
+"1024","ANSS","ANSYS Inc","496.98838170109104","7.4391658963277605","Largest Net Buys by Trade Value","S&P 500",2017-06-16,2017-06-09
+"1124","GOOG","Alphabet Inc C","408.93385389391779","0.29968419462883378","Largest Net Buys by Trade Value","S&P 500",2017-06-16,2017-06-09
+"1224","FB","Facebook Inc A","261.33309115849534","0.11081221924135504","Largest Net Buys by Trade Value","S&P 500",2017-06-16,2017-06-09
+"1324","AMZN","Amazon.com Inc","199.34861403229411","6.0712007882965428E-2","Largest Net Buys by Trade Value","S&P 500",2017-06-16,2017-06-09
+"1424","CRM","Salesforce.com","157.88033117619918","0.31253484218594113","Largest Net Buys by Trade Value","S&P 500",2017-06-16,2017-06-09
+"1524","GOOGL","Alphabet Inc A","149.47021915460829","0.10191236138111995","Largest Net Buys by Trade Value","S&P 500",2017-06-16,2017-06-09
+"1724","ALGN","Align Technology Inc","515.53495042523787","3.8670398000901396","Largest Net Buys by Trade Value","S&P 400",2017-06-16,2017-06-09
+"1824","RE","Everest Re Group Ltd","505.15871451603857","7.3524420751079536","Largest Net Buys by Trade Value","S&P 400",2017-06-16,2017-06-09
+"1924","ANSS","ANSYS Inc","496.98838170109104","7.4391658963277605","Largest Net Buys by Trade Value","S&P 400",2017-06-16,2017-06-09
+"2024","PNFP","Pinnacle Financial","48.653809645614785","2.1477148245025002","Largest Net Buys by Trade Value","S&P 400",2017-06-16,2017-06-09
+"2124","TTWO","Take-Two Interactive Software","19.843407835447408","9.5693139725502877E-2","Largest Net Buys by Trade Value","S&P 400",2017-06-16,2017-06-09
+"2224","POST","Post Holdings Inc.","16.661676808709188","0.23944084008703417","Largest Net Buys by Trade Value","S&P 400",2017-06-16,2017-06-09
+"2324","RYN","Rayonier Inc","14.939729850442797","1.1654555055990892","Largest Net Buys by Trade Value","S&P 400",2017-06-16,2017-06-09
+"2424","NVR","NVR Inc","14.226337873868159","0.14364948349075735","Largest Net Buys by Trade Value","S&P 400",2017-06-16,2017-06-09
+"2524","CGNX","Cognex Corp","11.166023071306451","0.17096186218237636","Largest Net Buys by Trade Value","S&P 400",2017-06-16,2017-06-09
+"2624","SIVB","SVB Financial Group","10.518329191878751","8.5585643465822606E-2","Largest Net Buys by Trade Value","S&P 400",2017-06-16,2017-06-09
+"2824","PNFP","Pinnacle Financial","48.653809645614785","2.1477148245025002","Largest Net Buys by Trade Value","S&P 600",2017-06-16,2017-06-09
+"2924","AHH","Armada Hoffler Properties Inc","32.922483668443121","6.0968961586637151","Largest Net Buys by Trade Value","S&P 600",2017-06-16,2017-06-09
+"3024","EVR","Evercore Partners A","7.5043656430909671","0.21841644480119946","Largest Net Buys by Trade Value","S&P 600",2017-06-16,2017-06-09
+"3124","ALE","Allete Inc","3.269496609324241","0.20336272327689736","Largest Net Buys by Trade Value","S&P 600",2017-06-16,2017-06-09
+"3224","HMST","HomeStreet Inc.","3.0852627636967274","0.6463094400461642","Largest Net Buys by Trade Value","S&P 600",2017-06-16,2017-06-09
+"3324","EGP","EastGroup Properties","2.9544067917979091","0.18742583965493706","Largest Net Buys by Trade Value","S&P 600",2017-06-16,2017-06-09
+"3424","MDSO","Medidata Solutions Inc.","2.916846176802081","8.4378409556217421E-2","Largest Net Buys by Trade Value","S&P 600",2017-06-16,2017-06-09
+"3524","BLKB","Blackbaud Inc","2.7160491292213025","0.11834024874741148","Largest Net Buys by Trade Value","S&P 600",2017-06-16,2017-06-09
+"3624","SANM","Sanmina Corp","2.5816600972783332","0.1412475371544207","Largest Net Buys by Trade Value","S&P 600",2017-06-16,2017-06-09
+"3724","CSGS","CSG Systems Intl Inc","2.2152274496706656","0.26669085360578504","Largest Net Buys by Trade Value","S&P 600",2017-06-16,2017-06-09
+"634","YHOO","Yahoo Inc","-5476.8181267768077","-6.454833701401216","Largest Net Sells by Trade Value","S&P 500",2017-06-16,2017-06-09
+"734","MJN","Mead Johnson Nutrition Co","-1910.5629106556394","-12.411299658638075","Largest Net Sells by Trade Value","S&P 500",2017-06-16,2017-06-09
+"834","HD","Home Depot Inc","-342.8597223486866","-0.49977652876398937","Largest Net Sells by Trade Value","S&P 500",2017-06-16,2017-06-09
+"934","AAPL","Apple Inc.","-317.70542780910898","-8.4719555583354297E-2","Largest Net Sells by Trade Value","S&P 500",2017-06-16,2017-06-09
+"1034","WMT","Wal-Mart Stores","-225.37575203580067","-0.30301442972414327","Largest Net Sells by Trade Value","S&P 500",2017-06-16,2017-06-09
+"1134","JNJ","Johnson & Johnson","-183.1287099762026","-0.23934385769280719","Largest Net Sells by Trade Value","S&P 500",2017-06-16,2017-06-09
+"1234","TDC","Teradata Corp","-170.63475990052461","-4.4301790729535924","Largest Net Sells by Trade Value","S&P 500",2017-06-16,2017-06-09
+"1334","R","Ryder System Inc","-162.88094324071196","-3.9238648840213601","Largest Net Sells by Trade Value","S&P 500",2017-06-16,2017-06-09
+"1434","BA","Boeing Co","-147.85937518337971","-0.27559409052158856","Largest Net Sells by Trade Value","S&P 500",2017-06-16,2017-06-09
+"1534","CTSH","Cognizant Tech Solutions Corp","-138.32875682613874","-0.50562365038709156","Largest Net Sells by Trade Value","S&P 500",2017-06-16,2017-06-09
+"1734","TDC","Teradata Corp","-170.63475990052461","-4.4301790729535924","Largest Net Sells by Trade Value","S&P 400",2017-06-16,2017-06-09
+"1834","R","Ryder System Inc","-162.88094324071196","-3.9238648840213601","Largest Net Sells by Trade Value","S&P 400",2017-06-16,2017-06-09
+"1934","AVT","Avnet Inc","-6.2729857699147642","-0.11812216135311296","Largest Net Sells by Trade Value","S&P 400",2017-06-16,2017-06-09
+"2034","SBH","Sally Beauty Co Inc","-5.9647422871928155","-0.11801381964543446","Largest Net Sells by Trade Value","S&P 400",2017-06-16,2017-06-09
+"2134","NCR","NCR Corp","-5.2321228877672201","-0.1190835750132655","Largest Net Sells by Trade Value","S&P 400",2017-06-16,2017-06-09
+"2234","SYNA","Synaptics Inc","-2.5866355582211416","-8.4866596564440538E-2","Largest Net Sells by Trade Value","S&P 400",2017-06-16,2017-06-09
+"2334","BXS","BancorpSouth Inc (MS)","-2.4749179100396961","-0.14692583105985951","Largest Net Sells by Trade Value","S&P 400",2017-06-16,2017-06-09
+"2434","DST","DST Systems Inc","-2.3998414633215184","-0.12238501276175019","Largest Net Sells by Trade Value","S&P 400",2017-06-16,2017-06-09
+"2534","AEO","American Eagle Outfitters","-2.0436495438839413","-2.2571595467090585E-2","Largest Net Sells by Trade Value","S&P 400",2017-06-16,2017-06-09
+"2634","AMCX","AMC Networks Inc.-A","-1.7831588831220622","-4.9980791795362661E-2","Largest Net Sells by Trade Value","S&P 400",2017-06-16,2017-06-09
+"2834","CHE","Chemed Corp","-2.5062458760651349","-0.13535843533745764","Largest Net Sells by Trade Value","S&P 600",2017-06-16,2017-06-09
+"2934","SONC","Sonic Corp","-2.3504540601795645","-0.10995228997797671","Largest Net Sells by Trade Value","S&P 600",2017-06-16,2017-06-09
+"3034","EPAY","Bottomline Technologies Inc","-2.3430415529730308","-0.29550268394151463","Largest Net Sells by Trade Value","S&P 600",2017-06-16,2017-06-09
+"3134","SCSS","Select Comfort Corp","-2.1613120266934316","-7.7764988147540751E-2","Largest Net Sells by Trade Value","S&P 600",2017-06-16,2017-06-09
+"3234","PLCE","Children's Place, Inc","-2.0286743818625004","-2.6062618512449971E-2","Largest Net Sells by Trade Value","S&P 600",2017-06-16,2017-06-09
+"3334","VIAV","Viavi Solutions Inc","-1.9978740315666315","-7.2554569837942132E-2","Largest Net Sells by Trade Value","S&P 600",2017-06-16,2017-06-09
+"3434","OSIS","OSI Systems Inc","-1.8763255438010236","-0.20257499453521299","Largest Net Sells by Trade Value","S&P 600",2017-06-16,2017-06-09
+"3534","BLD","TopBuild Corp","-1.8011425362269744","-0.11511529713723899","Largest Net Sells by Trade Value","S&P 600",2017-06-16,2017-06-09
+"3634","GDOT","Green Dot Corp","-1.6329003293394526","-0.14951143094704886","Largest Net Sells by Trade Value","S&P 600",2017-06-16,2017-06-09
+"3734","RGR","Sturm Ruger & Co Inc","-1.6139728735572125","-0.12185232758191157","Largest Net Sells by Trade Value","S&P 600",2017-06-16,2017-06-09
+"68","ALXN","Alexion Pharmaceuticals Inc","442.19720763487521","1.4866017301806069","Most Illiquid Net Buys","S&P 500",2015-06-19,2015-06-12
+"78","PRGO","Perrigo Company plc","127.46925488393731","0.67347644006811702","Most Illiquid Net Buys","S&P 500",2015-06-19,2015-06-12
+"88","LVLT","Level 3 Communications","53.152691137623343","0.6412851584362329","Most Illiquid Net Buys","S&P 500",2015-06-19,2015-06-12
+"98","PLD","ProLogis Inc","62.057440086715005","0.57201259011093208","Most Illiquid Net Buys","S&P 500",2015-06-19,2015-06-12
+"108","O","Realty Income Corp","43.45346456028453","0.53202009113924664","Most Illiquid Net Buys","S&P 500",2015-06-19,2015-06-12
+"118","KMI","Kinder Morgan Inc","162.95376415799245","0.4992710043846631","Most Illiquid Net Buys","S&P 500",2015-06-19,2015-06-12
+"128","BBT","BB&T Corp","59.552803884031661","0.46421393065769384","Most Illiquid Net Buys","S&P 500",2015-06-19,2015-06-12
+"138","D","Dominion Resources Inc","56.047824166200748","0.32961746675700709","Most Illiquid Net Buys","S&P 500",2015-06-19,2015-06-12
+"148","PG","Procter & Gamble","193.14857456790119","0.32059682542293283","Most Illiquid Net Buys","S&P 500",2015-06-19,2015-06-12
+"158","HAR","Harman Intl Industries Inc","38.603595777388939","0.31300943803707554","Most Illiquid Net Buys","S&P 500",2015-06-19,2015-06-12
+"178","HE","Hawaiian Electric Industries","11.026221964099991","0.63876158602497268","Most Illiquid Net Buys","S&P 400",2015-06-19,2015-06-12
+"188","EQY","Equity One Inc","5.3410480994240368","0.46089844749676462","Most Illiquid Net Buys","S&P 400",2015-06-19,2015-06-12
+"198","ASB","Associated Banc-Corp (IL)","6.0257072165119663","0.41698829803030579","Most Illiquid Net Buys","S&P 400",2015-06-19,2015-06-12
+"208","KRC","Kilroy Realty Corp","9.2892316585311576","0.35564504901427901","Most Illiquid Net Buys","S&P 400",2015-06-19,2015-06-12
+"218","TCB","TCF Financial Corp (MN)","5.6974475854351434","0.3159046674669998","Most Illiquid Net Buys","S&P 400",2015-06-19,2015-06-12
+"228","LNT","Alliant Energy Corp","9.183822286496456","0.27012684844067592","Most Illiquid Net Buys","S&P 400",2015-06-19,2015-06-12
+"238","SF","Stifel Financial Corp","7.2118301417648789","0.26857739905799999","Most Illiquid Net Buys","S&P 400",2015-06-19,2015-06-12
+"248","OFC","Corporate Office Properties Trust","3.9749333710466463","0.23045722989302972","Most Illiquid Net Buys","S&P 400",2015-06-19,2015-06-12
+"258","AJG","Gallagher Arthur J. & Co","12.333017181941207","0.19629789604219799","Most Illiquid Net Buys","S&P 400",2015-06-19,2015-06-12
+"268","GVA","Granite Construction Inc","0.88350779923846268","0.19333449821866147","Most Illiquid Net Buys","S&P 400",2015-06-19,2015-06-12
+"288","UMBF","UMB Financial Corp","8.8275089042787283","0.77940373774926175","Most Illiquid Net Buys","S&P 600",2015-06-19,2015-06-12
+"298","DSPG","DSP Group","0.42592213866490747","0.65306115383591579","Most Illiquid Net Buys","S&P 600",2015-06-19,2015-06-12
+"308","DGII","Digi Intl Inc","0.29488784986260064","0.52821856756067764","Most Illiquid Net Buys","S&P 600",2015-06-19,2015-06-12
+"318","CCMP","Cabot Microelectronics Corp","2.532921555395093","0.46759338722457316","Most Illiquid Net Buys","S&P 600",2015-06-19,2015-06-12
+"328","TG","Tredegar Corp","0.37256212561485413","0.3697261930317019","Most Illiquid Net Buys","S&P 600",2015-06-19,2015-06-12
+"338","PNFP","Pinnacle Financial","2.1430042420258708","0.31873384881991779","Most Illiquid Net Buys","S&P 600",2015-06-19,2015-06-12
+"348","CHSP","Chesapeake Lodging Trust","2.7479793365598191","0.30310213338131969","Most Illiquid Net Buys","S&P 600",2015-06-19,2015-06-12
+"358","LPSN","LivePerson Inc","1.1177176215709483","0.28346732904200972","Most Illiquid Net Buys","S&P 600",2015-06-19,2015-06-12
+"368","MGLN","Magellan Health Inc","2.287347388067142","0.27078252823697641","Most Illiquid Net Buys","S&P 600",2015-06-19,2015-06-12
+"378","BFS","Saul Centers","0.38692184105568522","0.26650195382512304","Most Illiquid Net Buys","S&P 600",2015-06-19,2015-06-12
+"615","LOW","Lowe's Cos Inc","-299.87714438477519","-0.77424729837988349","Most Illiquid Net Sells","S&P 500",2015-06-19,2015-06-12
+"715","DISCK","Discovery Communications Inc C","-29.563803501298679","-0.74604995225945525","Most Illiquid Net Sells","S&P 500",2015-06-19,2015-06-12
+"815","ITW","Illinois Tool Works Inc","-106.44587826946155","-0.69036427251328358","Most Illiquid Net Sells","S&P 500",2015-06-19,2015-06-12
+"915","NAVI","Navient Corp","-25.386657215598163","-0.67667303129850143","Most Illiquid Net Sells","S&P 500",2015-06-19,2015-06-12
+"1015","AIG","American Intl Group Inc","-251.24629514343582","-0.58088926396285112","Most Illiquid Net Sells","S&P 500",2015-06-19,2015-06-12
+"1115","MSI","Motorola Solutions Inc","-29.985093575685557","-0.52004494129566214","Most Illiquid Net Sells","S&P 500",2015-06-19,2015-06-12
+"1215","CTAS","Cintas Corp","-21.409991447217802","-0.51047233933413072","Most Illiquid Net Sells","S&P 500",2015-06-19,2015-06-12
+"1315","VZ","Verizon Communications Inc","-352.7899506358375","-0.48429666456970055","Most Illiquid Net Sells","S&P 500",2015-06-19,2015-06-12
+"1415","FOXA","Twenty-First Century Fox, Inc","-203.75687540324535","-0.46771627951647121","Most Illiquid Net Sells","S&P 500",2015-06-19,2015-06-12
+"1515","ADM","Archer-Daniels-Midland Co","-72.347957346730126","-0.45422531905634389","Most Illiquid Net Sells","S&P 500",2015-06-19,2015-06-12
+"1715","CRS","Carpenter Technology Corp","-7.0286310989855352","-0.66732473341043996","Most Illiquid Net Sells","S&P 400",2015-06-19,2015-06-12
+"1815","RGA","Reinsurance Group of America","-18.839437907841443","-0.65775246634644946","Most Illiquid Net Sells","S&P 400",2015-06-19,2015-06-12
+"1915","WOR","Worthington Industries Inc","-4.144633921944826","-0.58447594423203542","Most Illiquid Net Sells","S&P 400",2015-06-19,2015-06-12
+"2015","WAFD","Washington Federal Inc.","-5.703308587612911","-0.56711209550140029","Most Illiquid Net Sells","S&P 400",2015-06-19,2015-06-12
+"2115","RS","Reliance Steel & Aluminum","-15.940984042736263","-0.53392492202692776","Most Illiquid Net Sells","S&P 400",2015-06-19,2015-06-12
+"2215","KMPR","Kemper Corporation","-2.2444107149697663","-0.5284340343111732","Most Illiquid Net Sells","S&P 400",2015-06-19,2015-06-12
+"2315","LECO","Lincoln Electric Hldgs","-10.708096182783716","-0.45829060058104842","Most Illiquid Net Sells","S&P 400",2015-06-19,2015-06-12
+"2415","INFA","Informatica Corp","-17.784608442596635","-0.41668758173627074","Most Illiquid Net Sells","S&P 400",2015-06-19,2015-06-12
+"2515","MD","Mednax Inc","-14.518089345222684","-0.39758094262338528","Most Illiquid Net Sells","S&P 400",2015-06-19,2015-06-12
+"2615","HBHC","Hancock Hldgs Co","-6.2254649103957416","-0.34733622116209273","Most Illiquid Net Sells","S&P 400",2015-06-19,2015-06-12
+"2815","SENEA","Seneca Foods Corp A","-0.89624662714763992","-2.642290988700998","Most Illiquid Net Sells","S&P 600",2015-06-19,2015-06-12
+"2915","PKE","Park Electrochemical","-0.70713011419298577","-0.7670838664102817","Most Illiquid Net Sells","S&P 600",2015-06-19,2015-06-12
+"3015","UTI","Universal Technical Institute","-0.29923819294155368","-0.53607652533739392","Most Illiquid Net Sells","S&P 600",2015-06-19,2015-06-12
+"3115","COHR","Coherent Inc","-3.4037295969659338","-0.50088479379452577","Most Illiquid Net Sells","S&P 600",2015-06-19,2015-06-12
+"3215","GFF","Griffon Corp","-1.0696221071522014","-0.46800541069686741","Most Illiquid Net Sells","S&P 600",2015-06-19,2015-06-12
+"3315","MOG/A","Moog Inc A","-4.5524085269699457","-0.40124958592849241","Most Illiquid Net Sells","S&P 600",2015-06-19,2015-06-12
+"3415","CSGS","CSG Systems Intl Inc","-2.8986916895002262","-0.36747047583851211","Most Illiquid Net Sells","S&P 600",2015-06-19,2015-06-12
+"3515","MYE","Myers Industries Inc","-0.50289697578989634","-0.36700291589174983","Most Illiquid Net Sells","S&P 600",2015-06-19,2015-06-12
+"3615","XOXO","XO Group Inc","-0.37788883811248547","-0.35644157917849428","Most Illiquid Net Sells","S&P 600",2015-06-19,2015-06-12
+"3715","ASEI","American Science & Engineering","-0.79109817249685199","-0.34231850853504309","Most Illiquid Net Sells","S&P 600",2015-06-19,2015-06-12
+"625","ALXN","Alexion Pharmaceuticals Inc","442.19720763487521","1.4866017301806069","Largest Net Buys by Trade Value","S&P 500",2015-06-19,2015-06-12
+"725","PG","Procter & Gamble","193.14857456790119","0.32059682542293283","Largest Net Buys by Trade Value","S&P 500",2015-06-19,2015-06-12
+"825","PFE","Pfizer Inc","192.04980366081298","0.26398233210997235","Largest Net Buys by Trade Value","S&P 500",2015-06-19,2015-06-12
+"925","KMI","Kinder Morgan Inc","162.95376415799245","0.4992710043846631","Largest Net Buys by Trade Value","S&P 500",2015-06-19,2015-06-12
+"1025","GE","General Electric Co","136.31587462236806","0.15687874496812365","Largest Net Buys by Trade Value","S&P 500",2015-06-19,2015-06-12
+"1125","FB","Facebook Inc","128.71299529350247","7.6986549002341517E-2","Largest Net Buys by Trade Value","S&P 500",2015-06-19,2015-06-12
+"1225","PRGO","Perrigo Company plc","127.46925488393731","0.67347644006811702","Largest Net Buys by Trade Value","S&P 500",2015-06-19,2015-06-12
+"1325","AMZN","Amazon.com Inc","113.43472183423036","0.10692643705373617","Largest Net Buys by Trade Value","S&P 500",2015-06-19,2015-06-12
+"1425","ACT","Actavis plc","111.37536060985927","0.18221799223940474","Largest Net Buys by Trade Value","S&P 500",2015-06-19,2015-06-12
+"1525","REGN","Regeneron Pharmaceuticals Inc","106.42102029605917","0.27352260985264742","Largest Net Buys by Trade Value","S&P 500",2015-06-19,2015-06-12
+"1725","CY","Cypress Semiconductor Corp","14.180959451962021","0.16136253295679881","Largest Net Buys by Trade Value","S&P 400",2015-06-19,2015-06-12
+"1825","AJG","Gallagher Arthur J. & Co","12.333017181941207","0.19629789604219799","Largest Net Buys by Trade Value","S&P 400",2015-06-19,2015-06-12
+"1925","HE","Hawaiian Electric Industries","11.026221964099991","0.63876158602497268","Largest Net Buys by Trade Value","S&P 400",2015-06-19,2015-06-12
+"2025","KRC","Kilroy Realty Corp","9.2892316585311576","0.35564504901427901","Largest Net Buys by Trade Value","S&P 400",2015-06-19,2015-06-12
+"2125","LNT","Alliant Energy Corp","9.183822286496456","0.27012684844067592","Largest Net Buys by Trade Value","S&P 400",2015-06-19,2015-06-12
+"2225","POST","Post Holdings Inc.","9.100544483326221","0.14837434178158856","Largest Net Buys by Trade Value","S&P 400",2015-06-19,2015-06-12
+"2325","OHI","Omega Healthcare Investors","8.3963858526374526","0.1312033479138856","Largest Net Buys by Trade Value","S&P 400",2015-06-19,2015-06-12
+"2425","SUNE","SunEdison Inc","7.8020391898103325","2.898855873900421E-2","Largest Net Buys by Trade Value","S&P 400",2015-06-19,2015-06-12
+"2525","ZBRA","Zebra Technologies Corp A","7.4098094516584112","0.13077049078779585","Largest Net Buys by Trade Value","S&P 400",2015-06-19,2015-06-12
+"2625","SF","Stifel Financial Corp","7.2118301417648789","0.26857739905799999","Largest Net Buys by Trade Value","S&P 400",2015-06-19,2015-06-12
+"2825","UMBF","UMB Financial Corp","8.8275089042787283","0.77940373774926175","Largest Net Buys by Trade Value","S&P 600",2015-06-19,2015-06-12
+"2925","AMSG","Amsurg Corp","3.2853664094457113","0.1488128200219524","Largest Net Buys by Trade Value","S&P 600",2015-06-19,2015-06-12
+"3025","CHSP","Chesapeake Lodging Trust","2.7479793365598191","0.30310213338131969","Largest Net Buys by Trade Value","S&P 600",2015-06-19,2015-06-12
+"3125","CCMP","Cabot Microelectronics Corp","2.532921555395093","0.46759338722457316","Largest Net Buys by Trade Value","S&P 600",2015-06-19,2015-06-12
+"3225","MGLN","Magellan Health Inc","2.287347388067142","0.27078252823697641","Largest Net Buys by Trade Value","S&P 600",2015-06-19,2015-06-12
+"3325","MDSO","Medidata Solutions Inc.","2.2637038033396526","9.2077642130129728E-2","Largest Net Buys by Trade Value","S&P 600",2015-06-19,2015-06-12
+"3425","BABY","Natus Medical Inc","2.1948972836760676","0.19129610109684253","Largest Net Buys by Trade Value","S&P 600",2015-06-19,2015-06-12
+"3525","PNFP","Pinnacle Financial","2.1430042420258708","0.31873384881991779","Largest Net Buys by Trade Value","S&P 600",2015-06-19,2015-06-12
+"3625","PDCE","PDC Energy Inc","1.9381522368671471","3.2544842708313447E-2","Largest Net Buys by Trade Value","S&P 600",2015-06-19,2015-06-12
+"3725","CRZO","Carrizo Oil & Gas Inc","1.8519095635464025","4.3962690736272042E-2","Largest Net Buys by Trade Value","S&P 600",2015-06-19,2015-06-12
+"635","AAPL","Apple Inc.","-675.49792443459705","-0.12455398395885511","Largest Net Sells by Trade Value","S&P 500",2015-06-19,2015-06-12
+"735","MSFT","Microsoft Corp","-475.36170775860029","-0.38725629206540946","Largest Net Sells by Trade Value","S&P 500",2015-06-19,2015-06-12
+"835","VZ","Verizon Communications Inc","-352.7899506358375","-0.48429666456970055","Largest Net Sells by Trade Value","S&P 500",2015-06-19,2015-06-12
+"935","LOW","Lowe's Cos Inc","-299.87714438477519","-0.77424729837988349","Largest Net Sells by Trade Value","S&P 500",2015-06-19,2015-06-12
+"1035","AIG","American Intl Group Inc","-251.24629514343582","-0.58088926396285112","Largest Net Sells by Trade Value","S&P 500",2015-06-19,2015-06-12
+"1135","GILD","Gilead Sciences Inc","-207.97981631123073","-0.16102264712328604","Largest Net Sells by Trade Value","S&P 500",2015-06-19,2015-06-12
+"1235","FOXA","Twenty-First Century Fox, Inc","-203.75687540324535","-0.46771627951647121","Largest Net Sells by Trade Value","S&P 500",2015-06-19,2015-06-12
+"1335","HD","Home Depot Inc","-190.24042367487613","-0.34639960508682283","Largest Net Sells by Trade Value","S&P 500",2015-06-19,2015-06-12
+"1435","BA","Boeing Co","-165.47730096274336","-0.3518646439663986","Largest Net Sells by Trade Value","S&P 500",2015-06-19,2015-06-12
+"1535","CMCSA","Comcast Corp","-133.14326569568601","-0.16196068871670632","Largest Net Sells by Trade Value","S&P 500",2015-06-19,2015-06-12
+"1735","RGA","Reinsurance Group of America","-18.839437907841443","-0.65775246634644946","Largest Net Sells by Trade Value","S&P 400",2015-06-19,2015-06-12
+"1835","INFA","Informatica Corp","-17.784608442596635","-0.41668758173627074","Largest Net Sells by Trade Value","S&P 400",2015-06-19,2015-06-12
+"1935","RS","Reliance Steel & Aluminum","-15.940984042736263","-0.53392492202692776","Largest Net Sells by Trade Value","S&P 400",2015-06-19,2015-06-12
+"2035","ASH","Ashland Inc","-15.200597474087818","-0.17793649149670912","Largest Net Sells by Trade Value","S&P 400",2015-06-19,2015-06-12
+"2135","MD","Mednax Inc","-14.518089345222684","-0.39758094262338528","Largest Net Sells by Trade Value","S&P 400",2015-06-19,2015-06-12
+"2235","ACM","AECOM","-13.054768574872282","-0.28795281328715466","Largest Net Sells by Trade Value","S&P 400",2015-06-19,2015-06-12
+"2335","FL","Foot Locker Inc","-11.1243825106645","-8.1632965252679685E-2","Largest Net Sells by Trade Value","S&P 400",2015-06-19,2015-06-12
+"2435","LECO","Lincoln Electric Hldgs","-10.708096182783716","-0.45829060058104842","Largest Net Sells by Trade Value","S&P 400",2015-06-19,2015-06-12
+"2535","EAT","Brinker Intl Inc","-9.0328282605108896","-0.17083882614870902","Largest Net Sells by Trade Value","S&P 400",2015-06-19,2015-06-12
+"2635","TCO","Taubman Centers Inc","-8.4881208002894066","-0.23159282498810399","Largest Net Sells by Trade Value","S&P 400",2015-06-19,2015-06-12
+"2835","MOG/A","Moog Inc A","-4.5524085269699457","-0.40124958592849241","Largest Net Sells by Trade Value","S&P 600",2015-06-19,2015-06-12
+"2935","JACK","Jack in the Box Inc","-3.5999911608291928","-6.0942753260790052E-2","Largest Net Sells by Trade Value","S&P 600",2015-06-19,2015-06-12
+"3035","COHR","Coherent Inc","-3.4037295969659338","-0.50088479379452577","Largest Net Sells by Trade Value","S&P 600",2015-06-19,2015-06-12
+"3135","SAFM","Sanderson Farms","-3.0580066166709079","-7.1432507510257787E-2","Largest Net Sells by Trade Value","S&P 600",2015-06-19,2015-06-12
+"3235","ATU","Actuant Corp","-3.0055074442357772","-0.24471680650408981","Largest Net Sells by Trade Value","S&P 600",2015-06-19,2015-06-12
+"3335","CSGS","CSG Systems Intl Inc","-2.8986916895002262","-0.36747047583851211","Largest Net Sells by Trade Value","S&P 600",2015-06-19,2015-06-12
+"3435","TTC","Toro Co","-2.7867867614341195","-0.20775016521678091","Largest Net Sells by Trade Value","S&P 600",2015-06-19,2015-06-12
+"3535","SONC","Sonic Corp","-2.6208507793574829","-0.11456425739652633","Largest Net Sells by Trade Value","S&P 600",2015-06-19,2015-06-12
+"3635","EBIX","Ebix.Com Inc","-2.6093423144285239","-0.18072829583694627","Largest Net Sells by Trade Value","S&P 600",2015-06-19,2015-06-12
+"3735","VSI","Vitamin Shoppe Inc","-2.5607385302702728","-0.19034489356623352","Largest Net Sells by Trade Value","S&P 600",2015-06-19,2015-06-12
+"69","ENDP","Endo International plc","125.23874549154749","0.63186997720589533","Most Illiquid Net Buys","S&P 500",2015-03-20,2015-03-09
+"79","F","Ford Motor Co","228.82568205099869","0.58420427348301418","Most Illiquid Net Buys","S&P 500",2015-03-20,2015-03-09
+"89","ESS","Essex Property Trust","37.404792689370254","0.55596702713748314","Most Illiquid Net Buys","S&P 500",2015-03-20,2015-03-09
+"99","ALXN","Alexion Pharmaceuticals Inc","100.64062834482964","0.55481362211405438","Most Illiquid Net Buys","S&P 500",2015-03-20,2015-03-09
+"109","LVLT","Level 3 Communications","57.649644699758483","0.54553921326209676","Most Illiquid Net Buys","S&P 500",2015-03-20,2015-03-09
+"119","PLD","ProLogis Inc","68.304801251849256","0.52895362561157366","Most Illiquid Net Buys","S&P 500",2015-03-20,2015-03-09
+"129","ACT","Actavis plc","531.86635769093607","0.51160813043237208","Most Illiquid Net Buys","S&P 500",2015-03-20,2015-03-09
+"139","VTR","Ventas Inc","98.481089307611441","0.48576650606013994","Most Illiquid Net Buys","S&P 500",2015-03-20,2015-03-09
+"149","NEE","NextEra Energy Inc","100.73876412645635","0.43782874663085497","Most Illiquid Net Buys","S&P 500",2015-03-20,2015-03-09
+"159","SPG","Simon Property Group","102.36878139133213","0.42684419379411237","Most Illiquid Net Buys","S&P 500",2015-03-20,2015-03-09
+"179","SIRO","Sirona Dental Systems Inc","16.664090129165835","0.8417143837316029","Most Illiquid Net Buys","S&P 400",2015-03-20,2015-03-09
+"189","ACC","American Campus Communities Inc","20.21145877489926","0.63937865271538086","Most Illiquid Net Buys","S&P 400",2015-03-20,2015-03-09
+"199","UE","Urban Edge Properties Inc.","8.4748951396798446","0.54357338828748769","Most Illiquid Net Buys","S&P 400",2015-03-20,2015-03-09
+"209","KRC","Kilroy Realty Corp","12.631855174549225","0.3354297057207915","Most Illiquid Net Buys","S&P 400",2015-03-20,2015-03-09
+"219","SLG","SL Green Realty Corp","18.855403313132257","0.3059887522166031","Most Illiquid Net Buys","S&P 400",2015-03-20,2015-03-09
+"229","AJG","Gallagher Arthur J. & Co","11.110253740462062","0.28055627040120373","Most Illiquid Net Buys","S&P 400",2015-03-20,2015-03-09
+"239","SF","Stifel Financial Corp","6.0186327846372345","0.27005111723213093","Most Illiquid Net Buys","S&P 400",2015-03-20,2015-03-09
+"249","TYL","Tyler Technologies Inc","4.5593724908547433","0.2319683020354974","Most Illiquid Net Buys","S&P 400",2015-03-20,2015-03-09
+"259","BMR","BioMed Realty Trust Inc","9.2809882769472996","0.22796433319691267","Most Illiquid Net Buys","S&P 400",2015-03-20,2015-03-09
+"269","UMPQ","Umpqua Hldgs Corp","3.8014202052985437","0.21212416415311239","Most Illiquid Net Buys","S&P 400",2015-03-20,2015-03-09
+"289","INDB","Independent Bank Cp (MA)","3.0431775359932232","0.64291263644735186","Most Illiquid Net Buys","S&P 600",2015-03-20,2015-03-09
+"299","EPAY","Bottomline Technologies Inc","2.337178011348783","0.58871317268754098","Most Illiquid Net Buys","S&P 600",2015-03-20,2015-03-09
+"309","UBA","Urstadt Biddle Prop Inc A","0.53596040359232056","0.40611176342541633","Most Illiquid Net Buys","S&P 600",2015-03-20,2015-03-09
+"319","SSS","Sovran Self Storage","7.6172960268522969","0.39993608319848839","Most Illiquid Net Buys","S&P 600",2015-03-20,2015-03-09
+"329","GDOT","Green Dot Corp","3.5995224124460865","0.39170960179545644","Most Illiquid Net Buys","S&P 600",2015-03-20,2015-03-09
+"339","FMBI","First Midwest Bancorp (IL)","2.4431184715677876","0.36388207662012934","Most Illiquid Net Buys","S&P 600",2015-03-20,2015-03-09
+"349","NBTB","NBT Bancorp Inc (NY)","0.5883667154291653","0.32330557923460379","Most Illiquid Net Buys","S&P 600",2015-03-20,2015-03-09
+"359","EPIQ","Epiq Systems Inc","0.47292658038806501","0.2479517377838617","Most Illiquid Net Buys","S&P 600",2015-03-20,2015-03-09
+"369","MNTA","Momenta Pharmaceuticals Inc","2.763608067087072","0.24108187629108099","Most Illiquid Net Buys","S&P 600",2015-03-20,2015-03-09
+"379","LTC","LTC Properties","1.4931982926335738","0.23984795189516489","Most Illiquid Net Buys","S&P 600",2015-03-20,2015-03-09
+"616","DE","Deere & Co","-186.22922344211375","-0.74442599293092471","Most Illiquid Net Sells","S&P 500",2015-03-20,2015-03-09
+"716","ITW","Illinois Tool Works Inc","-104.33496048583952","-0.67609649834930208","Most Illiquid Net Sells","S&P 500",2015-03-20,2015-03-09
+"816","PFE","Pfizer Inc","-575.78138925819007","-0.58619442810502664","Most Illiquid Net Sells","S&P 500",2015-03-20,2015-03-09
+"916","AFL","AFLAC Inc","-71.031720937687993","-0.57958303401855016","Most Illiquid Net Sells","S&P 500",2015-03-20,2015-03-09
+"1016","PH","Parker-Hannifin Corp","-76.610969132480079","-0.55544898266161147","Most Illiquid Net Sells","S&P 500",2015-03-20,2015-03-09
+"1116","TRV","Travelers Cos Inc","-107.23581718937268","-0.4997955693438404","Most Illiquid Net Sells","S&P 500",2015-03-20,2015-03-09
+"1216","MCO","Moody's Corp","-49.884978104143492","-0.49412468680640631","Most Illiquid Net Sells","S&P 500",2015-03-20,2015-03-09
+"1316","LLL","L-3 Communications Holdings","-33.038591596292648","-0.49218766752635223","Most Illiquid Net Sells","S&P 500",2015-03-20,2015-03-09
+"1416","INTU","Intuit Inc","-86.795617845281029","-0.47357463519987436","Most Illiquid Net Sells","S&P 500",2015-03-20,2015-03-09
+"1516","LYB","LyondellBasell Industries N.V.","-181.01877870679704","-0.46987006633133421","Most Illiquid Net Sells","S&P 500",2015-03-20,2015-03-09
+"1716","TR","Tootsie Roll Industries Inc","-1.4960917270322058","-0.63548961754298006","Most Illiquid Net Sells","S&P 400",2015-03-20,2015-03-09
+"1816","MD","Mednax Inc","-21.530089947303232","-0.62404059875418749","Most Illiquid Net Sells","S&P 400",2015-03-20,2015-03-09
+"1916","FULT","Fulton Financial Corp (PA)","-5.2019276630817082","-0.61346522142566129","Most Illiquid Net Sells","S&P 400",2015-03-20,2015-03-09
+"2016","ATR","AptarGroup Inc","-10.250850851057073","-0.53990568019604712","Most Illiquid Net Sells","S&P 400",2015-03-20,2015-03-09
+"2116","SAIC","Science Applications International Corp","-4.0525004396827891","-0.37760029089324293","Most Illiquid Net Sells","S&P 400",2015-03-20,2015-03-09
+"2216","ANSS","ANSYS Inc","-10.95992944764051","-0.37351494295930965","Most Illiquid Net Sells","S&P 400",2015-03-20,2015-03-09
+"2316","NDSN","Nordson Corp","-5.3393128752065122","-0.36373021183591631","Most Illiquid Net Sells","S&P 400",2015-03-20,2015-03-09
+"2416","CHD","Church & Dwight Co","-18.774518327571485","-0.36116894128552324","Most Illiquid Net Sells","S&P 400",2015-03-20,2015-03-09
+"2516","KMPR","Kemper Corporation","-1.8085823687030411","-0.32774869984496185","Most Illiquid Net Sells","S&P 400",2015-03-20,2015-03-09
+"2616","WOOF","VCA Inc","-7.4346811538516846","-0.30281187089538053","Most Illiquid Net Sells","S&P 400",2015-03-20,2015-03-09
+"2816","NX","Quanex Building Products Corporation","-2.9019775050608154","-0.70634992895992077","Most Illiquid Net Sells","S&P 600",2015-03-20,2015-03-09
+"2916","NPBC","National Penn Bancshares (PA)","-3.6469974511228727","-0.54933499593261514","Most Illiquid Net Sells","S&P 600",2015-03-20,2015-03-09
+"3016","DGII","Digi Intl Inc","-0.27963449814447694","-0.47796845317916442","Most Illiquid Net Sells","S&P 600",2015-03-20,2015-03-09
+"3116","MOG/A","Moog Inc A","-3.4313754502418075","-0.41448281157358602","Most Illiquid Net Sells","S&P 600",2015-03-20,2015-03-09
+"3216","MGLN","Magellan Health Inc","-3.5078841795468199","-0.39800009186405455","Most Illiquid Net Sells","S&P 600",2015-03-20,2015-03-09
+"3316","PRA","ProAssurance Corp","-3.4506909973654318","-0.39396417805294787","Most Illiquid Net Sells","S&P 600",2015-03-20,2015-03-09
+"3416","EME","Emcor Group Inc","-4.3975308841415695","-0.39184844552224607","Most Illiquid Net Sells","S&P 600",2015-03-20,2015-03-09
+"3516","HMN","Horace Mann Educators","-1.5273348970657714","-0.37871658615608794","Most Illiquid Net Sells","S&P 600",2015-03-20,2015-03-09
+"3616","NSIT","Insight Enterprises Inc","-1.8384155339353727","-0.3562165657222699","Most Illiquid Net Sells","S&P 600",2015-03-20,2015-03-09
+"3716","CPF","Central Pacific Financial Co","-1.143592210766373","-0.33760042060745971","Most Illiquid Net Sells","S&P 600",2015-03-20,2015-03-09
+"626","ACT","Actavis plc","531.86635769093607","0.51160813043237208","Largest Net Buys by Trade Value","S&P 500",2015-03-20,2015-03-09
+"726","F","Ford Motor Co","228.82568205099869","0.58420427348301418","Largest Net Buys by Trade Value","S&P 500",2015-03-20,2015-03-09
+"826","GE","General Electric Co","190.36787729261749","0.21327506580906991","Largest Net Buys by Trade Value","S&P 500",2015-03-20,2015-03-09
+"926","GOOG","Google Inc C","168.4301569173295","0.18410114108086859","Largest Net Buys by Trade Value","S&P 500",2015-03-20,2015-03-09
+"1026","FB","Facebook Inc","156.58166465490621","8.0558906841231431E-2","Largest Net Buys by Trade Value","S&P 500",2015-03-20,2015-03-09
+"1126","BRK/B","Berkshire Hathaway B","129.45983536969587","0.2732756533946345","Largest Net Buys by Trade Value","S&P 500",2015-03-20,2015-03-09
+"1226","VZ","Verizon Communications Inc","127.25628709816974","0.18178590450640036","Largest Net Buys by Trade Value","S&P 500",2015-03-20,2015-03-09
+"1326","ENDP","Endo International plc","125.23874549154749","0.63186997720589533","Largest Net Buys by Trade Value","S&P 500",2015-03-20,2015-03-09
+"1426","MDT","Medtronic plc","122.55670607724933","0.24145483796149939","Largest Net Buys by Trade Value","S&P 500",2015-03-20,2015-03-09
+"1526","DIS","Walt Disney Co","121.65634634675258","0.22417632521522621","Largest Net Buys by Trade Value","S&P 500",2015-03-20,2015-03-09
+"1726","EQIX","Equinix Inc","27.701568775387845","0.16677265524379328","Largest Net Buys by Trade Value","S&P 400",2015-03-20,2015-03-09
+"1826","ACC","American Campus Communities Inc","20.21145877489926","0.63937865271538086","Largest Net Buys by Trade Value","S&P 400",2015-03-20,2015-03-09
+"1926","SLG","SL Green Realty Corp","18.855403313132257","0.3059887522166031","Largest Net Buys by Trade Value","S&P 400",2015-03-20,2015-03-09
+"2026","SIRO","Sirona Dental Systems Inc","16.664090129165835","0.8417143837316029","Largest Net Buys by Trade Value","S&P 400",2015-03-20,2015-03-09
+"2126","QRVO","Qorvo, Inc","13.91889330179905","0.14033205570286941","Largest Net Buys by Trade Value","S&P 400",2015-03-20,2015-03-09
+"2226","KRC","Kilroy Realty Corp","12.631855174549225","0.3354297057207915","Largest Net Buys by Trade Value","S&P 400",2015-03-20,2015-03-09
+"2326","AJG","Gallagher Arthur J. & Co","11.110253740462062","0.28055627040120373","Largest Net Buys by Trade Value","S&P 400",2015-03-20,2015-03-09
+"2426","BMR","BioMed Realty Trust Inc","9.2809882769472996","0.22796433319691267","Largest Net Buys by Trade Value","S&P 400",2015-03-20,2015-03-09
+"2526","O","Realty Income Corp","8.5595406631942801","8.6989360772570731E-2","Largest Net Buys by Trade Value","S&P 400",2015-03-20,2015-03-09
+"2626","UE","Urban Edge Properties Inc.","8.4748951396798446","0.54357338828748769","Largest Net Buys by Trade Value","S&P 400",2015-03-20,2015-03-09
+"2826","SSS","Sovran Self Storage","7.6172960268522969","0.39993608319848839","Largest Net Buys by Trade Value","S&P 600",2015-03-20,2015-03-09
+"2926","MPW","Medical Properties Trust","4.6645974569727047","0.17269336276835678","Largest Net Buys by Trade Value","S&P 600",2015-03-20,2015-03-09
+"3026","GDOT","Green Dot Corp","3.5995224124460865","0.39170960179545644","Largest Net Buys by Trade Value","S&P 600",2015-03-20,2015-03-09
+"3126","DRH","Diamondrock Hospitality","3.4229988432161047","0.12298070633193174","Largest Net Buys by Trade Value","S&P 600",2015-03-20,2015-03-09
+"3226","MOH","Molina Healthcare","3.0974402801948058","5.349010054659506E-2","Largest Net Buys by Trade Value","S&P 600",2015-03-20,2015-03-09
+"3326","INDB","Independent Bank Cp (MA)","3.0431775359932232","0.64291263644735186","Largest Net Buys by Trade Value","S&P 600",2015-03-20,2015-03-09
+"3426","MNTA","Momenta Pharmaceuticals Inc","2.763608067087072","0.24108187629108099","Largest Net Buys by Trade Value","S&P 600",2015-03-20,2015-03-09
+"3526","NWE","Northwestern Corp","2.737322457152561","0.21432944648674915","Largest Net Buys by Trade Value","S&P 600",2015-03-20,2015-03-09
+"3626","NUVA","NuVasive Inc","2.5653073742052959","0.13171613819218997","Largest Net Buys by Trade Value","S&P 600",2015-03-20,2015-03-09
+"3726","FMBI","First Midwest Bancorp (IL)","2.4431184715677876","0.36388207662012934","Largest Net Buys by Trade Value","S&P 600",2015-03-20,2015-03-09
+"636","PFE","Pfizer Inc","-575.78138925819007","-0.58619442810502664","Largest Net Sells by Trade Value","S&P 500",2015-03-20,2015-03-09
+"736","INTC","Intel Corp","-301.95378487543417","-0.39326644731048721","Largest Net Sells by Trade Value","S&P 500",2015-03-20,2015-03-09
+"836","AAPL","Apple Inc.","-238.585527440573","-3.1243543019278328E-2","Largest Net Sells by Trade Value","S&P 500",2015-03-20,2015-03-09
+"936","XOM","Exxon Mobil Corp","-221.47052423510993","-0.1902966496645061","Largest Net Sells by Trade Value","S&P 500",2015-03-20,2015-03-09
+"1036","CVS","CVS Health Corporation","-196.30422283488457","-0.4282549860306023","Largest Net Sells by Trade Value","S&P 500",2015-03-20,2015-03-09
+"1136","DE","Deere & Co","-186.22922344211375","-0.74442599293092471","Largest Net Sells by Trade Value","S&P 500",2015-03-20,2015-03-09
+"1236","LYB","LyondellBasell Industries N.V.","-181.01877870679704","-0.46987006633133421","Largest Net Sells by Trade Value","S&P 500",2015-03-20,2015-03-09
+"1336","EBAY","eBay Inc.","-175.56015868508217","-0.37661260966117327","Largest Net Sells by Trade Value","S&P 500",2015-03-20,2015-03-09
+"1436","CMCSA","Comcast Corp","-173.83909111569756","-0.22449213378800678","Largest Net Sells by Trade Value","S&P 500",2015-03-20,2015-03-09
+"1536","GILD","Gilead Sciences Inc","-154.59374057041461","-0.16217578268124003","Largest Net Sells by Trade Value","S&P 500",2015-03-20,2015-03-09
+"1736","MD","Mednax Inc","-21.530089947303232","-0.62404059875418749","Largest Net Sells by Trade Value","S&P 400",2015-03-20,2015-03-09
+"1836","CHD","Church & Dwight Co","-18.774518327571485","-0.36116894128552324","Largest Net Sells by Trade Value","S&P 400",2015-03-20,2015-03-09
+"1936","ANSS","ANSYS Inc","-10.95992944764051","-0.37351494295930965","Largest Net Sells by Trade Value","S&P 400",2015-03-20,2015-03-09
+"2036","AGCO","AGCO Corp","-10.659446239162493","-0.23324209311351612","Largest Net Sells by Trade Value","S&P 400",2015-03-20,2015-03-09
+"2136","ATR","AptarGroup Inc","-10.250850851057073","-0.53990568019604712","Largest Net Sells by Trade Value","S&P 400",2015-03-20,2015-03-09
+"2236","UTHR","United Therapeutics Corp","-9.2813642706718724","-9.9214248109308317E-2","Largest Net Sells by Trade Value","S&P 400",2015-03-20,2015-03-09
+"2336","RE","Everest Re Group Ltd","-8.9395659218885566","-0.18992781840231299","Largest Net Sells by Trade Value","S&P 400",2015-03-20,2015-03-09
+"2436","TDY","Teledyne Technologies Inc","-8.9233914353928157","-0.18554070141388432","Largest Net Sells by Trade Value","S&P 400",2015-03-20,2015-03-09
+"2536","MTD","Mettler-Toledo Intl","-8.8943875090695848","-0.23906319446154087","Largest Net Sells by Trade Value","S&P 400",2015-03-20,2015-03-09
+"2636","SCI","Service Corp Intl","-8.2593365066669939","-0.28314582229290219","Largest Net Sells by Trade Value","S&P 400",2015-03-20,2015-03-09
+"2836","PRAA","PRA Group, Inc","-4.7669936433800544","-0.201960852291825","Largest Net Sells by Trade Value","S&P 600",2015-03-20,2015-03-09
+"2936","EME","Emcor Group Inc","-4.3975308841415695","-0.39184844552224607","Largest Net Sells by Trade Value","S&P 600",2015-03-20,2015-03-09
+"3036","ENS","Enersys","-4.318018255515951","-0.26999660721221347","Largest Net Sells by Trade Value","S&P 600",2015-03-20,2015-03-09
+"3136","NPBC","National Penn Bancshares (PA)","-3.6469974511228727","-0.54933499593261514","Largest Net Sells by Trade Value","S&P 600",2015-03-20,2015-03-09
+"3236","MGLN","Magellan Health Inc","-3.5078841795468199","-0.39800009186405455","Largest Net Sells by Trade Value","S&P 600",2015-03-20,2015-03-09
+"3336","PRA","ProAssurance Corp","-3.4506909973654318","-0.39396417805294787","Largest Net Sells by Trade Value","S&P 600",2015-03-20,2015-03-09
+"3436","MOG/A","Moog Inc A","-3.4313754502418075","-0.41448281157358602","Largest Net Sells by Trade Value","S&P 600",2015-03-20,2015-03-09
+"3536","JACK","Jack in the Box Inc","-3.3291753166012703","-4.1990760637614734E-2","Largest Net Sells by Trade Value","S&P 600",2015-03-20,2015-03-09
+"3636","CROX","CROCS","-2.9204676649588648","-0.19337592252775554","Largest Net Sells by Trade Value","S&P 600",2015-03-20,2015-03-09
+"3736","PKY","Parkway Properties Inc (MD)","-2.9063434077483272","-0.2071139841215377","Largest Net Sells by Trade Value","S&P 600",2015-03-20,2015-03-09
+"610","CPGX","Columbia Pipeline Group","27.29325505887676","0.59631821970062759","Most Illiquid Net Buys","S&P 500",2016-03-18,2016-03-07
+"710","BLL","Ball Corp","45.441157464897138","0.51269091858442473","Most Illiquid Net Buys","S&P 500",2016-03-18,2016-03-07
+"810","MOS","Mosaic Co","64.124098295677129","0.30100061095969188","Most Illiquid Net Buys","S&P 500",2016-03-18,2016-03-07
+"910","SWK","Stanley Black & Decker","35.49241487356268","0.27578643851419227","Most Illiquid Net Buys","S&P 500",2016-03-18,2016-03-07
+"1010","FLIR","FLIR Systems Inc","9.5844263957209233","0.25659374348917535","Most Illiquid Net Buys","S&P 500",2016-03-18,2016-03-07
+"1110","ZBH","Zimmer Biomet Holdings Inc","33.595728176986839","0.24708680831993987","Most Illiquid Net Buys","S&P 500",2016-03-18,2016-03-07
+"1210","STZ","Constellation Brands Inc A","52.943323341076955","0.22730865408471757","Most Illiquid Net Buys","S&P 500",2016-03-18,2016-03-07
+"1310","ACN","Accenture plc A","60.311408978083193","0.18633761958697626","Most Illiquid Net Buys","S&P 500",2016-03-18,2016-03-07
+"1410","BDX","Becton Dickinson & Co","30.078725115596207","0.17250567026841676","Most Illiquid Net Buys","S&P 500",2016-03-18,2016-03-07
+"1510","TAP","Molson Coors Brewing Co B","31.05105396379664","0.16823720766141551","Most Illiquid Net Buys","S&P 500",2016-03-18,2016-03-07
+"1710","SBNY","Signature Bank NY","28.871722889452315","0.34884174620937031","Most Illiquid Net Buys","S&P 400",2016-03-18,2016-03-07
+"1810","REG","Regency Centers Corp","18.462804160045604","0.2712085360543412","Most Illiquid Net Buys","S&P 400",2016-03-18,2016-03-07
+"1910","NNN","National Retail Properties Inc","15.592901600231775","0.26744501408723537","Most Illiquid Net Buys","S&P 400",2016-03-18,2016-03-07
+"2010","ARE","Alexandria Real Estate Eqty","5.7712119894031009","0.16569350580960537","Most Illiquid Net Buys","S&P 400",2016-03-18,2016-03-07
+"2110","CDNS","Cadence Design Systems Inc","13.069881130162157","0.1638830135205176","Most Illiquid Net Buys","S&P 400",2016-03-18,2016-03-07
+"2210","THS","TreeHouse Foods Inc","10.957684917110159","0.14778051863370811","Most Illiquid Net Buys","S&P 400",2016-03-18,2016-03-07
+"2310","POST","Post Holdings Inc.","10.658459982101947","0.14411663444137218","Most Illiquid Net Buys","S&P 400",2016-03-18,2016-03-07
+"2410","SKT","Tanger Factory Outlet Centers","2.9827930143676924","0.1287247316503021","Most Illiquid Net Buys","S&P 400",2016-03-18,2016-03-07
+"2510","KEYS","Keysight Technologies Inc","2.9395905763359975","0.12472855534509497","Most Illiquid Net Buys","S&P 400",2016-03-18,2016-03-07
+"2610","ACC","American Campus Communities Inc","7.7915093731588829","0.1153371346599089","Most Illiquid Net Buys","S&P 400",2016-03-18,2016-03-07
+"2810","EPAY","Bottomline Technologies Inc","4.3518221804493775","0.62038326307981573","Most Illiquid Net Buys","S&P 600",2016-03-18,2016-03-07
+"2910","DGII","Digi Intl Inc","0.23778624224328321","0.26779718302927191","Most Illiquid Net Buys","S&P 600",2016-03-18,2016-03-07
+"3010","PNY","Piedmont Natural Gas Inc","6.0438720275982423","0.251518460740423","Most Illiquid Net Buys","S&P 600",2016-03-18,2016-03-07
+"3110","AKR","Acadia Realty Trust","2.5997791402768886","0.21059713005517228","Most Illiquid Net Buys","S&P 600",2016-03-18,2016-03-07
+"3210","BLKB","Blackbaud Inc","2.5180241789871078","0.15421864895505405","Most Illiquid Net Buys","S&P 600",2016-03-18,2016-03-07
+"3310","NTGR","Netgear Inc","1.9720930651820072","0.14125070418238184","Most Illiquid Net Buys","S&P 600",2016-03-18,2016-03-07
+"3410","PRGS","Progress Software Corp","0.9230526005909081","0.13498483014178617","Most Illiquid Net Buys","S&P 600",2016-03-18,2016-03-07
+"3510","BRKS","Brooks Automation Inc","0.42854332523893796","0.12584067738118179","Most Illiquid Net Buys","S&P 600",2016-03-18,2016-03-07
+"3610","IPXL","Impax Laboratories Inc","3.6696649606079021","0.10645132000983212","Most Illiquid Net Buys","S&P 600",2016-03-18,2016-03-07
+"3710","PAHC","Phibro Animal Health Corporation A","0.55247243698015036","0.10510620537495098","Most Illiquid Net Buys","S&P 600",2016-03-18,2016-03-07
+"617","DISCK","Discovery Communications Inc C","-60.461280533382542","-1.0803179137605359","Most Illiquid Net Sells","S&P 500",2016-03-18,2016-03-07
+"717","L","Loews Corp","-48.730501894724753","-0.91987923860680787","Most Illiquid Net Sells","S&P 500",2016-03-18,2016-03-07
+"817","TEL","TE Connectivity Ltd.","-108.47545661223221","-0.62103783795882594","Most Illiquid Net Sells","S&P 500",2016-03-18,2016-03-07
+"917","TRV","Travelers Cos Inc","-106.07907713991517","-0.50227937575201231","Most Illiquid Net Sells","S&P 500",2016-03-18,2016-03-07
+"1017","HPE","Hewlett Packard Enterprise Co","-92.903956794150403","-0.47646346158719788","Most Illiquid Net Sells","S&P 500",2016-03-18,2016-03-07
+"1117","MMM","3M Co","-163.22732672216856","-0.46600493281481115","Most Illiquid Net Sells","S&P 500",2016-03-18,2016-03-07
+"1217","HPQ","HP Inc","-83.656349960253664","-0.45277245840967467","Most Illiquid Net Sells","S&P 500",2016-03-18,2016-03-07
+"1317","AVGO","Broadcom Limited","-278.9258696153949","-0.44616354800919694","Most Illiquid Net Sells","S&P 500",2016-03-18,2016-03-07
+"1417","FOXA","Twenty-First Century Fox Inc A","-154.37900170399524","-0.4265772682479006","Most Illiquid Net Sells","S&P 500",2016-03-18,2016-03-07
+"1517","LYB","LyondellBasell Industries N.V.","-123.96443527338936","-0.4061776738350773","Most Illiquid Net Sells","S&P 500",2016-03-18,2016-03-07
+"1717","GHC","Graham Holdings Co B","-6.022395082996904","-0.4046515448642693","Most Illiquid Net Sells","S&P 400",2016-03-18,2016-03-07
+"1817","CDK","CDK Global Inc","-12.964431076488429","-0.36024816446504587","Most Illiquid Net Sells","S&P 400",2016-03-18,2016-03-07
+"1917","KBH","KB Home","-14.14501627592613","-0.28795183255437051","Most Illiquid Net Sells","S&P 400",2016-03-18,2016-03-07
+"2017","CNO","CNO Financial Group Inc","-7.6311697109657768","-0.25637269084714592","Most Illiquid Net Sells","S&P 400",2016-03-18,2016-03-07
+"2117","CLC","CLARCOR Inc","-3.8265060952544641","-0.22551363084492457","Most Illiquid Net Sells","S&P 400",2016-03-18,2016-03-07
+"2217","SNPS","Synopsys Inc","-13.428691811374922","-0.22336278387269112","Most Illiquid Net Sells","S&P 400",2016-03-18,2016-03-07
+"2317","WWD","Woodward Inc.","-3.7089116426817395","-0.22199404811798243","Most Illiquid Net Sells","S&P 400",2016-03-18,2016-03-07
+"2417","ARW","Arrow Electronics Inc","-10.030552840559409","-0.21833658076968834","Most Illiquid Net Sells","S&P 400",2016-03-18,2016-03-07
+"2517","TIME","Time Inc","-4.7083611991166041","-0.21473161790906387","Most Illiquid Net Sells","S&P 400",2016-03-18,2016-03-07
+"2617","WAB","Wabtec","-23.574804613378031","-0.2081365788583367","Most Illiquid Net Sells","S&P 400",2016-03-18,2016-03-07
+"2817","ENS","Enersys","-2.9867125514609114","-0.2269969033506947","Most Illiquid Net Sells","S&P 600",2016-03-18,2016-03-07
+"2917","SCSC","ScanSource Inc","-1.1780242163305175","-0.18061967837351736","Most Illiquid Net Sells","S&P 600",2016-03-18,2016-03-07
+"3017","ETH","Ethan Allen Interiors","-0.90919500293029432","-0.15665047257223533","Most Illiquid Net Sells","S&P 600",2016-03-18,2016-03-07
+"3117","GTY","Getty Realty Corp","-0.21245572391415801","-0.11977722524789401","Most Illiquid Net Sells","S&P 600",2016-03-18,2016-03-07
+"3217","SANM","Sanmina Corp","-1.4478188202566771","-0.11883152206715959","Most Illiquid Net Sells","S&P 600",2016-03-18,2016-03-07
+"3317","CLW","Clearwater Paper Corp","-0.81465854187608833","-0.11464974483815984","Most Illiquid Net Sells","S&P 600",2016-03-18,2016-03-07
+"3417","KIRK","Kirkland's Inc","-0.20294144707979234","-0.11188218692964819","Most Illiquid Net Sells","S&P 600",2016-03-18,2016-03-07
+"3517","SSI","Stage Stores Inc","-0.66282848858473842","-0.11072801873521387","Most Illiquid Net Sells","S&P 600",2016-03-18,2016-03-07
+"3617","RGS","Regis Corp","-0.38228476377312981","-0.10926724711647247","Most Illiquid Net Sells","S&P 600",2016-03-18,2016-03-07
+"3717","BJRI","BJ's Restaurants Inc","-2.3102096992873133","-0.10216242857038467","Most Illiquid Net Sells","S&P 600",2016-03-18,2016-03-07
+"627","FB","Facebook Inc A","388.51120998370749","0.10124838429647276","Largest Net Buys by Trade Value","S&P 500",2016-03-18,2016-03-07
+"727","AMZN","Amazon.com Inc","190.36569342604216","6.3680960034890571E-2","Largest Net Buys by Trade Value","S&P 500",2016-03-18,2016-03-07
+"827","GOOGL","Alphabet Inc A","155.88569674745153","8.6852079532404064E-2","Largest Net Buys by Trade Value","S&P 500",2016-03-18,2016-03-07
+"927","XOM","Exxon Mobil Corp","127.15488036733484","9.2414599190467253E-2","Largest Net Buys by Trade Value","S&P 500",2016-03-18,2016-03-07
+"1027","VZ","Verizon Communications Inc","107.10001809534857","0.12267726132679926","Largest Net Buys by Trade Value","S&P 500",2016-03-18,2016-03-07
+"1127","JNJ","Johnson & Johnson","107.09817052495256","0.10921824094416534","Largest Net Buys by Trade Value","S&P 500",2016-03-18,2016-03-07
+"1227","GE","General Electric Co","103.69819660334572","8.7856958115306957E-2","Largest Net Buys by Trade Value","S&P 500",2016-03-18,2016-03-07
+"1327","BRK/B","Berkshire Hathaway B","95.732237688927171","0.14697933999345186","Largest Net Buys by Trade Value","S&P 500",2016-03-18,2016-03-07
+"1427","WFC","Wells Fargo & Co","84.165843878661462","8.0222256677330239E-2","Largest Net Buys by Trade Value","S&P 500",2016-03-18,2016-03-07
+"1527","T","AT&T Inc","81.338558814669994","8.1647941975700258E-2","Largest Net Buys by Trade Value","S&P 500",2016-03-18,2016-03-07
+"1727","SBNY","Signature Bank NY","28.871722889452315","0.34884174620937031","Largest Net Buys by Trade Value","S&P 400",2016-03-18,2016-03-07
+"1827","REG","Regency Centers Corp","18.462804160045604","0.2712085360543412","Largest Net Buys by Trade Value","S&P 400",2016-03-18,2016-03-07
+"1927","NNN","National Retail Properties Inc","15.592901600231775","0.26744501408723537","Largest Net Buys by Trade Value","S&P 400",2016-03-18,2016-03-07
+"2027","CDNS","Cadence Design Systems Inc","13.069881130162157","0.1638830135205176","Largest Net Buys by Trade Value","S&P 400",2016-03-18,2016-03-07
+"2127","THS","TreeHouse Foods Inc","10.957684917110159","0.14778051863370811","Largest Net Buys by Trade Value","S&P 400",2016-03-18,2016-03-07
+"2227","CNC","Centene Corp","10.85600093930311","8.32032190745641E-2","Largest Net Buys by Trade Value","S&P 400",2016-03-18,2016-03-07
+"2327","POST","Post Holdings Inc.","10.658459982101947","0.14411663444137218","Largest Net Buys by Trade Value","S&P 400",2016-03-18,2016-03-07
+"2427","JBLU","JetBlue Airways Corp","10.042460405636016","7.2364140581436781E-2","Largest Net Buys by Trade Value","S&P 400",2016-03-18,2016-03-07
+"2527","ACC","American Campus Communities Inc","7.7915093731588829","0.1153371346599089","Largest Net Buys by Trade Value","S&P 400",2016-03-18,2016-03-07
+"2627","ARE","Alexandria Real Estate Eqty","5.7712119894031009","0.16569350580960537","Largest Net Buys by Trade Value","S&P 400",2016-03-18,2016-03-07
+"2827","PNY","Piedmont Natural Gas Inc","6.0438720275982423","0.251518460740423","Largest Net Buys by Trade Value","S&P 600",2016-03-18,2016-03-07
+"2927","EPAY","Bottomline Technologies Inc","4.3518221804493775","0.62038326307981573","Largest Net Buys by Trade Value","S&P 600",2016-03-18,2016-03-07
+"3027","IPXL","Impax Laboratories Inc","3.6696649606079021","0.10645132000983212","Largest Net Buys by Trade Value","S&P 600",2016-03-18,2016-03-07
+"3127","AKR","Acadia Realty Trust","2.5997791402768886","0.21059713005517228","Largest Net Buys by Trade Value","S&P 600",2016-03-18,2016-03-07
+"3227","BLKB","Blackbaud Inc","2.5180241789871078","0.15421864895505405","Largest Net Buys by Trade Value","S&P 600",2016-03-18,2016-03-07
+"3327","NTGR","Netgear Inc","1.9720930651820072","0.14125070418238184","Largest Net Buys by Trade Value","S&P 600",2016-03-18,2016-03-07
+"3427","VSAT","ViaSat Inc","1.7191932567484609","5.9959725830223992E-2","Largest Net Buys by Trade Value","S&P 600",2016-03-18,2016-03-07
+"3527","GEO","Geo Group Inc","1.4042577947844894","7.6370256946146964E-2","Largest Net Buys by Trade Value","S&P 600",2016-03-18,2016-03-07
+"3627","NUVA","NuVasive Inc","1.3579964396257604","3.7243132707526702E-2","Largest Net Buys by Trade Value","S&P 600",2016-03-18,2016-03-07
+"3727","ALE","Allete Inc","1.2160189025962793","7.4850735340676849E-2","Largest Net Buys by Trade Value","S&P 600",2016-03-18,2016-03-07
+"637","MSFT","Microsoft Corp","-318.5609806056284","-0.17687041837356729","Largest Net Sells by Trade Value","S&P 500",2016-03-18,2016-03-07
+"737","AVGO","Broadcom Limited","-278.9258696153949","-0.44616354800919694","Largest Net Sells by Trade Value","S&P 500",2016-03-18,2016-03-07
+"837","ORCL","Oracle Corp","-181.0312890979134","-0.33211922664180815","Largest Net Sells by Trade Value","S&P 500",2016-03-18,2016-03-07
+"937","V","Visa Inc A","-177.70642803469983","-0.24537740921617032","Largest Net Sells by Trade Value","S&P 500",2016-03-18,2016-03-07
+"1037","DIS","Walt Disney Co","-174.94290656701673","-0.17154601577631437","Largest Net Sells by Trade Value","S&P 500",2016-03-18,2016-03-07
+"1137","MMM","3M Co","-163.22732672216856","-0.46600493281481115","Largest Net Sells by Trade Value","S&P 500",2016-03-18,2016-03-07
+"1237","AAPL","Apple Inc.","-157.95312507682294","-3.8947866575659518E-2","Largest Net Sells by Trade Value","S&P 500",2016-03-18,2016-03-07
+"1337","FOXA","Twenty-First Century Fox Inc A","-154.37900170399524","-0.4265772682479006","Largest Net Sells by Trade Value","S&P 500",2016-03-18,2016-03-07
+"1437","LYB","LyondellBasell Industries N.V.","-123.96443527338936","-0.4061776738350773","Largest Net Sells by Trade Value","S&P 500",2016-03-18,2016-03-07
+"1537","ABBV","AbbVie Inc.","-120.54319969411986","-0.26500413040452109","Largest Net Sells by Trade Value","S&P 500",2016-03-18,2016-03-07
+"1737","WAB","Wabtec","-23.574804613378031","-0.2081365788583367","Largest Net Sells by Trade Value","S&P 400",2016-03-18,2016-03-07
+"1837","KBH","KB Home","-14.14501627592613","-0.28795183255437051","Largest Net Sells by Trade Value","S&P 400",2016-03-18,2016-03-07
+"1937","TOL","Toll Brothers Inc","-13.81751228949622","-0.15067346925455177","Largest Net Sells by Trade Value","S&P 400",2016-03-18,2016-03-07
+"2037","SNPS","Synopsys Inc","-13.428691811374922","-0.22336278387269112","Largest Net Sells by Trade Value","S&P 400",2016-03-18,2016-03-07
+"2137","CDK","CDK Global Inc","-12.964431076488429","-0.36024816446504587","Largest Net Sells by Trade Value","S&P 400",2016-03-18,2016-03-07
+"2237","PNRA","Panera Bread Co A","-11.675977361636646","-8.1106582278196365E-2","Largest Net Sells by Trade Value","S&P 400",2016-03-18,2016-03-07
+"2337","IM","Ingram Micro Inc A","-11.286852949619675","-7.8757446684606325E-2","Largest Net Sells by Trade Value","S&P 400",2016-03-18,2016-03-07
+"2437","ARW","Arrow Electronics Inc","-10.030552840559409","-0.21833658076968834","Largest Net Sells by Trade Value","S&P 400",2016-03-18,2016-03-07
+"2537","EAT","Brinker Intl Inc","-8.1765905547136981","-0.15827431381597948","Largest Net Sells by Trade Value","S&P 400",2016-03-18,2016-03-07
+"2637","MTD","Mettler-Toledo Intl","-7.9373102194371761","-0.13407497032566779","Largest Net Sells by Trade Value","S&P 400",2016-03-18,2016-03-07
+"2837","ENS","Enersys","-2.9867125514609114","-0.2269969033506947","Largest Net Sells by Trade Value","S&P 600",2016-03-18,2016-03-07
+"2937","BJRI","BJ's Restaurants Inc","-2.3102096992873133","-0.10216242857038467","Largest Net Sells by Trade Value","S&P 600",2016-03-18,2016-03-07
+"3037","ABG","Asbury Automotive Group Inc","-2.1877409011109865","-5.9065001653571772E-2","Largest Net Sells by Trade Value","S&P 600",2016-03-18,2016-03-07
+"3137","DORM","Dorman Products Inc","-1.8336447112029048","-8.3782465167123246E-2","Largest Net Sells by Trade Value","S&P 600",2016-03-18,2016-03-07
+"3237","CUZ","Cousins Properties","-1.6603876777075677","-7.3548551947003091E-2","Largest Net Sells by Trade Value","S&P 600",2016-03-18,2016-03-07
+"3337","SANM","Sanmina Corp","-1.4478188202566771","-0.11883152206715959","Largest Net Sells by Trade Value","S&P 600",2016-03-18,2016-03-07
+"3437","EFII","Electronics For Imaging","-1.3872096492549417","-8.0867658730488498E-2","Largest Net Sells by Trade Value","S&P 600",2016-03-18,2016-03-07
+"3537","BGG","Briggs & Stratton Corp","-1.3850286680589035","-9.5060237894577626E-2","Largest Net Sells by Trade Value","S&P 600",2016-03-18,2016-03-07
+"3637","PLCE","Children's Place, Inc","-1.3050232255675902","-4.5475679684709155E-2","Largest Net Sells by Trade Value","S&P 600",2016-03-18,2016-03-07
+"3737","OUTR","Outerwall Inc","-1.272259856440509","-6.4101042196147401E-2","Largest Net Sells by Trade Value","S&P 600",2016-03-18,2016-03-07
+"618","DISCK","Discovery Communications Inc","417.69630823133662","5.6626609171414284","Most Illiquid Net Buys","S&P 500",2014-09-19,2014-08-27
+"718","SCG","SCANA Corp","260.39777294449334","5.6263505255602073","Most Illiquid Net Buys","S&P 500",2014-09-19,2014-08-27
+"818","MSFT","Microsoft Corp","4092.7104588684151","3.603750718397325","Most Illiquid Net Buys","S&P 500",2014-09-19,2014-08-27
+"918","AN","AutoNation Inc","164.25175797979216","3.3854347671450071","Most Illiquid Net Buys","S&P 500",2014-09-19,2014-08-27
+"1018","GGP","General Growth Properties Inc","161.86445651901806","2.4371482814414747","Most Illiquid Net Buys","S&P 500",2014-09-19,2014-08-27
+"1118","EQR","Equity Residential","216.3688578454763","2.295031159465418","Most Illiquid Net Buys","S&P 500",2014-09-19,2014-08-27
+"1218","GM","General Motors Company","632.75984862109442","1.7768296220933255","Most Illiquid Net Buys","S&P 500",2014-09-19,2014-08-27
+"1318","AVB","AvalonBay Communities Inc","181.02227201497098","1.6759926777627676","Most Illiquid Net Buys","S&P 500",2014-09-19,2014-08-27
+"1418","GRMN","Garmin Ltd","86.16465722667111","1.4319882673547981","Most Illiquid Net Buys","S&P 500",2014-09-19,2014-08-27
+"1518","NTRS","Northern Trust Corp (IL)","116.17266879000978","1.4044743901472772","Most Illiquid Net Buys","S&P 500",2014-09-19,2014-08-27
+"1718","LDOS","Leidos Holdings Inc","33.20912164248525","2.7866815911728602","Most Illiquid Net Buys","S&P 400",2014-09-19,2014-08-27
+"1818","DCI","Donaldson Co","38.045597427641468","2.3994962565903859","Most Illiquid Net Buys","S&P 400",2014-09-19,2014-08-27
+"1918","TECH","Techne Corp","27.828601672177964","2.0025219131093528","Most Illiquid Net Buys","S&P 400",2014-09-19,2014-08-27
+"2018","UNT","Unit Corp","27.612267783882068","1.7342108310894815","Most Illiquid Net Buys","S&P 400",2014-09-19,2014-08-27
+"2118","NDSN","Nordson Corp","25.008224934780152","1.6379702641085672","Most Illiquid Net Buys","S&P 400",2014-09-19,2014-08-27
+"2218","PB","Prosperity Bancshares Inc","26.822076453564836","1.5412287602729244","Most Illiquid Net Buys","S&P 400",2014-09-19,2014-08-27
+"2318","TMST","TimkenSteel Corp","25.9801437952983","1.324109420888425","Most Illiquid Net Buys","S&P 400",2014-09-19,2014-08-27
+"2418","ALEX","Alexander & Baldwin Inc.","8.0855445228483198","1.1686120859198281","Most Illiquid Net Buys","S&P 400",2014-09-19,2014-08-27
+"2518","PACW","PacWest Bancorp","20.562952960067122","1.1257928837011142","Most Illiquid Net Buys","S&P 400",2014-09-19,2014-08-27
+"2618","CBT","Cabot Corp","19.512660365694824","0.9968850890685006","Most Illiquid Net Buys","S&P 400",2014-09-19,2014-08-27
+"2818","HOMB","Home Bancshares","13.218822178247329","3.4563746503878936","Most Illiquid Net Buys","S&P 600",2014-09-19,2014-08-27
+"2918","HHS","Harte-Hanks Inc","2.6279760235465588","3.2971080703779791","Most Illiquid Net Buys","S&P 600",2014-09-19,2014-08-27
+"3018","SENEA","Seneca Foods Corp A","0.96830368377546527","2.1378898226244081","Most Illiquid Net Buys","S&P 600",2014-09-19,2014-08-27
+"3118","QNST","QuinStreet Inc","1.0982411657439795","2.1051621442951518","Most Illiquid Net Buys","S&P 600",2014-09-19,2014-08-27
+"3218","MBFI","MB Financial Inc","14.511381336600746","1.8782427951860483","Most Illiquid Net Buys","S&P 600",2014-09-19,2014-08-27
+"3318","UBSI","United Bankshares Inc (WV)","9.8049444560968979","1.7107849536687341","Most Illiquid Net Buys","S&P 600",2014-09-19,2014-08-27
+"3418","TILE","Interface Inc","6.6180872483951418","1.6854539080912809","Most Illiquid Net Buys","S&P 600",2014-09-19,2014-08-27
+"3518","BCC","Boise Cascade Co","11.757940707967185","1.6326396180194278","Most Illiquid Net Buys","S&P 600",2014-09-19,2014-08-27
+"3618","IGTE","Igate Corp","8.46979449361951","1.4848625992931423","Most Illiquid Net Buys","S&P 600",2014-09-19,2014-08-27
+"3718","CTRE","CareTrust REIT Inc","2.2639814843173678","1.4342627164397701","Most Illiquid Net Buys","S&P 600",2014-09-19,2014-08-27
+"619","GHC","Graham Holdings Co","-96.313000147505178","-8.1223353633931428","Most Illiquid Net Sells","S&P 500",2014-09-19,2014-08-27
+"719","DISCA","Discovery Communications Inc","-431.30560138178902","-4.6388763862876194","Most Illiquid Net Sells","S&P 500",2014-09-19,2014-08-27
+"819","SNI","Scripps Networks Interactive","-132.2608206882004","-2.0246956780349432","Most Illiquid Net Sells","S&P 500",2014-09-19,2014-08-27
+"919","NKE","NIKE Inc B","-340.37062700933717","-1.5303072494688534","Most Illiquid Net Sells","S&P 500",2014-09-19,2014-08-27
+"1019","ITW","Illinois Tool Works Inc","-201.40820514807479","-1.2765584265850589","Most Illiquid Net Sells","S&P 500",2014-09-19,2014-08-27
+"1119","KR","Kroger Co","-126.31651371018809","-1.1607465014686971","Most Illiquid Net Sells","S&P 500",2014-09-19,2014-08-27
+"1219","FDX","FedEx Corp","-169.6776214651232","-1.1346345511697034","Most Illiquid Net Sells","S&P 500",2014-09-19,2014-08-27
+"1319","VRSN","VeriSign Inc","-67.899435470643866","-1.1293955755814027","Most Illiquid Net Sells","S&P 500",2014-09-19,2014-08-27
+"1419","IBM","Intl Business Machines Corp","-538.94427055924302","-1.0527523037419171","Most Illiquid Net Sells","S&P 500",2014-09-19,2014-08-27
+"1519","TYC","Tyco Intl","-95.354015001196785","-1.0516245145874128","Most Illiquid Net Sells","S&P 500",2014-09-19,2014-08-27
+"1719","KMPR","Kemper Corporation","-20.182494345889392","-3.3155603498635444","Most Illiquid Net Sells","S&P 400",2014-09-19,2014-08-27
+"1819","HOLX","Hologic Inc","-79.736028742321452","-2.0813667700081853","Most Illiquid Net Sells","S&P 400",2014-09-19,2014-08-27
+"1919","WCN","Waste Connections Inc","-28.246241373871143","-1.9787438786935356","Most Illiquid Net Sells","S&P 400",2014-09-19,2014-08-27
+"2019","GGG","Graco Inc","-21.946286983633087","-1.8147507864240568","Most Illiquid Net Sells","S&P 400",2014-09-19,2014-08-27
+"2119","CLGX","CoreLogic Inc.","-17.73589135082176","-1.7921042962934073","Most Illiquid Net Sells","S&P 400",2014-09-19,2014-08-27
+"2219","ATR","AptarGroup Inc","-21.178748511814611","-1.4815475231870721","Most Illiquid Net Sells","S&P 400",2014-09-19,2014-08-27
+"2319","SEIC","SEI Investments Corp","-38.711257962344433","-1.4439513109116704","Most Illiquid Net Sells","S&P 400",2014-09-19,2014-08-27
+"2419","TR","Tootsie Roll Industries Inc","-2.7738619966767901","-1.3339975615565856","Most Illiquid Net Sells","S&P 400",2014-09-19,2014-08-27
+"2519","CBSH","Commerce Bancshares Inc (MO)","-14.281853756643004","-1.1483708401863","Most Illiquid Net Sells","S&P 400",2014-09-19,2014-08-27
+"2619","WAB","Wabtec","-33.233858249528069","-1.0622048856272179","Most Illiquid Net Sells","S&P 400",2014-09-19,2014-08-27
+"2819","BFS","Saul Centers","-7.3308014667452079","-6.6018731460270379","Most Illiquid Net Sells","S&P 600",2014-09-19,2014-08-27
+"2919","CRVL","Corvel Corp","-5.4978745470903689","-4.4189358406802128","Most Illiquid Net Sells","S&P 600",2014-09-19,2014-08-27
+"3019","UFCS","United Fire Group Inc.","-5.8278159761796129","-4.1417828315517369","Most Illiquid Net Sells","S&P 600",2014-09-19,2014-08-27
+"3119","FORR","Forrester Research Inc","-3.7987757165066829","-3.6041808359566563","Most Illiquid Net Sells","S&P 600",2014-09-19,2014-08-27
+"3219","GFF","Griffon Corp","-3.9789648524326195","-1.8411542788477271","Most Illiquid Net Sells","S&P 600",2014-09-19,2014-08-27
+"3319","VICR","Vicor Corp","-0.7550462278131187","-1.6852439541320299","Most Illiquid Net Sells","S&P 600",2014-09-19,2014-08-27
+"3419","WPP","Wausau Paper Corp.","-5.0074727113379618","-1.55630335331851","Most Illiquid Net Sells","S&P 600",2014-09-19,2014-08-27
+"3519","ADC","Agree Realty Corp","-1.5207724518475931","-1.4459283106326268","Most Illiquid Net Sells","S&P 600",2014-09-19,2014-08-27
+"3619","GTY","Getty Realty Corp","-1.1331416699077059","-1.3294113628157684","Most Illiquid Net Sells","S&P 600",2014-09-19,2014-08-27
+"3719","BKMU","Bank Mutual Corp","-0.72506379056922421","-1.2986886854776132","Most Illiquid Net Sells","S&P 600",2014-09-19,2014-08-27
+"628","MSFT","Microsoft Corp","4092.7104588684151","3.603750718397325","Largest Net Buys by Trade Value","S&P 500",2014-09-19,2014-08-27
+"728","FB","Facebook Inc","2163.9328860663222","0.98854644611311415","Largest Net Buys by Trade Value","S&P 500",2014-09-19,2014-08-27
+"828","KO","Coca-Cola Co","663.60847266297981","1.2973463611322809","Largest Net Buys by Trade Value","S&P 500",2014-09-19,2014-08-27
+"928","GM","General Motors Company","632.75984862109442","1.7768296220933255","Largest Net Buys by Trade Value","S&P 500",2014-09-19,2014-08-27
+"1028","BRK/B","Berkshire Hathaway B","419.39649527985199","0.98738610702008633","Largest Net Buys by Trade Value","S&P 500",2014-09-19,2014-08-27
+"1128","DISCK","Discovery Communications Inc","417.69630823133662","5.6626609171414284","Largest Net Buys by Trade Value","S&P 500",2014-09-19,2014-08-27
+"1228","AMZN","Amazon.com Inc","281.26471448136095","0.2598667609766197","Largest Net Buys by Trade Value","S&P 500",2014-09-19,2014-08-27
+"1328","SCG","SCANA Corp","260.39777294449334","5.6263505255602073","Largest Net Buys by Trade Value","S&P 500",2014-09-19,2014-08-27
+"1428","ORCL","Oracle Corp","236.31002109026733","0.56184058728075303","Largest Net Buys by Trade Value","S&P 500",2014-09-19,2014-08-27
+"1528","EQR","Equity Residential","216.3688578454763","2.295031159465418","Largest Net Buys by Trade Value","S&P 500",2014-09-19,2014-08-27
+"1728","ASH","Ashland Inc","46.660278675822553","0.3959267043586493","Largest Net Buys by Trade Value","S&P 400",2014-09-19,2014-08-27
+"1828","LDOS","Leidos Holdings Inc","33.20912164248525","2.7866815911728602","Largest Net Buys by Trade Value","S&P 400",2014-09-19,2014-08-27
+"1928","UNT","Unit Corp","27.612267783882068","1.7342108310894815","Largest Net Buys by Trade Value","S&P 400",2014-09-19,2014-08-27
+"2028","TMST","TimkenSteel Corp","25.9801437952983","1.324109420888425","Largest Net Buys by Trade Value","S&P 400",2014-09-19,2014-08-27
+"2128","LAMR","Lamar Advertising Co A","60.026415575020401","0.74335964527438869","Largest Net Buys by Trade Value","S&P 400",2014-09-19,2014-08-27
+"2228","CBT","Cabot Corp","19.512660365694824","0.9968850890685006","Largest Net Buys by Trade Value","S&P 400",2014-09-19,2014-08-27
+"2328","DCI","Donaldson Co","38.045597427641468","2.3994962565903859","Largest Net Buys by Trade Value","S&P 400",2014-09-19,2014-08-27
+"2428","TKR","Timken Co","14.704329397588262","0.30264398876491722","Largest Net Buys by Trade Value","S&P 400",2014-09-19,2014-08-27
+"2528","JBLU","JetBlue Airways Corp","13.269874214717724","0.12643320595417767","Largest Net Buys by Trade Value","S&P 400",2014-09-19,2014-08-27
+"2628","TECH","Techne Corp","27.828601672177964","2.0025219131093528","Largest Net Buys by Trade Value","S&P 400",2014-09-19,2014-08-27
+"2828","TYL","Tyler Technologies Inc","16.487338346835191","1.1601341447579987","Largest Net Buys by Trade Value","S&P 600",2014-09-19,2014-08-27
+"2928","MBFI","MB Financial Inc","14.511381336600746","1.8782427951860483","Largest Net Buys by Trade Value","S&P 600",2014-09-19,2014-08-27
+"3028","HOMB","Home Bancshares","13.218822178247329","3.4563746503878936","Largest Net Buys by Trade Value","S&P 600",2014-09-19,2014-08-27
+"3128","BCC","Boise Cascade Co","11.757940707967185","1.6326396180194278","Largest Net Buys by Trade Value","S&P 600",2014-09-19,2014-08-27
+"3228","CUZ","Cousins Properties","11.126921641096217","0.48015345799192599","Largest Net Buys by Trade Value","S&P 600",2014-09-19,2014-08-27
+"3328","MINI","Mobile Mini Inc","10.559433997018489","0.98068011023242929","Largest Net Buys by Trade Value","S&P 600",2014-09-19,2014-08-27
+"3428","UBSI","United Bankshares Inc (WV)","9.8049444560968979","1.7107849536687341","Largest Net Buys by Trade Value","S&P 600",2014-09-19,2014-08-27
+"3528","ALE","Allete Inc","9.2732477659789261","1.0066214875188024","Largest Net Buys by Trade Value","S&P 600",2014-09-19,2014-08-27
+"3628","FTK","Flotek Industries Inc","9.0112289689761162","0.6302128963075504","Largest Net Buys by Trade Value","S&P 600",2014-09-19,2014-08-27
+"3728","IGTE","Igate Corp","8.46979449361951","1.4848625992931423","Largest Net Buys by Trade Value","S&P 600",2014-09-19,2014-08-27
+"638","IBM","Intl Business Machines Corp","-538.94427055924302","-1.0527523037419171","Largest Net Sells by Trade Value","S&P 500",2014-09-19,2014-08-27
+"738","AAPL","Apple Inc.","-441.33327190333193","-9.8114450004652243E-2","Largest Net Sells by Trade Value","S&P 500",2014-09-19,2014-08-27
+"838","DISCA","Discovery Communications Inc","-431.30560138178902","-4.6388763862876194","Largest Net Sells by Trade Value","S&P 500",2014-09-19,2014-08-27
+"938","FOXA","Twenty-First Century Fox, Inc","-422.037069932858","-0.68891723900982116","Largest Net Sells by Trade Value","S&P 500",2014-09-19,2014-08-27
+"1038","NKE","NIKE Inc B","-340.37062700933717","-1.5303072494688534","Largest Net Sells by Trade Value","S&P 500",2014-09-19,2014-08-27
+"1138","DIS","Walt Disney Co","-331.43689424306359","-0.61523059095315069","Largest Net Sells by Trade Value","S&P 500",2014-09-19,2014-08-27
+"1238","GS","Goldman Sachs Group Inc","-318.61646189234176","-0.79066536244875474","Largest Net Sells by Trade Value","S&P 500",2014-09-19,2014-08-27
+"1338","XOM","Exxon Mobil Corp","-301.33062034038306","-0.31726228357220992","Largest Net Sells by Trade Value","S&P 500",2014-09-19,2014-08-27
+"1438","GILD","Gilead Sciences Inc","-297.37825750408598","-0.21101394749677221","Largest Net Sells by Trade Value","S&P 500",2014-09-19,2014-08-27
+"1538","NFLX","NetFlix Inc","-271.78971328043951","-0.29592242238781186","Largest Net Sells by Trade Value","S&P 500",2014-09-19,2014-08-27
+"1738","HOLX","Hologic Inc","-79.736028742321452","-2.0813667700081853","Largest Net Sells by Trade Value","S&P 400",2014-09-19,2014-08-27
+"1838","WCN","Waste Connections Inc","-28.246241373871143","-1.9787438786935356","Largest Net Sells by Trade Value","S&P 400",2014-09-19,2014-08-27
+"1938","ATR","AptarGroup Inc","-21.178748511814611","-1.4815475231870721","Largest Net Sells by Trade Value","S&P 400",2014-09-19,2014-08-27
+"2038","KMPR","Kemper Corporation","-20.182494345889392","-3.3155603498635444","Largest Net Sells by Trade Value","S&P 400",2014-09-19,2014-08-27
+"2138","RNR","RenaissanceRe Hldgs","-19.688468816386781","-0.57471145032534177","Largest Net Sells by Trade Value","S&P 400",2014-09-19,2014-08-27
+"2238","LPNT","Lifepoint Hospitals","-14.514627345788631","-0.44047716127225456","Largest Net Sells by Trade Value","S&P 400",2014-09-19,2014-08-27
+"2338","DKS","Dick's Sporting Goods Inc","-12.935651240699894","-0.13039549260848649","Largest Net Sells by Trade Value","S&P 400",2014-09-19,2014-08-27
+"2438","TDS","Telephone & Data Systems Inc","-11.943807854772894","-0.63883213942952977","Largest Net Sells by Trade Value","S&P 400",2014-09-19,2014-08-27
+"2538","AGCO","AGCO Corp","-11.067854859340819","-0.17385461678308869","Largest Net Sells by Trade Value","S&P 400",2014-09-19,2014-08-27
+"2638","SPW","SPX Corp","-10.158003160435014","-0.33167112526479003","Largest Net Sells by Trade Value","S&P 400",2014-09-19,2014-08-27
+"2838","POOL","Pool Corp","-11.166800491371459","-1.1153696797074604","Largest Net Sells by Trade Value","S&P 600",2014-09-19,2014-08-27
+"2938","PRXL","PAREXEL Intl Corp","-7.5767122887078768","-0.27672019937739567","Largest Net Sells by Trade Value","S&P 600",2014-09-19,2014-08-27
+"3038","BFS","Saul Centers","-7.3308014667452079","-6.6018731460270379","Largest Net Sells by Trade Value","S&P 600",2014-09-19,2014-08-27
+"3138","WRLD","World Acceptance Corp","-6.9465570831162875","-0.67737184990214028","Largest Net Sells by Trade Value","S&P 600",2014-09-19,2014-08-27
+"3238","SAM","Boston Beer Inc A","-6.8483957458965889","-0.66609298999232691","Largest Net Sells by Trade Value","S&P 600",2014-09-19,2014-08-27
+"3338","MOG/A","Moog Inc A","-6.3775220441010099","-0.53984993612879162","Largest Net Sells by Trade Value","S&P 600",2014-09-19,2014-08-27
+"3438","BJRI","BJ's Restaurants Inc","-6.2591202476698511","-0.66825645383909837","Largest Net Sells by Trade Value","S&P 600",2014-09-19,2014-08-27
+"3538","LGND","Ligand Pharmaceutical Inc B","-5.8671990345250382","-0.22292201521489705","Largest Net Sells by Trade Value","S&P 600",2014-09-19,2014-08-27
+"3638","UFCS","United Fire Group Inc.","-5.8278159761796129","-4.1417828315517369","Largest Net Sells by Trade Value","S&P 600",2014-09-19,2014-08-27
+"3738","CRVL","Corvel Corp","-5.4978745470903689","-4.4189358406802128","Largest Net Sells by Trade Value","S&P 600",2014-09-19,2014-08-27
+"5","NWS","News Corporation","173.06538916570454","13.227624234016327","Most Illiquid Net Buys","S&P 500",2015-09-18,2015-08-12
+"620","CMCSK","Comcast Corp","2558.8167804703548","13.220074355329022","Most Illiquid Net Buys","S&P 500",2015-09-18,2015-08-12
+"720","FOX","Twenty-First Century Fox, Inc","1477.1374064411498","11.830933999338278","Most Illiquid Net Buys","S&P 500",2015-09-18,2015-08-12
+"820","PGR","Progressive Corp","192.91632622423879","1.6365886430458307","Most Illiquid Net Buys","S&P 500",2015-09-18,2015-08-12
+"920","BRK/B","Berkshire Hathaway B","517.3062570729137","1.2471854677628671","Most Illiquid Net Buys","S&P 500",2015-09-18,2015-08-12
+"1020","HCA","HCA Holdings Inc","236.89030981602721","1.1151143776025108","Most Illiquid Net Buys","S&P 500",2015-09-18,2015-08-12
+"1120","MOS","Mosaic Co","140.91748687328692","0.81159343963887953","Most Illiquid Net Buys","S&P 500",2015-09-18,2015-08-12
+"1220","EL","Estee Lauder Cos.","86.695876515017204","0.70428082795748825","Most Illiquid Net Buys","S&P 500",2015-09-18,2015-08-12
+"1320","WMT","Wal-Mart Stores","318.50612090915695","0.68833769846414494","Most Illiquid Net Buys","S&P 500",2015-09-18,2015-08-12
+"1420","KMI","Kinder Morgan Inc","358.66663322813764","0.63461821289607889","Most Illiquid Net Buys","S&P 500",2015-09-18,2015-08-12
+"51","BF/B","Brown-Forman Corp B","-616.71332938288901","-13.232247094225345","Most Illiquid Net Sells","S&P 500",2015-09-18,2015-08-12
+"6110","NWSA","News Corporation","-193.03486995726891","-4.6056248536561668","Most Illiquid Net Sells","S&P 500",2015-09-18,2015-08-12
+"7110","CMCSA","Comcast Corp","-2691.736220359875","-3.3002765425266429","Most Illiquid Net Sells","S&P 500",2015-09-18,2015-08-12
+"8110","FOXA","Twenty-First Century Fox","-1894.9289728928065","-3.1036517311141849","Most Illiquid Net Sells","S&P 500",2015-09-18,2015-08-12
+"9110","MKC","McCormick & Co","-111.77545693353609","-1.9670504534841753","Most Illiquid Net Sells","S&P 500",2015-09-18,2015-08-12
+"10110","VIAB","Viacom Inc B","-268.67777247798523","-1.0377171946912249","Most Illiquid Net Sells","S&P 500",2015-09-18,2015-08-12
+"11110","ABBV","AbbVie Inc.","-465.08038235452597","-0.86058542373446767","Most Illiquid Net Sells","S&P 500",2015-09-18,2015-08-12
+"12110","RSG","Republic Services Inc","-56.150166358831164","-0.82153387291234647","Most Illiquid Net Sells","S&P 500",2015-09-18,2015-08-12
+"13110","DHR","Danaher Corp","-199.00040553214114","-0.66405974475472207","Most Illiquid Net Sells","S&P 500",2015-09-18,2015-08-12
+"14110","NKE","NIKE Inc B","-210.17478244141464","-0.6448063681633055","Most Illiquid Net Sells","S&P 500",2015-09-18,2015-08-12
+"52","CMCSK","Comcast Corp","2558.8167804703548","13.220074355329022","Largest Net Buys by Trade Value","S&P 500",2015-09-18,2015-08-12
+"629","FB","Facebook Inc","1766.8166423473688","0.50123517384291305","Largest Net Buys by Trade Value","S&P 500",2015-09-18,2015-08-12
+"729","FOX","Twenty-First Century Fox, Inc","1477.1374064411498","11.830933999338278","Largest Net Buys by Trade Value","S&P 500",2015-09-18,2015-08-12
+"829","GOOG","Google Inc C","487.53398804672059","0.23541176689177909","Largest Net Buys by Trade Value","S&P 500",2015-09-18,2015-08-12
+"929","BRK/B","Berkshire Hathaway B","517.3062570729137","1.2471854677628671","Largest Net Buys by Trade Value","S&P 500",2015-09-18,2015-08-12
+"1029","GOOGL","Google Inc A","379.32656119068355","0.16146567861286237","Largest Net Buys by Trade Value","S&P 500",2015-09-18,2015-08-12
+"1129","KMI","Kinder Morgan Inc","358.66663322813764","0.63461821289607889","Largest Net Buys by Trade Value","S&P 500",2015-09-18,2015-08-12
+"1229","GM","General Motors Company","344.29904016505424","0.55793930003274261","Largest Net Buys by Trade Value","S&P 500",2015-09-18,2015-08-12
+"1329","WMT","Wal-Mart Stores","318.50612090915695","0.68833769846414494","Largest Net Buys by Trade Value","S&P 500",2015-09-18,2015-08-12
+"1429","HCA","HCA Holdings Inc","236.89030981602721","1.1151143776025108","Largest Net Buys by Trade Value","S&P 500",2015-09-18,2015-08-12
+"53","CMCSA","Comcast Corp","-2691.736220359875","-3.3002765425266429","Largest Net Sells by Trade Value","S&P 500",2015-09-18,2015-08-12
+"639","FOXA","Twenty-First Century Fox","-1894.9289728928065","-3.1036517311141849","Largest Net Sells by Trade Value","S&P 500",2015-09-18,2015-08-12
+"739","BF/B","Brown-Forman Corp B","-616.71332938288901","-13.232247094225345","Largest Net Sells by Trade Value","S&P 500",2015-09-18,2015-08-12
+"839","AAPL","Apple Inc.","-504.61148230238001","-6.9671812719353743E-2","Largest Net Sells by Trade Value","S&P 500",2015-09-18,2015-08-12
+"939","ABBV","AbbVie Inc.","-465.08038235452597","-0.86058542373446767","Largest Net Sells by Trade Value","S&P 500",2015-09-18,2015-08-12
+"1039","QCOM","QUALCOMM Inc","-382.58146721686433","-0.4163363390795205","Largest Net Sells by Trade Value","S&P 500",2015-09-18,2015-08-12
+"1139","MSFT","Microsoft Corp","-340.27006513261881","-0.22261000509098039","Largest Net Sells by Trade Value","S&P 500",2015-09-18,2015-08-12
+"1239","WFC","Wells Fargo & Co","-322.38698195331745","-0.4181834020013192","Largest Net Sells by Trade Value","S&P 500",2015-09-18,2015-08-12
+"1339","VIAB","Viacom Inc B","-268.67777247798523","-1.0377171946912249","Largest Net Sells by Trade Value","S&P 500",2015-09-18,2015-08-12
+"1439","AIG","American Intl Group Inc","-254.68043503896774","-0.51350893681164267","Largest Net Sells by Trade Value","S&P 500",2015-09-18,2015-08-12
+"54","APD","Air Products & Chemicals Inc","412.87108047105443","2.990843328065282","Most Illiquid Net Buys","S&P 500",2016-09-16,2016-08-29
+"630","HOLX","Hologic Inc","161.15370468117518","1.9034302941033276","Most Illiquid Net Buys","S&P 500",2016-09-16,2016-08-29
+"730","L","Loews Corp","46.476061356347621","1.8184996523453656","Most Illiquid Net Buys","S&P 500",2016-09-16,2016-08-29
+"830","SRE","Sempra Energy","165.87300333321994","1.7082588689862637","Most Illiquid Net Buys","S&P 500",2016-09-16,2016-08-29
+"930","AVGO","Broadcom Limited","536.29328818479428","1.5120571310653221","Most Illiquid Net Buys","S&P 500",2016-09-16,2016-08-29
+"1030","ZTS","Zoetis Inc","237.40827269615008","1.312446927046615","Most Illiquid Net Buys","S&P 500",2016-09-16,2016-08-29
+"1130","CA","CA Inc","77.132419175402532","1.1873838409804556","Most Illiquid Net Buys","S&P 500",2016-09-16,2016-08-29
+"1230","JNPR","Juniper Networks Inc","83.770958165104176","1.1294179151382846","Most Illiquid Net Buys","S&P 500",2016-09-16,2016-08-29
+"1330","CPB","Campbell Soup Co","90.509416640234974","1.082521339024398","Most Illiquid Net Buys","S&P 500",2016-09-16,2016-08-29
+"1430","VTR","Ventas Inc","123.6922777032709","1.0110471762244861","Most Illiquid Net Buys","S&P 500",2016-09-16,2016-08-29
+"511","XRX","Xerox Corp","-109.53376682538762","-2.3451509959138681","Most Illiquid Net Sells","S&P 500",2016-09-16,2016-08-29
+"6111","GGP","General Growth Properties Inc","-261.52029325981999","-2.3029220519483578","Most Illiquid Net Sells","S&P 500",2016-09-16,2016-08-29
+"7111","NLSN","Nielsen Holdings plc","-144.29569940373187","-1.9208126640994212","Most Illiquid Net Sells","S&P 500",2016-09-16,2016-08-29
+"8111","LM","Legg Mason Inc","-46.774631504522809","-1.3668618336869676","Most Illiquid Net Sells","S&P 500",2016-09-16,2016-08-29
+"9111","PNR","Pentair PLC","-101.21577669585621","-1.3433197018650491","Most Illiquid Net Sells","S&P 500",2016-09-16,2016-08-29
+"10111","FOX","Twenty-First Century Fox Inc B","-88.318074630724354","-1.28785354139563","Most Illiquid Net Sells","S&P 500",2016-09-16,2016-08-29
+"11111","VNO","Vornado Realty Trust","-81.666997678442939","-1.2701021944662783","Most Illiquid Net Sells","S&P 500",2016-09-16,2016-08-29
+"12111","BF/B","Brown-Forman Corp B","-54.402864099045644","-1.2105441167717925","Most Illiquid Net Sells","S&P 500",2016-09-16,2016-08-29
+"13111","SYK","Stryker Corp","-132.40177549937226","-1.1923487270519921","Most Illiquid Net Sells","S&P 500",2016-09-16,2016-08-29
+"14111","WAT","Waters Corp","-75.788078723980377","-1.1081389939968895","Most Illiquid Net Sells","S&P 500",2016-09-16,2016-08-29
+"521","AMZN","Amazon.com Inc","719.55782283321423","0.43312166783374545","Largest Net Buys by Trade Value","S&P 500",2016-09-16,2016-08-29
+"6210","AVGO","Broadcom Limited","536.29328818479428","1.5120571310653221","Largest Net Buys by Trade Value","S&P 500",2016-09-16,2016-08-29
+"7210","APD","Air Products & Chemicals Inc","412.87108047105443","2.990843328065282","Largest Net Buys by Trade Value","S&P 500",2016-09-16,2016-08-29
+"8210","FB","Facebook Inc A","289.36566646371875","0.1481733241667087","Largest Net Buys by Trade Value","S&P 500",2016-09-16,2016-08-29
+"9210","SO","Southern Co","259.76063790045174","0.91203140691550133","Largest Net Buys by Trade Value","S&P 500",2016-09-16,2016-08-29
+"10210","KMI","Kinder Morgan Inc","244.1161322130317","0.87059233211591824","Largest Net Buys by Trade Value","S&P 500",2016-09-16,2016-08-29
+"11210","ZTS","Zoetis Inc","237.40827269615008","1.312446927046615","Largest Net Buys by Trade Value","S&P 500",2016-09-16,2016-08-29
+"12210","GOOGL","Alphabet Inc A","208.91136192651521","0.22257445408465273","Largest Net Buys by Trade Value","S&P 500",2016-09-16,2016-08-29
+"13210","PG","Procter & Gamble","178.42764687757233","0.2649615879606716","Largest Net Buys by Trade Value","S&P 500",2016-09-16,2016-08-29
+"14210","SRE","Sempra Energy","165.87300333321994","1.7082588689862637","Largest Net Buys by Trade Value","S&P 500",2016-09-16,2016-08-29
+"531","AAPL","Apple Inc.","-854.83956289701837","-0.29780819133473901","Largest Net Sells by Trade Value","S&P 500",2016-09-16,2016-08-29
+"6310","GE","General Electric Co","-730.09155922022546","-1.0238900625224649","Largest Net Sells by Trade Value","S&P 500",2016-09-16,2016-08-29
+"7310","ORCL","Oracle Corp","-438.03083857909763","-1.0938986250468665","Largest Net Sells by Trade Value","S&P 500",2016-09-16,2016-08-29
+"8310","WFC","Wells Fargo & Co","-355.90645973782978","-0.49445162063575337","Largest Net Sells by Trade Value","S&P 500",2016-09-16,2016-08-29
+"9310","AIG","American Intl Group Inc","-304.60877452111623","-1.0596876572331682","Largest Net Sells by Trade Value","S&P 500",2016-09-16,2016-08-29
+"10310","MCD","McDonald's Corp","-285.05086829970304","-0.57483919396556082","Largest Net Sells by Trade Value","S&P 500",2016-09-16,2016-08-29
+"11310","LMT","Lockheed Martin","-268.24941756034502","-0.15836313637085142","Largest Net Sells by Trade Value","S&P 500",2016-09-16,2016-08-29
+"12310","MSFT","Microsoft Corp","-263.09187656101847","-0.2245686373603353","Largest Net Sells by Trade Value","S&P 500",2016-09-16,2016-08-29
+"13310","GGP","General Growth Properties Inc","-261.52029325981999","-2.3029220519483578","Largest Net Sells by Trade Value","S&P 500",2016-09-16,2016-08-29
+"14310","JPM","JP Morgan Chase & Co","-241.24815869704739","-0.32297271712853304","Largest Net Sells by Trade Value","S&P 500",2016-09-16,2016-08-29
+"55","BRK/B","Berkshire Hathaway B","2016.8916939447927","4.0620811554426766","Most Illiquid Net Buys","S&P 500",2017-09-15,2017-08-16
+"640","CSRA","CSRA Inc","66.73018995379789","2.8305848994880018","Most Illiquid Net Buys","S&P 500",2017-09-15,2017-08-16
+"740","CERN","Cerner Corp","274.5041907334745","2.8188992238811728","Most Illiquid Net Buys","S&P 500",2017-09-15,2017-08-16
+"840","DOW","Dow Chemical","726.7595651429923","2.6239341736021209","Most Illiquid Net Buys","S&P 500",2017-09-15,2017-08-16
+"940","WM","Waste Management Inc","291.64736042985004","2.3364551917501633","Most Illiquid Net Buys","S&P 500",2017-09-15,2017-08-16
+"1040","BF/B","Brown-Forman Corp B","83.812992241526956","2.2315029646901512","Most Illiquid Net Buys","S&P 500",2017-09-15,2017-08-16
+"1140","IRM","Iron Mountain Inc","80.394348753585547","1.9953518973493289","Most Illiquid Net Buys","S&P 500",2017-09-15,2017-08-16
+"1240","MNST","Monster Beverage Corp New","177.94984001631616","1.6731278268266767","Most Illiquid Net Buys","S&P 500",2017-09-15,2017-08-16
+"1340","DE","Deere & Co","370.25171628947697","1.5989216448393966","Most Illiquid Net Buys","S&P 500",2017-09-15,2017-08-16
+"1440","WBA","Walgreens Boots Alliance Inc","616.04324447256431","1.5531235302049222","Most Illiquid Net Buys","S&P 500",2017-09-15,2017-08-16
+"1520","GPS","Gap Inc","156.74395214592312","1.4885949426875158","Most Illiquid Net Buys","S&P 500",2017-09-15,2017-08-16
+"16","DIS","Walt Disney Co","1037.1292344008718","1.2249677884758392","Most Illiquid Net Buys","S&P 500",2017-09-15,2017-08-16
+"1720","WLTW","Willis Towers Watson PLC","123.6945545629644","1.2157502551823547","Most Illiquid Net Buys","S&P 500",2017-09-15,2017-08-16
+"1820","ATVI","Activision Blizzard Inc","442.29518672075454","1.1241906980030756","Most Illiquid Net Buys","S&P 500",2017-09-15,2017-08-16
+"1920","MYL","Mylan NV","262.0302312413383","1.0243815863131758","Most Illiquid Net Buys","S&P 500",2017-09-15,2017-08-16
+"2020","CINF","Cincinnati Financial Corp","38.832388391306324","0.98351667812363475","Most Illiquid Net Buys","S&P 500",2017-09-15,2017-08-16
+"2120","CMI","Cummins Inc","230.80720524248835","0.9511300534218784","Most Illiquid Net Buys","S&P 500",2017-09-15,2017-08-16
+"2220","D","Dominion Energy Inc","122.36165402401184","0.90506328590420282","Most Illiquid Net Buys","S&P 500",2017-09-15,2017-08-16
+"2320","YUM","Yum! Brands Inc","122.12718554953875","0.85050033805861558","Most Illiquid Net Buys","S&P 500",2017-09-15,2017-08-16
+"2420","HES","Hess Corp","128.09954285974388","0.84161962935853252","Most Illiquid Net Buys","S&P 500",2017-09-15,2017-08-16
+"512","FOX","Twenty-First Century Fox Inc B","-175.36759726786175","-2.9941492688139375","Most Illiquid Net Sells","S&P 500",2017-09-15,2017-08-16
+"6112","GD","General Dynamics","-457.59328228755169","-1.6218237375771898","Most Illiquid Net Sells","S&P 500",2017-09-15,2017-08-16
+"7112","ADS","Alliance Data Systems Corp","-207.23558900477573","-1.3151542477310922","Most Illiquid Net Sells","S&P 500",2017-09-15,2017-08-16
+"8112","AAL","American Airlines Group Inc.","-299.11451020060775","-1.2213283545161142","Most Illiquid Net Sells","S&P 500",2017-09-15,2017-08-16
+"9112","LUV","Southwest Airlines Co","-339.73893636989419","-1.1104459203154136","Most Illiquid Net Sells","S&P 500",2017-09-15,2017-08-16
+"10112","DAL","Delta Air Lines","-398.95852200768257","-1.0859454650615812","Most Illiquid Net Sells","S&P 500",2017-09-15,2017-08-16
+"11112","AON","Aon plc","-122.06852661022846","-0.92224228666414965","Most Illiquid Net Sells","S&P 500",2017-09-15,2017-08-16
+"12112","FTI","TechnipFMC Ltd","-66.848865050878246","-0.82927327542385976","Most Illiquid Net Sells","S&P 500",2017-09-15,2017-08-16
+"13112","CHTR","Charter Communications Inc A","-662.41487691160125","-0.82141291178637499","Most Illiquid Net Sells","S&P 500",2017-09-15,2017-08-16
+"14112","GM","General Motors Company","-250.73125496327947","-0.69160218455130962","Most Illiquid Net Sells","S&P 500",2017-09-15,2017-08-16
+"15110","LUK","Leucadia National Corp (NY)","-22.992238376540403","-0.6527011215688967","Most Illiquid Net Sells","S&P 500",2017-09-15,2017-08-16
+"161","AIG","American Intl Group Inc","-151.3926997892645","-0.58252711663416001","Most Illiquid Net Sells","S&P 500",2017-09-15,2017-08-16
+"17110","NAVI","Navient Corp","-17.214590867294209","-0.58167077750684637","Most Illiquid Net Sells","S&P 500",2017-09-15,2017-08-16
+"18110","AYI","Acuity Brands Inc","-41.788211599440253","-0.56605780108894665","Most Illiquid Net Sells","S&P 500",2017-09-15,2017-08-16
+"19110","ESRX","Express Scripts Holding Co.","-112.17870938363846","-0.56526474626688339","Most Illiquid Net Sells","S&P 500",2017-09-15,2017-08-16
+"20110","AXP","American Express Co","-168.72230983225262","-0.5450941286332992","Most Illiquid Net Sells","S&P 500",2017-09-15,2017-08-16
+"21110","PSX","Phillips 66","-84.572451055299666","-0.48692170705326909","Most Illiquid Net Sells","S&P 500",2017-09-15,2017-08-16
+"22110","BEN","Franklin Resources Inc","-37.697437840864026","-0.48037466614402186","Most Illiquid Net Sells","S&P 500",2017-09-15,2017-08-16
+"23110","SLG","SL Green Realty Corp","-32.176416353373092","-0.44272884646864069","Most Illiquid Net Sells","S&P 500",2017-09-15,2017-08-16
+"24110","MPC","Marathon Petroleum Corp.","-72.117973964328769","-0.44062286231612957","Most Illiquid Net Sells","S&P 500",2017-09-15,2017-08-16
+"522","BRK/B","Berkshire Hathaway B","2016.8916939447927","4.0620811554426766","Largest Net Buys by Trade Value","S&P 500",2017-09-15,2017-08-16
+"6211","DIS","Walt Disney Co","1037.1292344008718","1.2249677884758392","Largest Net Buys by Trade Value","S&P 500",2017-09-15,2017-08-16
+"7211","DOW","Dow Chemical","726.7595651429923","2.6239341736021209","Largest Net Buys by Trade Value","S&P 500",2017-09-15,2017-08-16
+"8211","WBA","Walgreens Boots Alliance Inc","616.04324447256431","1.5531235302049222","Largest Net Buys by Trade Value","S&P 500",2017-09-15,2017-08-16
+"9211","ATVI","Activision Blizzard Inc","442.29518672075454","1.1241906980030756","Largest Net Buys by Trade Value","S&P 500",2017-09-15,2017-08-16
+"10211","DE","Deere & Co","370.25171628947697","1.5989216448393966","Largest Net Buys by Trade Value","S&P 500",2017-09-15,2017-08-16
+"11211","IBM","Intl Business Machines Corp","345.09865354534014","0.51303427272280655","Largest Net Buys by Trade Value","S&P 500",2017-09-15,2017-08-16
+"12211","WM","Waste Management Inc","291.64736042985004","2.3364551917501633","Largest Net Buys by Trade Value","S&P 500",2017-09-15,2017-08-16
+"13211","CERN","Cerner Corp","274.5041907334745","2.8188992238811728","Largest Net Buys by Trade Value","S&P 500",2017-09-15,2017-08-16
+"14211","MYL","Mylan NV","262.0302312413383","1.0243815863131758","Largest Net Buys by Trade Value","S&P 500",2017-09-15,2017-08-16
+"1529","MU","Micron Technology Inc","260.10137360461232","0.32444065950778184","Largest Net Buys by Trade Value","S&P 500",2017-09-15,2017-08-16
+"162","CMI","Cummins Inc","230.80720524248835","0.9511300534218784","Largest Net Buys by Trade Value","S&P 500",2017-09-15,2017-08-16
+"1729","AMZN","Amazon.com Inc","230.75964110800265","5.6064099549409621E-2","Largest Net Buys by Trade Value","S&P 500",2017-09-15,2017-08-16
+"1829","TMO","Thermo Fisher Scientific","181.22347738863505","0.63636945428930591","Largest Net Buys by Trade Value","S&P 500",2017-09-15,2017-08-16
+"1929","MNST","Monster Beverage Corp New","177.94984001631616","1.6731278268266767","Largest Net Buys by Trade Value","S&P 500",2017-09-15,2017-08-16
+"2029","GPS","Gap Inc","156.74395214592312","1.4885949426875158","Largest Net Buys by Trade Value","S&P 500",2017-09-15,2017-08-16
+"2129","AVGO","Broadcom Limited","153.28047280529171","0.29117339418690152","Largest Net Buys by Trade Value","S&P 500",2017-09-15,2017-08-16
+"2229","REGN","Regeneron Pharmaceuticals Inc","146.80744478549715","0.43188167338684313","Largest Net Buys by Trade Value","S&P 500",2017-09-15,2017-08-16
+"2329","FB","Facebook Inc A","136.31311519059889","3.9194277233387566E-2","Largest Net Buys by Trade Value","S&P 500",2017-09-15,2017-08-16
+"2429","BLK","BlackRock Inc","133.11248045364962","0.63080764315652704","Largest Net Buys by Trade Value","S&P 500",2017-09-15,2017-08-16
+"532","AAPL","Apple Inc.","-874.44695779672304","-0.20336771641326776","Largest Net Sells by Trade Value","S&P 500",2017-09-15,2017-08-16
+"6311","CHTR","Charter Communications Inc A","-662.41487691160125","-0.82141291178637499","Largest Net Sells by Trade Value","S&P 500",2017-09-15,2017-08-16
+"7311","GD","General Dynamics","-457.59328228755169","-1.6218237375771898","Largest Net Sells by Trade Value","S&P 500",2017-09-15,2017-08-16
+"8311","DAL","Delta Air Lines","-398.95852200768257","-1.0859454650615812","Largest Net Sells by Trade Value","S&P 500",2017-09-15,2017-08-16
+"9311","JPM","JP Morgan Chase & Co","-348.43930552265806","-0.3192260251223783","Largest Net Sells by Trade Value","S&P 500",2017-09-15,2017-08-16
+"10311","LUV","Southwest Airlines Co","-339.73893636989419","-1.1104459203154136","Largest Net Sells by Trade Value","S&P 500",2017-09-15,2017-08-16
+"11311","AAL","American Airlines Group Inc.","-299.11451020060775","-1.2213283545161142","Largest Net Sells by Trade Value","S&P 500",2017-09-15,2017-08-16
+"12311","BAC","Bank of America Corp","-274.38720744951502","-0.17066702538595069","Largest Net Sells by Trade Value","S&P 500",2017-09-15,2017-08-16
+"13311","GM","General Motors Company","-250.73125496327947","-0.69160218455130962","Largest Net Sells by Trade Value","S&P 500",2017-09-15,2017-08-16
+"14311","C","Citigroup Inc","-217.66553601138071","-0.17840441310462782","Largest Net Sells by Trade Value","S&P 500",2017-09-15,2017-08-16
+"1539","ADS","Alliance Data Systems Corp","-207.23558900477573","-1.3151542477310922","Largest Net Sells by Trade Value","S&P 500",2017-09-15,2017-08-16
+"163","V","Visa Inc A","-194.84188425458026","-0.25202451167133055","Largest Net Sells by Trade Value","S&P 500",2017-09-15,2017-08-16
+"1739","WFC","Wells Fargo & Co","-175.45893522637803","-0.16586309683045042","Largest Net Sells by Trade Value","S&P 500",2017-09-15,2017-08-16
+"1839","FOX","Twenty-First Century Fox Inc B","-175.36759726786175","-2.9941492688139375","Largest Net Sells by Trade Value","S&P 500",2017-09-15,2017-08-16
+"1939","AXP","American Express Co","-168.72230983225262","-0.5450941286332992","Largest Net Sells by Trade Value","S&P 500",2017-09-15,2017-08-16
+"2039","GS","Goldman Sachs Group Inc","-159.88676165880347","-0.22284467152126547","Largest Net Sells by Trade Value","S&P 500",2017-09-15,2017-08-16
+"2139","BA","Boeing Co","-151.93028958949188","-0.13117504125665438","Largest Net Sells by Trade Value","S&P 500",2017-09-15,2017-08-16
+"2239","AIG","American Intl Group Inc","-151.3926997892645","-0.58252711663416001","Largest Net Sells by Trade Value","S&P 500",2017-09-15,2017-08-16
+"2339","JNJ","Johnson & Johnson","-142.81875187170337","-0.19710193937254478","Largest Net Sells by Trade Value","S&P 500",2017-09-15,2017-08-16
+"2439","MSFT","Microsoft Corp","-141.46354283694527","-7.7810396304654042E-2","Largest Net Sells by Trade Value","S&P 500",2017-09-15,2017-08-16
