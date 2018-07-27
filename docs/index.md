@@ -2,4 +2,5 @@
 
 We created these training modules for our team members who want to learn R coding.
 
-[Getting Started](./Rug1/tug1.html)
+[Getting Started](rug1.html)
+[Vector data type and stock data](rug2.html)
