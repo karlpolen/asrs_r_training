@@ -16,13 +16,13 @@ We created these training modules for our team members who want to learn R codin
 
 [Programming, creating functions](https://github.com/karlp-asrs/asrs_r_training/blob/master/Rug7%20building%20functions%2C%20loan%20amortization/rug7.pdf)
 
-[Getting data from Fred](rug8.html)
+[Getting data from Fred](Rug8.html)
 
 [Convert a portfolio from dollars to % weights](proportion.html)
 
 [Time series, performance attribution](https://github.com/karlp-asrs/asrs_r_training/blob/master/Rug9/Brinson%20Attribution%20Presentation.pdf)
 
-[More time series, dcf analysis](rug10.html)
+[More time series, dcf analysis](Rug10.html)
 
 [Bond calcs, calculating symbolic derivative](rug11.html)
 
